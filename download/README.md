@@ -1,5 +1,5 @@
-Arma2
-=====
-
-This folder contains completed scripts for Arma2, Arma2OA
-Click on script archive and button "View Raw" or "Raw" for download..
+Completed scripts for Arma2, Arma2OA
+============
+**This folder contains completed scripts for Arma2, Arma2OA**
+------------
+Click on script archive and follow link "View Raw" or "Raw" button for download..
