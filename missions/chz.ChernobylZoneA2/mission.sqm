@@ -1,0 +1,288 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"gsc_units_stalker_patch",
+		"chernobylzonea2",
+		"caair_pmc_ka60",
+		"cacharacters2"
+	};
+	addOnsAuto[]=
+	{
+		"gsc_units_stalker_patch",
+		"cacharacters2",
+		"caair_pmc_ka60",
+		"chernobylzonea2"
+	};
+	randomSeed=16445654;
+	class Intel
+	{
+		startWeather=0.2;
+		forecastWeather=0.2;
+		year=2014;
+		month=7;
+		day=1;
+		hour=10;
+	};
+	class Groups
+	{
+		items=10;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5584.5454,12.941177,16434.402};
+					azimut=132.54611;
+					id=1;
+					side="EAST";
+					vehicle="gsc_military_helmet_wdl";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5585.3359,12.941177,16435.076};
+					azimut=132.54601;
+					id=2;
+					side="EAST";
+					vehicle="gsc_military_helmet_grey";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5587.8496,12.941177,16441.461};
+					azimut=305.4902;
+					id=3;
+					side="GUER";
+					vehicle="gsc_cloth_loner_head";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5586.4624,12.941177,16439.908};
+					azimut=291.87253;
+					id=4;
+					side="GUER";
+					vehicle="gsc_scientist1";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5585.6011,12.941177,16438.826};
+					azimut=291.87253;
+					id=5;
+					side="GUER";
+					vehicle="gsc_scientist2";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5583.4917,12.941177,16436.344};
+					azimut=303.88614;
+					id=6;
+					side="GUER";
+					vehicle="gsc_eco_stalker_mask_neutral";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5582.417,12.941177,16435.17};
+					azimut=311.97983;
+					id=7;
+					side="GUER";
+					vehicle="gsc_eco_stalker_mask_duty";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5581.4473,12.941177,16434.152};
+					azimut=311.97998;
+					id=8;
+					side="GUER";
+					vehicle="gsc_eco_stalker_mask_camo";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item8
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5580.0449,12.941177,16433.012};
+					azimut=311.97998;
+					id=9;
+					side="GUER";
+					vehicle="gsc_eco_stalker_mask_fred";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item9
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5580.4717,12.941177,16440.92};
+					azimut=311.97998;
+					id=10;
+					side="CIV";
+					vehicle="Citizen1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={5596.936,12.941177,16427.031};
+			id=0;
+			side="EMPTY";
+			vehicle="Ka60_GL_PMC";
+			skill=0.60000002;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"chernobylzonea2"
+	};
+	addOnsAuto[]=
+	{
+		"chernobylzonea2"
+	};
+	randomSeed=458544;
+	class Intel
+	{
+		startWeather=0.2;
+		forecastWeather=0.2;
+		year=2014;
+		month=7;
+		day=1;
+		hour=10;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"chernobylzonea2"
+	};
+	addOnsAuto[]=
+	{
+		"chernobylzonea2"
+	};
+	randomSeed=14766543;
+	class Intel
+	{
+		startWeather=0.2;
+		forecastWeather=0.2;
+		year=2014;
+		month=7;
+		day=1;
+		hour=10;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"chernobylzonea2"
+	};
+	addOnsAuto[]=
+	{
+		"chernobylzonea2"
+	};
+	randomSeed=13072992;
+	class Intel
+	{
+		startWeather=0.2;
+		forecastWeather=0.2;
+		year=2014;
+		month=7;
+		day=1;
+		hour=10;
+	};
+};

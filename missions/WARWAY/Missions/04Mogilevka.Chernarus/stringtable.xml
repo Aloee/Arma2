@@ -1,0 +1,348 @@
+﻿<Project name="Name">
+<Package name="Second name">
+
+
+<Container name="Breefing">
+
+<Key ID="STRD_Task1">
+<Original>Прикрыть отступление</Original>
+</Key>
+<Key ID="STRD_Task1_1">
+<Original>Задача миссии: Уничтожить как можно больше техники и/или солдат противника. Если противник не понесёт существенных потерь, то он продолжит движение и нагонит Президента.</Original>
+</Key>
+<Key ID="STRD_Task2">
+<Original>Отступить к Новому Собору</Original>
+</Key>
+<Key ID="STRD_Task2_1">
+<Original>Основная атака США захлебнулась. Отступайте со своими людьми к &lt;marker name="Marker6"&gt;Новому Собору&lt;/marker&gt;. Будьте осторожны, к противнику может подойти подкрепление. Все выжившие солдаты должны быть выведены из района Моглилёвки.</Original>
+</Key>
+
+
+<Key ID="STRD_Plan_Title">
+<Original>Ситуация</Original>
+</Key>
+<Key ID="STRD_Plan">
+<Original>На данный момент, силы США заняли все южное побережье, а также близлежайшие населенные пункты. По распоряжению начальника штаба, силы Чернорусской армии мирно капитулировали. Однако, все еще остаются боевые части верные старому правительству и своему президенту. Враг наступает наземными силами, что наталкивает на мысль о том, что воздух контролирует система ПВО, размещенная вблизи &lt;marker name="Marker6"&gt;Нового Собора&lt;/marker&gt;</Original>
+</Key>
+<Key ID="STRD_Plan_Title1">
+<Original>Задача</Original>
+</Key>
+<Key ID="STRD_Plan1">
+<Original>Юрий Михайлович получил по телефону информацию из доверенных источников о приближайющихся силах противника со стороны Черногорска. Было принято решение о срочной эвакуации президента и раненных в &lt;marker name="Marker6"&gt;Новый Собор&lt;/marker&gt; Задача вашего отряда: приостановить наступление врага. Если же враг не понесет значительных потерь, он продолжит свой марш и в скором времени нагонит Президента.
+&lt;br/&gt;
+На данный момент, в вашем распоряжении находится десять солдат армии ЧСО. Сержант Самойлоко оставил вам оружие и боеприпасы. В срочном порядке, необходимо вооружить солдат и раздать им координаты их позиций. Расчетное время прибытия противника - 10 минут.</Original>
+</Key>
+</Container>
+
+<Container name="System">
+<Key ID="STR_intro">
+<Original>На главной площади...</Original>
+</Key>
+<Key ID="STR_init">
+<Original>В Могилёвке</Original>
+</Key>
+<Key ID="STRD_end">
+<Original>Вы сумели задержать врага</Original>
+</Key>
+<Key ID="STR_end1">
+<Original>Вы сумели задержать врага</Original>
+</Key> 
+<Key ID="STR_end2">
+<Original>В дебрифинге при выйграше2.</Original>
+</Key>   
+<Key ID="STR_end3">
+<Original>В дебрифинге при выйграше3.</Original>
+</Key>   
+<Key ID="STR_end4">
+<Original>В дебрифинге при выйграше4.</Original>
+</Key>   
+<Key ID="STR_end5">
+<Original>В дебрифинге при выйграше5.</Original>
+</Key>   
+<Key ID="STR_end6">
+<Original>В дебрифинге при выйграше6</Original>
+</Key>  
+<Key ID="STR_Loser">
+<Original>Вы не выполнили поставленных задач!</Original>
+</Key>
+<Key ID="STR_proval1">
+<Original>Миссия провалена.Вы оставили президента.</Original>
+</Key>
+<Key ID="STR_proval2">
+<Original>Миссия провалена.Вы не сумели сдержать натиск врага.</Original>
+</Key>
+<Key ID="STR_proval3">
+<Original>Миссия провалена.Президент попал в плен.</Original>
+</Key>
+
+
+
+<Key ID="STR_info">
+<Original>Республика Черноруссия\n 11.10.1996</Original>
+</Key>
+<Key ID="STR_campa">
+<Original>ПРЕВЕД</Original>
+</Key>
+<Key ID="STRD_SAY0_1">
+<Original>Электрозаводск</Original>
+</Key>
+<Key ID="STRD_SAY0">
+<Original>6 июня</Original>
+</Key>
+<Key ID="STRD_SAY0_2">
+<Original>18:20</Original>
+</Key>
+
+<Container name="Says">
+<Key ID="STRD_PIOBandage">
+<Original>- Мне нечем себя перевязать.</Original>
+</Key>
+<Key ID="STR_ID1">
+<Original>Перевязать себя</Original>
+</Key>
+<Key ID="STRD_PIO1">
+<Original>-Как Вы могли его упустить? Как? Вся операция под угрозой!</Original>
+</Key>
+<Key ID="STRD_PIO2">
+<Original>-Мы найдём его.</Original>
+</Key>
+<Key ID="STRD_PIO3">
+<Original>-Переройте весь город, все подвалы и чердаки!</Original>
+</Key>
+<Key ID="STRD_PIO4">
+<Original>-Сэр, мы нашли его! Только что беспилотник засёк его на окраине леса, он двигался в сопровождении ещё какого-то человека в направлении Могилёвки.</Original>
+</Key>
+<Key ID="STRD_PIO5">
+<Original>-Отлично. Срочно отправьте туда группу захвата.</Original>
+</Key>
+<Key ID="STRD_PIO6">
+<Original>-Сэр, при развороте беспилотник был сбит ракетой выпущенной из района Нового Собора.</Original>
+</Key>
+<Key ID="STRD_PIO7">
+<Original>-Чёрт подери. Стаускас, Вы обещали, что сопротивления не будет. Мы же задержали всех командиров!</Original>
+</Key>
+<Key ID="STRD_PIO8">
+<Original>-Да, но двое не прибыли. Возможно, задержались в пути, т.к. дежурные доложили об их отъезде, но вы спешили и пришлось действовать.</Original>
+</Key>
+<Key ID="STRD_PIO9">
+<Original>-Это Ваша вина! Надо было их вызывать раньше. Запомните, штурмовать горы будете своими силами, я не отправлю туда ни одного своего солдата.</Original>
+</Key>
+<Key ID="STRD_PIO10">
+<Original>-Я разберусь с ними. </Original>
+</Key>
+<Key ID="STRD_PIO11">
+<Original>-Отправьте под прикрытием наземной техники.</Original>
+</Key>
+<Key ID="STRD_PIO12">
+<Original>-Тяжёлая техника только разгружается...</Original>
+</Key>
+<Key ID="STRD_PIO13">
+<Original>-Отправьте, что есть. Только не используйте вертушки - их ПВО накрывает Могилёвку. И дайте указание нашей диверсионной группе, которая находится ближе всего к этому району - пусть... </Original>
+</Key>
+<Key ID="STRD_PIO14">
+<Original>-Так точно, сэр!</Original>
+</Key>
+<Key ID="STRD_PIO15">
+<Original>-Товарищ президент, Вы живы!</Original>
+</Key>
+<Key ID="STRD_PIO16">
+<Original>Президент: -Кто вы и что здесь делаете?</Original>
+</Key>
+<Key ID="STRD_PIO17">
+<Original>-Сержант Самойлоко. 12 мотопехотный полк охраны. Во время нападения американцев был в увольнении. Когда добрался до части, то увидел, что американцы всех взяли в плен.</Original>
+</Key>
+<Key ID="STRD_PIO18">
+<Original>-Из-за невозможности оказать сопротивление противнику принял решение двигаться к Старому Собору к нашим частям. Удалось увести Урал из-под носа америкосов, пока они охрану разоружали.</Original>
+</Key>
+<Key ID="STRD_PIO19">
+<Original>-По дороге встретил и собрал отбившихся от своих частей солдат. Многие бежали в лес не желая подчиняться приказу о сдачи американцам. Кто смог, конечно.</Original>
+</Key>
+<Key ID="STRD_PIO20">
+<Original>Президент:-Кто отдал приказ о сдаче в плен?</Original>
+</Key>
+<Key ID="STRD_PIO21">
+<Original> Сержант:-Начальник штаба армии...</Original>
+</Key>
+<Key ID="STRD_PIO22">
+<Original> Президент:-Предатель!</Original>
+</Key>
+<Key ID="STRD_PIO23">
+<Original> Сержант:-Может его заставили?</Original>
+</Key>
+<Key ID="STRD_PIO24">
+<Original> Президент: -Может, а может и нет. Ну ладно, этим мы займёмся позже, сейчас надо выбираться отсюда.</Original>
+</Key>
+<Key ID="STRD_PIO25">
+<Original> Юрий: -Сержант, транспорт в посёлке есть?</Original>
+</Key>
+<Key ID="STRD_PIO26">
+<Original> Сержант: -Да, Урал и уазик. В Урал я погрузил раненных.</Original>
+</Key>
+<Key ID="STRD_PIO27">
+<Original> -Отлично!</Original>
+</Key>
+<Key ID="TRD_PIO28">
+<Original>Телефон: -Срочно уходите из Могилёвки. В вашем направлении движется колонна противника.</Original>
+</Key>
+<Key ID="STRD_PIO29">
+<Original> -Так так... надо срочно действовать... Сержант, сколько человек в вашем распоряжении и какое имеется оружие?</Original>
+</Key>
+<Key ID="STRD_PIO30">
+<Original> Сержант:-Из тех, кто может держать оружие – 10 человек. Кое какое оружие я успел прихватить, так что есть автоматы, несколько гранат, три гранатомёта, но выстрелов всего 7 и снайперская винтовка.</Original>
+</Key>
+<Key ID="STRD_PIO31">
+<Original> -Так так... вертушек не слышно, хотя могли ими воспользоваться. Скорее всего, Новый Собор ещё наш. Сержант, садитесь с президентом в уазик и дуйте к Новому Собору. Урал пойдёт с вами. А я возьму эти 10 человек и мы попробуем задержать американцев.</Original>
+</Key>
+<Key ID="STRD_PIO32">
+<Original> -Как, вы останетесь здесь?</Original>
+</Key>
+<Key ID="STRD_PIO33">
+<Original> -А кто кроме меня сможет организовать засаду? Ни одного офицера. Сержант хоть и храбр, но молод и не опытен. Мы только вспугнём их, заставим сойти с дороги и рассредоточиться, и сразу уйдём лесом к Новому Собору.</Original>
+</Key>
+<Key ID="STRD_PIO34">
+<Original> Президент: -Хорошо. Очень надеюсь увидеть Вас живым и невредимым. Зря не рискуйте. Я отправлю Вам помощь, как доберусь.</Original>
+</Key>
+<Key ID="STRD_PIO35">
+<Original> Юрий: -Лучше сохраните свою – она сейчас куда важнее.</Original>
+</Key>
+<Key ID="STRD_PIO36">
+<Original>- Что здесь произошло?! Засада? Где уазик...</Original>
+</Key>
+<Key ID="STRD_PIO37">
+<Original>...ага, свежие следы на просёлочной дороге...</Original>
+</Key>
+<Key ID="STRD_PIO38">
+<Original>- А вот и уазик, сгорел. Но трупов нет. Что же здесь произошло?!</Original>
+</Key>
+
+</Container>
+
+<Container name="Persons">
+<Key ID="STR_p1">
+<Original>Юрий Михайлович</Original>
+</Key>
+<Key ID="STR_p3">
+<Original>Владимир Градецкий</Original>
+</Key>
+<Key ID="STR_p4">
+<Original>Американский офицер</Original>
+</Key>
+<Key ID="STR_p6">
+<Original>Сержант Самойлоко</Original>
+</Key>
+
+
+<Key ID="STRM_razrab">
+<Original>TSFH</Original>
+</Key>
+
+<Key ID="STRM_voiced">
+<Original>Two Steps From Hell</Original>
+</Key>
+<Key ID="STRM_sans">
+<Original>Посередке</Original>
+</Key>
+<Key ID="STRM_sans1">
+<Original>Посередке</Original>
+</Key>
+
+<Key ID="STRM_v1">
+<Original>Редактор: Mikezar</Original>
+</Key>
+<Key ID="STRM_v2">
+<Original>На следующий день</Original>
+</Key>
+<Key ID="STRM_v3">
+<Original>Кампания: Пламя Империи</Original>
+</Key>
+<Key ID="STRM_v4">
+<Original></Original>
+</Key>
+<Key ID="STRM_v5">
+<Original>В5</Original>
+</Key>
+<Key ID="STRM_v6">
+<Original>Той же ночью./</Original>
+</Key>
+<Key ID="STRM_v7">
+<Original>0900.На пути к Чернорусской базе</Original>
+</Key>
+<Key ID="STRM_v8">
+<Original></Original>
+</Key>
+<Key ID="STRM_v9">
+<Original>Спустя час...</Original>
+</Key>
+<Key ID="STRM_v10">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v11">
+<Original>Республика</Original>
+</Key>
+<Key ID="STRM_v12">
+<Original>10 часов утра. Площадь Черногорска.</Original>
+</Key>
+<Key ID="STRM_v13">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v14">
+<Original>В14</Original>
+</Key>
+<Key ID="STRM_v15">
+<Original>Электрозаводск.5 часов спустя.</Original>
+</Key>
+<Key ID="STRM_v16">
+<Original>3-мя часами ранее...</Original>
+</Key>
+<Key ID="STRM_v17">
+<Original>14 июля.18:20</Original>
+</Key>
+<Key ID="STRM_v18">
+<Original>В18</Original>
+</Key>
+<Key ID="STRM_v19">
+<Original>В19</Original>
+</Key>
+<Key ID="STRM_v20">
+<Original>В20</Original>
+</Key>
+<Key ID="STRM_v21">
+<Original>В21</Original>
+</Key>
+<Key ID="STRM_v22">
+<Original>В22</Original>
+</Key>
+<Key ID="STRM_v23">
+<Original>В23</Original>
+</Key>
+<Key ID="STRM_v24">
+<Original>В24</Original>
+</Key>
+<Key ID="STRM_v25">
+<Original>В25</Original>
+</Key>
+<Key ID="STRM_v26">
+<Original>В26</Original>
+</Key>
+<Key ID="STRM_blag1">
+<Original>благ 1</Original>
+</Key>
+<Key ID="STRM_blag2">
+<Original>благ 2</Original>
+</Key>
+<Key ID="STRM_blag3">
+<Original>благ 3</Original>
+</Key>
+<Key ID="STRM_blag4">
+<Original>благ 4</Original>
+</Key>
+<Key ID="STRM_blag5">
+<Original>благ 5</Original>
+</Key>
+<Key ID="STRM_blag6">
+<Original>благ 6</Original>
+</Key>
+
+</Container>
+</Package>
+</Project>

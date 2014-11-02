@@ -1,0 +1,4 @@
+_ARMY = _this select 0
+@(!alive _ARMY)
+RemoveAllWeapons _ARMY
+exit

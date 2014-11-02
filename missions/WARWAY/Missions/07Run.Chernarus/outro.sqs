@@ -1,0 +1,90 @@
+titleCut ["","Black faded",7];
+0 fadesound 0
+1 fademusic 0.6
+{_x setVariable ["BIS_noCoreConversations", true];_x disableConversation true} foreach allunits;
+enableRadio false
+setAccTime 1
+showcinemaborder false
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+_camera camPrepareFocus [-1,-1]
+~7
+_camera camPrepareTarget [-61162.60,80904.09,-10570.38];
+_camera camPreparePos [6253.44,7760.31,2.09];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+2 fadesound 0.7
+playmusic "Shadow"
+titleCut ["","Black in",4];
+_camera camPrepareTarget of2;
+_camera camPreparePos [6248.92,7764.46,2.09];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 15
+playsound "STRD_PIO46"
+~10
+TitleText [localize "STRD_PIO47","PLAIN DOWN"]
+~11
+_camera camPrepareTarget of
+_camera camPreparePos [6245.21,7767.95,1.86];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+playsound "STRD_PIO48"
+~4
+_camera camPrepareTarget [106125.41,7043.59,-4447.58];
+_camera camPreparePos [6240.27,7768.97,1.50];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+playsound "STRD_PIO49"
+~7
+_camera camPrepareTarget of
+_camera camPreparePos [6245.21,7767.95,1.86];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+playsound "STRD_PIO50"
+~10
+_camera camPrepareTarget [-93639.99,12427.79,38.28];
+_camera camPreparePos [6250.84,7767.91,2.09];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+_camera camPrepareTarget [84186.02,-54875.47,303.26];
+_camera camPreparePos [6241.82,7771.95,2.09];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 15
+playsound  "STRD_PIO51"
+~7
+TitleText [localize "STRD_PIO52","PLAIN DOWN"]
+~7
+TitleText [localize "STRD_PIO53","PLAIN DOWN"]
+~15
+_camera camPrepareTarget of
+_camera camPreparePos [6245.21,7767.95,1.86];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+playsound "STRD_PIO54"
+~15
+TitleText [localize "STRD_PIO55","PLAIN DOWN"]
+~10
+_camera camPrepareTarget of2
+_camera camPreparePos [6245.70,7769.40,1.77];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+playsound "STRD_PIO56"
+~9
+TitleText [localize "STRD_PIO57","PLAIN DOWN"]
+~9
+_camera camPrepareTarget [-80749.68,-15990.16,-43075.88];
+_camera camPreparePos [6249.53,7769.53,3.72];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+playsound "STRD_PIO58"
+~7
+playsound "STRD_PIO59"
+~4
+titleCut ["","BLACK OUT", 3]
+~3
+1 fademusic 0 
+1 fadesound 0
+~1
+_camera cameraeffect ["terminate", "Back"] 
+camdestroy _camera  
+endMission "END1"

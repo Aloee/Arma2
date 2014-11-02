@@ -1,0 +1,134 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"dapstalkers",
+		"CAAir_BAF",
+		"caair_baf_ch_47f",
+		"thirsk",
+		"vilas_rw_forces_co"
+	};
+	addOnsAuto[]=
+	{
+		"dapstalkers",
+		"CAAir_BAF",
+		"caair_baf_ch_47f",
+		"thirsk"
+	};
+	randomSeed=11556414;
+	class Intel
+	{
+		startWeather=0.25;
+		startFog=0.15000001;
+		forecastWeather=0.15000001;
+		year=2014;
+		month=7;
+		day=1;
+		hour=8;
+		minute=0;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1221.5482,45.222477,1900.5308};
+					id=0;
+					side="GUER";
+					vehicle="gsc_eco_stalker_mask_fred";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={1219.8756,45.647903,1915.3909};
+			id=1;
+			side="EMPTY";
+			vehicle="CH_47F_BAF";
+			skill=0.60000002;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"thirsk"
+	};
+	addOnsAuto[]=
+	{
+		"thirsk"
+	};
+	randomSeed=10760227;
+	class Intel
+	{
+		startWeather=0.25;
+		startFog=0.15000001;
+		forecastWeather=0.15000001;
+		year=2014;
+		month=7;
+		day=1;
+		hour=8;
+		minute=0;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"thirsk"
+	};
+	addOnsAuto[]=
+	{
+		"thirsk"
+	};
+	randomSeed=7280333;
+	class Intel
+	{
+		startWeather=0.25;
+		startFog=0.15000001;
+		forecastWeather=0.15000001;
+		year=2014;
+		month=7;
+		day=1;
+		hour=8;
+		minute=0;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"thirsk"
+	};
+	addOnsAuto[]=
+	{
+		"thirsk"
+	};
+	randomSeed=14772251;
+	class Intel
+	{
+		startWeather=0.25;
+		startFog=0.15000001;
+		forecastWeather=0.15000001;
+		year=2014;
+		month=7;
+		day=1;
+		hour=8;
+		minute=0;
+	};
+};

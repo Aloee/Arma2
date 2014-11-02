@@ -1,0 +1,278 @@
+﻿<Project name="Name">
+<Package name="Second name">
+<Container name="Breefing"
+
+</Container>
+<Container name="System">
+<Key ID="STR_intro">
+<Original>В американском штабе...</Original>
+</Key>
+<Key ID="STR_init">
+<Original>На следующий день</Original>
+</Key>
+<Key ID="STRD_end">
+<Original>Группа МОЛОТ полностью уничтожена. Никто не ожидал предательства со стороны братьев по оружию. Скорее всего, теперь об этом уже никому не будет известно.</Original>
+</Key>
+<Key ID="STR_end1">
+<Original>Вы успешно прибыли в Республику Черноруссь. Вы продолжаете сопровождать посла,Александра Васильевича, прибывшего с рабочим визитом в страну. Но у ГРУ на ваш счет другие планы...</Original>
+</Key> 
+<Key ID="STR_end2">
+<Original>Вы, как помощник атташе, совершили плановый визит и изучили местность, отведенную для постройки русской базы </Original>
+</Key>   
+<Key ID="STR_end3">
+<Original>В дебрифинге при выйграше3.</Original>
+</Key>   
+<Key ID="STR_end4">
+<Original>В дебрифинге при выйграше4.</Original>
+</Key>   
+<Key ID="STR_end5">
+<Original>В дебрифинге при выйграше5.</Original>
+</Key>   
+<Key ID="STR_end6">
+<Original>В дебрифинге при выйграше6</Original>
+</Key>  
+<Key ID="STR_Loser">
+<Original>Вы не выполнили поставленных задач!</Original>
+</Key>
+<Key ID="STR_proval1">
+<Original>Миссия провалена.Американец ушел.</Original>
+</Key>
+<Key ID="STR_proval2">
+<Original>Миссия провалена. Офицер боевиков погиб.</Original>
+</Key>
+<Key ID="STR_proval3">
+<Original>Миссия провалена.Огонь по своим!</Original>
+</Key>
+<Key ID="STRD_antiroket">
+<Original>Внимание! Датчики засекли ракету!</Original>
+</Key>
+<Key ID="STRD_PlrLeshenie">
+<Original>перевязка</Original>
+</Key>
+<Key ID="STRD_mar1">
+<Original>Маркер 1.</Original>
+</Key>
+<Key ID="STRD_arti">
+<Original>Доступна артеллерия. Радио: 0-0-0<br/><t><img size='7.3' color='#ffffff' align='center' image='img\art.jpg'></t></Original>
+</Key>
+
+
+<Key ID="STR_info">
+<Original>Республика Черноруссия\n 11.10.1996</Original>
+</Key>
+<Key ID="STR_campa">
+<Original>ПРЕВЕД</Original>
+</Key>
+<Key ID="STRD_SAY0_1">
+<Original>Электрозаводск</Original>
+</Key>
+<Key ID="STRD_SAY0">
+<Original>6 июня</Original>
+</Key>
+<Key ID="STRD_SAY0_2">
+<Original>18:20</Original>
+</Key>
+
+<Container name="Says">
+<Key ID="STRD_PIO1">
+<Original>-Проведём пару красочных разоблачений их режима и мандат ООН в нашем кармане. Можно, конечно и так, но они граничат с Россией… лучше сделать всё красиво и аккуратно.</Original>
+</Key>
+<Key ID="STRD_PIO2">
+<Original>-Хорошо, даю добро. Сколько Вам нужно времени на проведение операции?</Original>
+</Key>
+<Key ID="STRD_PIO3">
+<Original>-Первая часть будет проведена завтра, вторая через пять дней. </Original>
+</Key>
+<Key ID="STRD_PIO4">
+<Original>-Окей. Значит через  неделю наш представитель выступит в ООН?! </Original>
+</Key>
+<Key ID="STRD_PIO5">
+<Original>-Я рассчитываю на Вас, не подведите, нам нужна их нефть, а вам их позиции для развёртывания ракет-перехватчиков российских баллистических ракет.</Original>
+</Key>
+<Key ID="STRD_PIO6">
+<Original>-Здесь хорошее место. Рядом проходят коммуникации, отвод сделаем в течение трёх дней. Временный лагерь можно будет разместить вон там, пока будут возводиться постройки. </Original>
+</Key>
+<Key ID="STRD_PIO7">
+<Original>-Как на счёт рабочих?</Original>
+</Key>
+<Key ID="STRD_PIO8">
+<Original>-Будут. Приостановим несколько строек. Всё возведём в течении 4-5 месяцев.</Original>
+</Key>
+<Key ID="STRD_PIO9">
+<Original>-Хорошо.</Original>
+</Key>
+<Key ID="STRD_PIO10">
+<Original>Мы прерываем наше вещание на срочный выпуск новостей.</Original>
+</Key>
+<Key ID="STRD_PIO11">
+<Original>Сегодня в нейтральных водах американским патрулём был задержан корабль шедший под флагом Черноруссии. По заявлению американской стороны на корабле обнаружены боеприпасы с отравляющими веществами.</Original>
+</Key>
+<Key ID="STRD_PIO12">
+<Original>Правительство Черноруссии выступило с опровержением и заявило протест.</Original>
+</Key>
+<Key ID="STRD_PIO13">
+<Original>-Обстановка накаляется...</Original>
+</Key>
+<Key ID="STRD_PIO14">
+<Original>-Наш агент сообщил, что после завтра президент Черноруссии убывает в Москву с целью подписания договора на создание российской военной базы! </Original>
+</Key>
+<Key ID="STRD_PIO15">
+<Original>-Российские военные уже стоят в готовности пересечь границу Черноруссии.</Original>
+</Key>
+<Key ID="STRD_PIO16">
+<Original>-Чёрт… все наши планы коту под хвост! Окей, я свяжусь со штабом. Надо срочно действовать.</Original>
+</Key>
+<Key ID="STRD_PIO17">
+<Original>-Ну что там, на долго? Мы же опоздаем на совещание в штабе армии!</Original>
+</Key>
+<Key ID="STRD_PIO18">
+<Original>-Стараюсь, товарищ полковник. Трубка лопнула – вода вся вытекла. Сейчас залатаю. Только вот где теперь воды найти, что бы в радиатор налить?! В этой глуши даже телефон не берёт…</Original>
+</Key>
+<Key ID="STRD_PIO19">
+<Original>-Как всегда, всё в самый неподходящий момент… Что там у нас на карте… ага, тут родник есть не далеко – наберём воды. Фляга-то есть, горе-водила?</Original>
+</Key>
+<Key ID="STRD_PIO20">
+<Original>-Так точно, сейчас достану из багажника.</Original>
+</Key>
+<Key ID="STRD_PIO21">
+<Original>-Ну давай, латай трубу, мы пока за водой сходим</Original>
+</Key>
+
+</Container>
+
+<Container name="Persons">
+<Key ID="STR_p1">
+<Original>Сергеев Юрий Михайлович</Original>
+</Key>
+<Key ID="STR_p2">
+<Original>Александр Васильевич</Original>
+</Key>
+<Key ID="STR_p3">
+<Original>Владимир Градецкий</Original>
+</Key>
+<Key ID="STR_p4">
+<Original>Американский офицер</Original>
+</Key>
+
+
+
+
+<Key ID="STRM_razrab">
+<Original>TSFH</Original>
+</Key>
+
+<Key ID="STRM_voiced">
+<Original>Two Steps From Hell</Original>
+</Key>
+<Key ID="STRM_sans">
+<Original>Посередке</Original>
+</Key>
+<Key ID="STRM_sans1">
+<Original>Посередке</Original>
+</Key>
+
+<Key ID="STRM_v1">
+<Original>Редактор: Mikezar</Original>
+</Key>
+<Key ID="STRM_v2">
+<Original>На следующий день</Original>
+</Key>
+<Key ID="STRM_v3">
+<Original>Кампания: Пламя Империи</Original>
+</Key>
+<Key ID="STRM_v4">
+<Original>14 июля.18:20</Original>
+</Key>
+<Key ID="STRM_v5">
+<Original>В5</Original>
+</Key>
+<Key ID="STRM_v6">
+<Original>v6/</Original>
+</Key>
+<Key ID="STRM_v7">
+<Original>0900.На пути к Чернорусской базе</Original>
+</Key>
+<Key ID="STRM_v8">
+<Original></Original>
+</Key>
+<Key ID="STRM_v9">
+<Original>v9</Original>
+</Key>
+<Key ID="STRM_v10">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v11">
+<Original>Республика</Original>
+</Key>
+<Key ID="STRM_v12">
+<Original>Тем временем...</Original>
+</Key>
+<Key ID="STRM_v13">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v14">
+<Original>В14</Original>
+</Key>
+<Key ID="STRM_v15">
+<Original>Электрозаводск.5 часов спустя.</Original>
+</Key>
+<Key ID="STRM_v16">
+<Original>3-мя часами ранее...</Original>
+</Key>
+<Key ID="STRM_v17">
+<Original>14 июля.18:20</Original>
+</Key>
+<Key ID="STRM_v18">
+<Original>В18</Original>
+</Key>
+<Key ID="STRM_v19">
+<Original>В19</Original>
+</Key>
+<Key ID="STRM_v20">
+<Original>В20</Original>
+</Key>
+<Key ID="STRM_v21">
+<Original>В21</Original>
+</Key>
+<Key ID="STRM_v22">
+<Original>В22</Original>
+</Key>
+<Key ID="STRM_v23">
+<Original>В23</Original>
+</Key>
+<Key ID="STRM_v24">
+<Original>В24</Original>
+</Key>
+<Key ID="STRM_v25">
+<Original>В25</Original>
+</Key>
+<Key ID="STRM_v26">
+<Original>В26</Original>
+</Key>
+<Key ID="STRM_blag1">
+<Original>благ 1</Original>
+</Key>
+<Key ID="STRM_blag2">
+<Original>благ 2</Original>
+</Key>
+<Key ID="STRM_blag3">
+<Original>благ 3</Original>
+</Key>
+<Key ID="STRM_blag4">
+<Original>благ 4</Original>
+</Key>
+<Key ID="STRM_blag5">
+<Original>благ 5</Original>
+</Key>
+<Key ID="STRM_blag6">
+<Original>благ 6</Original>
+</Key>
+<Key ID="STRD_end">
+<Original>Продолжение следует....</Original>
+</Key>
+<Key ID="STRD_end2">
+<Original>by Mikezar</Original>
+</Key>
+</Container>
+</Package>
+</Project>

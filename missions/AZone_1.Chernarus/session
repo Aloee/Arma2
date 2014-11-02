@@ -1,0 +1,14 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="6">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1592" startPos="222" endPos="222" selMode="0" lang="&#x041E;&#x0431;&#x044B;&#x0447;&#x043D;&#x044B;&#x0439; &#x0422;&#x0435;&#x043A;&#x0441;&#x0442;" encoding="-1" filename="D:\Games\Bohemia Interactive\server.cfg" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2016" startPos="3013" endPos="3028" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\actions.sqf" />
+            <File firstVisibleLine="580" xOffset="0" scrollWidth="1736" startPos="15368" endPos="15384" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\l_functions.sqf" />
+            <File firstVisibleLine="43" xOffset="0" scrollWidth="2216" startPos="2417" endPos="2417" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\s_functions.sqf" />
+            <File firstVisibleLine="72" xOffset="0" scrollWidth="4448" startPos="3622" endPos="3622" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\init.sqf" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="360" startPos="548" endPos="548" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\Description.ext" />
+            <File firstVisibleLine="772" xOffset="0" scrollWidth="6848" startPos="40445" endPos="40445" selMode="0" lang="XML" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\stringtable.xml" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

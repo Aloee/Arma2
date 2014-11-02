@@ -1,0 +1,227 @@
+onLoadIntro="$STR_intro";
+onLoadMission = "$STR_init";
+onLoadIntroTime = true;
+onLoadMissionTime = true;
+
+briefing = 1;
+debriefing = 1;
+showCompass = 1;
+showGPS = 0;
+showMap = 1;
+showNotepad = 1;
+showWatch = 1;
+
+class CfgSounds
+{
+	sounds[] = {};
+	
+		class STRD_PIOBandage
+	{
+		name = "STRD_PIOBandage";
+		sound[] = {\sound\STRD_PIOBandage.ogg,2, 8.0};
+		titles[] = {0, "$STRD_PIOBandage"};
+	};
+	class STRD_PIO1
+	{
+		name = "STRD_PIO1";
+		sound[] = {\sound\STRD_PIO1.ogg,8, 1.0};
+		titles[] = {0, "$STRD_PIO1"};
+	};
+	class STRD_PIO2
+	{
+		name = "STRD_PIO2";
+		sound[] = {\sound\STRD_PIO2.ogg, 8, 1.0};
+		titles[] = {0, "$STRD_PIO2"};
+	};
+	class STRD_PIO3
+	{
+		name = "STRD_PIO3";
+		sound[] = {\sound\STRD_PIO3.ogg,8, 1.0};
+		titles[] = {0, "$STRD_PIO3"};
+	};
+	class STRD_PIO6
+	{
+		name = "STRD_PIO6";
+		sound[] = {\sound\STRD_PIO6.ogg,8, 1.0};
+		titles[] = {0, "$STRD_PIO6"};
+	};
+	class STRD_PIO7
+	{
+		name = "STRD_PIO7";
+		sound[] = {\sound\STRD_PIO7.ogg,8, 1.0};
+		titles[] = {0, "$STRD_PIO7"};
+	};
+
+	class STRD_PIO8
+	{
+		name = "STRD_PIO8";
+		sound[] = {\sound\STRD_PIO8.ogg,8, 1.0};
+		titles[] = {0, "$STRD_PIO8"};
+	};
+	class STRD_PIO9
+	{
+		name = "STRD_PIO9";
+		sound[] = {\sound\STRD_PIO9.ogg,8, 1.0};
+		titles[] = {0, "$STRD_PIO9"};
+	};
+			class STRD_PIO11
+	{
+		name = "STRD_PIO11";
+		sound[] = {\sound\STRD_PIO11.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO11"};
+	};
+	
+
+			class STRD_PIO17
+	{
+		name = "STRD_PIO17";
+		sound[] = {\sound\STRD_PIO17.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO17"};
+	};
+				class STRD_PIO18
+	{
+		name = "STRD_PIO18";
+		sound[] = {\sound\STRD_PIO18.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO18"};
+	};
+				class STRD_PIO19
+	{
+		name = "STRD_PIO19";
+		sound[] = {\sound\STRD_PIO19.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO19"};
+	};
+				class STRD_PIO20
+	{
+		name = "STRD_PIO20";
+		sound[] = {\sound\STRD_PIO20.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO20"};
+	};
+				class STRD_PIO21
+	{
+		name = "STRD_PIO21";
+		sound[] = {\sound\STRD_PIO21.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO21"};
+	};
+	
+
+};
+class CfgMusic
+{
+	tracks[] = {Spear.ogg, Oblivion.ogg, Lost.ogg, Silver.ogg, Dream.ogg, Steel.ogg };
+
+	class Spear
+	{
+		name = "Spear";
+		sound[] = {\music\Spear.ogg, db + 0, 1.0};
+	};	
+		class Oblivion
+	{
+		name = "Oblivion";
+		sound[] = {\music\Oblivion.ogg, db + 0, 1.0};
+	};
+			class Lost
+	{
+		name = "Lost";
+		sound[] = {\music\Lost.ogg, db + 0, 1.0};
+	};
+			class Silver
+	{
+		name = "Silver";
+		sound[] = {\music\Silver.ogg, db + 0, 1.0};
+	};
+			class Dream
+	{
+		name = "Dream";
+		sound[] = {\music\Dream.ogg, db + 0, 1.0};
+	};
+			class Steel
+	{
+		name = "Steel";
+		sound[] = {\music\Steel.ogg, db + 0, 1.0};
+	};
+};
+
+class CfgIdentities
+{
+	class spec_1
+	{
+		name = "$STR_p1";
+		face = "Face50";
+		glasses="none";
+		speaker = "Male01RU";
+		pitch = 1.10;
+	};
+	class spec_2
+	{
+		name =  "$STR_p2";
+		face = "Face45";
+		glasses="none";
+		speaker = "Male02RU";
+		pitch = 1.09;
+	};
+	class spec_3
+	{
+		name =  "$STR_p3";
+		face = "Face74";
+		glasses="none";
+		speaker = "Male03RU";
+		pitch = 1.09;
+	};
+		class spec_4
+	{
+		name =  "$STR_p4";
+		face = "Face50";
+		glasses="none";
+		speaker = "Male02RU";
+		pitch = 1.09;
+	};
+		class spec_5
+	{
+		name =  "$STR_p5";
+		face = "Face71";
+		glasses="none";
+		speaker = "Male02RU";
+		pitch = 1.09;
+	};
+		class spec_6
+	{
+		name =  "$STR_p6";
+		face = "Face61";
+		glasses="none";
+		speaker = "Male03RU";
+		pitch = 1.09;
+	};
+};
+
+#include "T.hpp"
+
+#define ST_CENTER 0
+#define FontMAIN "SteelfishB64"
+
+class Stroka  {
+	idd = 50000;
+	movingEnable = 0;
+	objects[] = {};
+	duration = 145;
+    fadeout = 4;
+	controlsBackground[] = {tx};
+	controls[] = {bort1,bort2};
+	font = FontMAIN;
+size = 2;
+	
+class tx : RscHTML {idc = 50001};
+
+class bort1 : RscText {
+style = ST_CENTER;
+x = SafeZoneX;
+y = SafeZoneY;
+h = SafeZoneH * 0.15;
+w = SafeZoneW;
+
+};
+class bort2 : bort1 {
+y = SafeZoneY + 0.85 * SafeZoneH;
+
+};
+	
+};

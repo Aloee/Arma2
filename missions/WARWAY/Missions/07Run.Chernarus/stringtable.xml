@@ -1,0 +1,443 @@
+﻿<Project name="Name">
+<Package name="Second name">
+
+
+<Container name="Breefing">
+
+<Key ID="STRD_Task1">
+<Original>Добраться до Зелёной горы</Original>
+</Key>
+<Key ID="STRD_Task1_1">
+<Original>Вы начинаете движение вблизи поселка &lt;marker name="01"&gt;Пуста&lt;/marker&gt;. Ваша задача: Добраться до леса &lt;marker name="06"&gt;вблизи&lt;/marker&gt; Зеленой горы для подготовки последующего маневра. 
+&lt;br/&gt;
+Старайтесь избегать основных дорог и второстепенного назначения - по ним могут двигаться американские конвои. В случае, если вас обнаружат - будет выслана пара боевых вертолетов.Американцы уже осведомлены о ваших действиях в поселке Старое, поэтому под гражданского уже сойти не получится.
+
+</Original>
+</Key>
+<Key ID="STRD_Task2">
+<Original>Захватить грузовик с боеприпасами</Original>
+</Key>
+<Key ID="STRD_Task2_1">
+<Original>Вы встретили местного, который сообщил о произошедшей аварии - столкнулись два грузовика в густом тумане. Есть жертвы. У вас появилась возможность завладеть амуницией и транспортом до приезда на место проишествия полиции и американских военных.</Original>
+</Key>
+<Key ID="STRD_Task3">
+<Original>Найти транспорт</Original>
+</Key>
+<Key ID="STRD_Task3_1">
+<Original>Для того, чтобы добраться до точки назначения вам необходим транспорт. Проверьте северную часть &lt;marker name="02"&gt;Пусты&lt;/marker&gt;, что на юге от вас, и дома возле дороги &lt;marker name="02_1"&gt;на севере&lt;/marker&gt;</Original>
+</Key>
+<Key ID="STRD_Task4">
+<Original>Поговорить с механиком</Original>
+</Key>
+<Key ID="STRD_Task4_1">
+<Original>Поговорите с механиком у трактора.</Original>
+</Key>
+
+
+<Key ID="STRD_Plan_Title">
+<Original>Ситуация</Original>
+</Key>
+<Key ID="STRD_Plan">
+<Original>Вам удалось вызволить президента и других военнопленных из поселка &lt;marker name="05_2"&gt;Старое&lt;/marker&gt;. Командование США уже осознало, что захватиь президента им уже не удасться, поэтому было принято решение инсцинировать его смерть. Необходимо дат ьпонять всему народу Черноруссии, что их лидер жив, и что еще не все потеряно! 
+&lt;br/&gt;
+Помощи от координатора не будет - телефон сел. Нет зарядки.</Original>
+</Key>
+<Key ID="STRD_Plan_Title1">
+<Original>План</Original>
+</Key>
+<Key ID="STRD_Plan1">
+<Original>При движении избегайте главных и второстепенных дорог - вероятно наличие военной техники противника. Хорошо охраняются такие города, как &lt;marker name="04_2"&gt;Электрозаводск&lt;/marker&gt;, &lt;marker name="04_3"&gt;Зеленогорск&lt;/marker&gt; и &lt;marker name="04_1"&gt;Черногорск.&lt;/marker&gt; Большая часть городов оккупирована американскими военными. В поселках на въезде и выездах скорее всего размещены американские блокпосты.
+&lt;br/&gt;
+Провести операцию необходимо пока окончательно не взошло солнце и не рассеялся туман. У вас всего 1 час.
+&lt;br/&gt;
+Нельзя допустить смерть президента или сержанта!
+</Original>
+</Key>
+<Key ID="STRD_Plan_Title2">
+<Original>Заметки</Original>
+</Key>
+<Key ID="STRD_Plan2">
+<Original>
+Было решено провести операцию рано утром, на восходе солнца. Сегодня над землей стелится густой туман. Нам повезло. Но надо торопиться, у нас не больше часа.
+</Original>
+</Key>
+</Container>
+
+<Container name="System">
+<Key ID="STR_intro">
+<Original>Ночь. Где-то в лесу.</Original>
+</Key>
+<Key ID="STR_init">
+<Original>Рассвет.</Original>
+</Key>
+<Key ID="STRD_end">
+<Original></Original>
+</Key>
+<Key ID="STR_end1">
+<Original>Вы успешно добрались до горы Зелёная.</Original>
+</Key> 
+<Key ID="STR_end2">
+<Original>В дебрифинге при выйграше2.</Original>
+</Key>   
+<Key ID="STR_end3">
+<Original>В дебрифинге при выйграше3.</Original>
+</Key>   
+<Key ID="STR_end4">
+<Original>В дебрифинге при выйграше4.</Original>
+</Key>   
+<Key ID="STR_end5">
+<Original>В дебрифинге при выйграше5.</Original>
+</Key>   
+<Key ID="STR_end6">
+<Original>В дебрифинге при выйграше6</Original>
+</Key>  
+<Key ID="STR_Loser">
+<Original>Вы не выполнили поставленных задач!</Original>
+</Key>
+<Key ID="STR_proval1">
+<Original>Миссия провалена.Президент или сержант погиб.</Original>
+</Key>
+<Key ID="STR_proval2">
+<Original>Миссия провалена.Время вышло.</Original>
+</Key>
+
+
+
+
+<Key ID="STR_info">
+<Original>Республика Черноруссия\n 11.10.1996</Original>
+</Key>
+<Key ID="STR_campa">
+<Original>ПРЕВЕД</Original>
+</Key>
+<Key ID="STRD_SAY0_1">
+<Original>Электрозаводск</Original>
+</Key>
+<Key ID="STRD_SAY0">
+<Original>6 июня</Original>
+</Key>
+<Key ID="STRD_SAY0_2">
+<Original>18:20</Original>
+</Key>
+
+<Container name="Says">
+<Key ID="STRD_PIOBandage">
+<Original>- Мне нечем себя перевязать.</Original>
+</Key>
+<Key ID="STR_ID1">
+<Original>Перевязать себя</Original>
+</Key>
+<Key ID="STRD_PIO1">
+<Original>... погибли президент и премьер-министр. Ответственность за терракт взяла на себя организация "Коммунисты Черногории". Руководство республикой возглавил начальник штаба Черногорской армии.</Original>
+</Key>
+<Key ID="STRD_PIO2">
+<Original>Он объявил военное положение в республике и попросил руководство НАТО оказать помощь в борьбе с террористической организацией.В ответ на просьбу, НАТО согласилось выделить руководству Черногории оборудование, технику и предоставить помощь специалистов по борьбе с террористами.</Original>
+</Key>
+<Key ID="STRD_PIO3">
+<Original>Вот это номер!</Original>
+</Key>
+<Key ID="STRD_PIO4">
+<Original>Они инсцинировали мою смерть!</Original>
+</Key>
+<Key ID="STRD_PIO5">
+<Original>Да, и теперь они постараются Вас убить, чтобы ВЫ вдруг не "ожили"!</Original>
+</Key>
+<Key ID="STRD_PIO6">
+<Original>Ожил... ну-ну... а ведь это мысль! Нужно, чтобы я ожил! Например, показать моё обращение по ТВ!</Original>
+</Key>
+<Key ID="STRD_PIO7">
+<Original>Для повышения оперативности на время активной фазы на территории республики будет размещена военная база НАТО. Временный глава правительства Черногории объявил коммендантский час с 20.00 до 7.00. Всякое передвижение в это время без специальных пропусков запрещено...</Original>
+</Key>
+<Key ID="STRD_PIO8">
+<Original>По ТВ? Да Вас близко к нему не подпустят! А зарубежные каналы будут просто глушить. Здесь теперь информационный вакуум.</Original>
+</Key>
+<Key ID="STRD_PIO9">
+<Original>Но... если записать моё выступление и пустить в эфир без моего присутствия на студии? Это можно сделать, есть центральная вышка, там есть оборудование именно для таких случаев. </Original>
+</Key>
+<Key ID="STRD_PIO10">
+<Original>Когда необходимо выдать в эфир заранее подготовленное сообщение, и студия не может выполнять свои функции. Есть такие экстренные сообщения... Записываешь их на любой удобный носитель и на станции подключаешь и пускаешь в эфир!</Original>
+</Key>
+<Key ID="STRD_PIO11">
+<Original>Хм... да, такое, пожалуй, можно было бы сделать. Выступление записать на телефон... только вот... вышку, наверняка, охраняют и охраняют очень хорошо!</Original>
+</Key>
+<Key ID="STRD_PIO12">
+<Original>Я ходил в караул на охрану вышки. Знаю там каждое деревце, каждый пенёк.</Original>
+</Key>
+<Key ID="STRD_PIO13">
+<Original>Где она находится?</Original>
+</Key>
+<Key ID="STRD_PIO14">
+<Original>Гора зелёная. Далеко отсюда.</Original>
+</Key>
+<Key ID="STRD_PIO15">
+<Original>Мда... значит у нас две проблемы, одна - добраться до вышки, вторая - выйти в эфир.</Original>
+</Key>
+<Key ID="STRD_PIO16">
+<Original>И третья - унести ноги..</Original>
+</Key>
+<Key ID="STRD_PIO17">
+<Original>Миссия практически невыполнимая.</Original>
+</Key>
+<Key ID="STRD_PIO18"> 
+<Original>Стой, руки вверх. Кто такой?</Original>
+</Key>
+<Key ID="STRD_PIO19">
+<Original> А ты сам кто будешь, чтобы такие вопросы задавать?</Original>
+</Key>
+<Key ID="STRD_PIO20">
+<Original>Русский что ли? Это не ты ли в Могилёвке янки потрепал?</Original>
+</Key>
+<Key ID="STRD_PIO21">
+<Original>Может и я. Уж не за мной ли охотитесь?</Original>
+</Key>
+<Key ID="STRD_PIO22">
+<Original>Нет, ищем более важного человека. Говорят ты последний видел президента, когда он уезжал из Могилёвки?</Original>
+</Key>
+<Key ID="STRD_PIO23">
+<Original>Откуда такие сведения?</Original>
+</Key>
+<Key ID="STRD_PIO24">
+<Original>После боя несколько человек добрались до Нового Собора. Нас на поиски отправили. Нашли место бойни на дороге, среди трупов не нашли и двинулись по следам нападавших. Оказалась группа янки-диверсантов. Всех уложили. Правда и сами потери понесли. Но пленных у них не было. Вот уже двое суток рыщем по лесам.</Original>
+</Key>
+<Key ID="STRD_PIO25">
+<Original>Президент с нами. Но у нас срочное дело. Транспорт нужен.</Original>
+</Key>
+<Key ID="STRD_PIO26">
+<Original>Транспорт есть. Вы делайте своё дело, а мы президента выведем.</Original>
+</Key>
+<Key ID="STRD_PIO27">
+<Original>Неее... один раз я его уже отпустил, еле вызволил обратно. Пусть лучше будет под боком, так надёжнее.</Original>
+</Key>
+<Key ID="STRD_PIO28">
+<Original>Что за дело-то?</Original>
+</Key>
+<Key ID="STRD_PIO29">
+<Original>Нужно добраться до Зелёной горы.</Original>
+</Key>
+<Key ID="STRD_PIO30">
+<Original>Машину найдём, есть тут одна на примете. Но мы поедим с вами. Идёмте,мы покажем вам, где транспорт.</Original>
+</Key>
+<Key ID="STRD_PIO31">
+<Original>Это вы вчера устроили шум в Старом?</Original>
+</Key>
+<Key ID="STRD_PIO32">
+<Original>Было дело, пошумели малость. Лучше скажи, как выбираться планировали?</Original>
+</Key>
+<Key ID="STRD_PIO33">
+<Original>Наши уже отошли от Нового и Старого Соборов. Почти вся бронетехника была сосредоточена в частях у побережья, так что обороняться практически нечем. Два с половиной танка, несколько бронетранспортёров и зениток. Зато много НЗ складов с боеприпасами, снаряжением и провиантом. Вчера вечером получили радиограмму, что войска отходят на север к горам.</Original>
+</Key>
+<Key ID="STRD_PIO34">
+<Original>Плохо, далеко добираться. Ещё и через линию фронта надо будет пробираться.</Original>
+</Key>
+<Key ID="STRD_PIO35">
+<Original>Пробраться будет не сложно - мы местные, все лазейки знаем.</Original>
+</Key>
+<Key ID="STRD_PIO36">
+<Original>Утро доброе. Куда в такую рань собрались? Коммендантский час же!?</Original>
+</Key>
+<Key ID="STRD_PIO37">
+<Original>Доброе. Да вон тупые янки в тумане влетели в наш поселковый грузовичок. Теперь надо ехать - вытаскивать. Полицейский даже пропуск привёз. Говорят водители на смерть разбились. Жуть... Куда в таком тумане несутся?! </Original>
+</Key>
+<Key ID="STRD_PIO38">
+<Original>И далеко отсюда?</Original>
+</Key>
+<Key ID="STRD_PIO39">
+<Original>Cовсем рядом. Рукой подать.</Original>
+</Key>
+<Key ID="STRD_PIO40">
+<Original>Послушай меня, мужик. Не стоит тебе туда лезть... Давай-ка я съезжу. А ты домой иди. Если что - скажи, что я тебе оружием угрожал.</Original>
+</Key>
+<Key ID="STRD_PIO41">
+<Original>Ты только трактор верни.</Original>
+</Key>
+<Key ID="STRD_PIO42">
+<Original>Через пару часов заберёшь на месте аварии. Раньше не лезь туда.</Original>
+</Key>
+<Key ID="STRD_PIO43">
+<Original>Ну ладно. Но ты это... не разбей его. Аккуратнее..</Original>
+</Key>
+<Key ID="STRD_PIO44">
+<Original>Хорошо.</Original>
+</Key>
+<Key ID="STRD_PIO45">
+<Original>О! Автомобильная зарядка. Какая удача, пока будем ехать можно зарядить спутниковый телефон. А пока отправлю сообщение в штаб.</Original>
+</Key>
+<Key ID="STRD_PIO46">
+<Original>-Плохо дело. Мало того, что мы почти без техники, так ещё и это вчерашнее сообщение о гибели президента и переходу власти к временному правительству.Теперь мы выставлены как мятежники.</Original>
+</Key>
+<Key ID="STRD_PIO47">
+<Original>-Многие солдаты в рассеянности. Они неуверенны в правильности наших действий. Не удивлюсь, если к завтрашнему утру они перейдут на сторону временного правительства, а нас выдадут как изменников. </Original>
+</Key>
+<Key ID="STRD_PIO48">
+<Original>-Это же ложь. Грязные политические игры.</Original>
+</Key>
+<Key ID="STRD_PIO49">
+<Original>Да, только в них разбираются далеко не все. Большинство смотрит ТВ, слушает радио и верит всему, что говорят.</Original>
+</Key>
+<Key ID="STRD_PIO50">
+<Original>Но есть и плюсы - президент жив и если удастся задуманная им операция, то баланс сил в политической игре изменится в нашу сторону.</Original>
+</Key>
+<Key ID="STRD_PIO51">
+<Original>Да, надеюсь, что им удастся. Сейчас главное, что бы никто не узнал про их планы...</Original>
+</Key>
+<Key ID="STRD_PIO52">
+<Original>Вечером максимальное количество личного состава, под видом отдыха, должно смотреть ТВ, будем надеяться на успех мероприятия. </Original>
+</Key>
+<Key ID="STRD_PIO53">
+<Original>А пока продолжаем вывозить припасы, оружие и снаряжение в лесные базы и тайники. С завтрашнего дня мы переходим к партизанской войне, возможности к прямому противостоянию у нас больше нет. Противник стянул большие силы.</Original>
+</Key>
+<Key ID="STRD_PIO54">
+<Original>Судя по данным разведки американцы планируют атаковать в направлении дороги через горы, чтобы лишить нас возможности отступления в Россию. Думаю не стоит зря ложить людей на бесполезную оборону.</Original>
+</Key>
+<Key ID="STRD_PIO55">
+<Original>Сделаем лишь её видимость, заминируем всё. А сами воспользуемся этим и сосредоточим все наши силы для прорыва к точке эвакуации, чтобы вывести президента и сопроваждающих его людей.</Original>
+</Key>
+<Key ID="STRD_PIO56">
+<Original>Он наш символ сопротивления и потому его нужно вывести живым и невредимым. Это поднимет боевой дух личного состава и укрепит веру в правильность нашей борьбы.</Original>
+</Key>
+<Key ID="STRD_PIO57">
+<Original>Сегодня вечером отправьте в точку эвакуации отряд, который встерит президента и нанесёт удар по противнику в тыл. Думаю одно отделение вполне сможет незаметно просочиться.</Original>
+</Key>
+<Key ID="STRD_PIO58">
+<Original>Да, многие являются местными и очень хорошо знают все медвежьи тропы в этих горах.</Original>
+</Key>
+<Key ID="STRD_PIO59">
+<Original>Отлично. Вот их и отберите для операции.</Original>
+</Key>
+</Container>
+
+<Container name="Persons">
+<Key ID="STR_p1">
+<Original>Юрий Михайлович</Original>
+</Key>
+<Key ID="STR_p2">
+<Original>Александр Васильевич</Original>
+</Key>
+<Key ID="STR_p3">
+<Original>Владимир Градецкий</Original>
+</Key>
+<Key ID="STR_p4">
+<Original>Спецназовец</Original>
+</Key>
+<Key ID="STR_p5">
+<Original>Механик</Original>
+</Key>
+<Key ID="STR_p6">
+<Original>Сержант Самойлоко</Original>
+</Key>
+
+
+<Key ID="STRM_razrab">
+<Original>TSFH</Original>
+</Key>
+
+<Key ID="STRM_voiced">
+<Original>Two Steps From Hell</Original>
+</Key>
+<Key ID="STRM_sans">
+<Original>Посередке</Original>
+</Key>
+<Key ID="STRM_sans1">
+<Original>Посередке</Original>
+</Key>
+
+<Key ID="STRM_v1">
+<Original>Редактор: Mikezar</Original>
+</Key>
+<Key ID="STRM_v2">
+<Original>На следующий день</Original>
+</Key>
+<Key ID="STRM_v3">
+<Original>Кампания: Пламя Империи</Original>
+</Key>
+<Key ID="STRM_v4">
+<Original></Original>
+</Key>
+<Key ID="STRM_v5">
+<Original>В5</Original>
+</Key>
+<Key ID="STRM_v6">
+<Original>Той же ночью./</Original>
+</Key>
+<Key ID="STRM_v7">
+<Original>0900.На пути к Чернорусской базе</Original>
+</Key>
+<Key ID="STRM_v8">
+<Original></Original>
+</Key>
+<Key ID="STRM_v9">
+<Original>Спустя час...</Original>
+</Key>
+<Key ID="STRM_v10">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v11">
+<Original>Республика</Original>
+</Key>
+<Key ID="STRM_v12">
+<Original>17 июля. Где-то в лесу.</Original>
+</Key>
+<Key ID="STRM_v13">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v14">
+<Original>В14</Original>
+</Key>
+<Key ID="STRM_v15">
+<Original>Электрозаводск.5 часов спустя.</Original>
+</Key>
+<Key ID="STRM_v16">
+<Original>3-мя часами ранее...</Original>
+</Key>
+<Key ID="STRM_v17">
+<Original>14 июля.18:20</Original>
+</Key>
+<Key ID="STRM_v18">
+<Original>В18</Original>
+</Key>
+<Key ID="STRM_v19">
+<Original>В19</Original>
+</Key>
+<Key ID="STRM_v20">
+<Original>В20</Original>
+</Key>
+<Key ID="STRM_v21">
+<Original>В21</Original>
+</Key>
+<Key ID="STRM_v22">
+<Original>В22</Original>
+</Key>
+<Key ID="STRM_v23">
+<Original>В23</Original>
+</Key>
+<Key ID="STRM_v24">
+<Original>В24</Original>
+</Key>
+<Key ID="STRM_v25">
+<Original>В25</Original>
+</Key>
+<Key ID="STRM_v26">
+<Original>В26</Original>
+</Key>
+<Key ID="STRM_blag1">
+<Original>благ 1</Original>
+</Key>
+<Key ID="STRM_blag2">
+<Original>благ 2</Original>
+</Key>
+<Key ID="STRM_blag3">
+<Original>благ 3</Original>
+</Key>
+<Key ID="STRM_blag4">
+<Original>благ 4</Original>
+</Key>
+<Key ID="STRM_blag5">
+<Original>благ 5</Original>
+</Key>
+<Key ID="STRM_blag6">
+<Original>благ 6</Original>
+</Key>
+
+</Container>
+</Package>
+</Project>

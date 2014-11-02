@@ -1,0 +1,28 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="9">
+            <File firstVisibleLine="0" xOffset="32" scrollWidth="2921" startPos="13158" endPos="13158" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\s_functions.sqf" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2128" startPos="3513" endPos="3513" selMode="0" lang="&#x041E;&#x0431;&#x044B;&#x0447;&#x043D;&#x044B;&#x0439; &#x0422;&#x0435;&#x043A;&#x0441;&#x0442;" encoding="-1" filename="D:\Games\Bohemia Interactive\server.cfg" />
+            <File firstVisibleLine="0" xOffset="3" scrollWidth="2016" startPos="175" endPos="175" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\actions.sqf" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="4448" startPos="58" endPos="58" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\init.sqf" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="768" startPos="266" endPos="266" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\Killed.sqf" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1472" startPos="148" endPos="148" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\dammageEH.sqf" />
+            <File firstVisibleLine="241" xOffset="0" scrollWidth="1674" startPos="10025" endPos="10042" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\main\pvehs.sqf" />
+            <File firstVisibleLine="33" xOffset="0" scrollWidth="1792" startPos="1316" endPos="1316" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\main\z_locations.sqf" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1712" startPos="53" endPos="53" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\l_functions.sqf" />
+            <File firstVisibleLine="1061" xOffset="0" scrollWidth="6832" startPos="51690" endPos="51690" selMode="0" lang="XML" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\stringtable.xml" />
+            <File firstVisibleLine="53" xOffset="0" scrollWidth="1240" startPos="2134" endPos="2150" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\tasks\capture.sqf" />
+            <File firstVisibleLine="18" xOffset="0" scrollWidth="864" startPos="1398" endPos="1398" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\kbs\birth.sqf" />
+            <File firstVisibleLine="36" xOffset="0" scrollWidth="2384" startPos="1677" endPos="1677" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\tasks\mounting.sqf" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1088" startPos="473" endPos="473" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\tasks\mounting_act.sqf" />
+            <File firstVisibleLine="74" xOffset="0" scrollWidth="1672" startPos="3703" endPos="3703" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\main\init.sqf" />
+            <File firstVisibleLine="227" xOffset="0" scrollWidth="968" startPos="6822" endPos="6822" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\prices.sqf" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="624" startPos="52" endPos="0" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\killedEH.sqf" />
+            <File firstVisibleLine="69" xOffset="0" scrollWidth="1600" startPos="2613" endPos="2613" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\tasks\hunting.sqf" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="376" startPos="169" endPos="169" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\tasks\hunting_act.sqf" />
+            <File firstVisibleLine="4" xOffset="246" scrollWidth="1496" startPos="1647" endPos="1647" selMode="0" lang="SQF" encoding="-1" filename="C:\Users\Nekromicon\Documents\ArmA 2 Other Profiles\Jonah\missions\AZone_1.Chernarus\main\z_anomalies.sqf" />
+            <File firstVisibleLine="30584" xOffset="0" scrollWidth="1384" startPos="2328003" endPos="2328003" selMode="0" lang="&#x041E;&#x0431;&#x044B;&#x0447;&#x043D;&#x044B;&#x0439; &#x0422;&#x0435;&#x043A;&#x0441;&#x0442;" encoding="-1" filename="D:\Games\Bohemia Interactive\profiles\arma2server.RPT" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

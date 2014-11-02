@@ -1,0 +1,95 @@
+debriefing = 1;
+
+class MissionDefault
+{
+ 	lives = -1;
+
+	lost = ;
+	end1 = ;
+	end2 = ;
+	end3 = ;
+	end4 = ;
+	end5 = ;
+	end6 = ;
+};
+
+class Campaign {
+	name = "Zone of Freedom";
+	firstBattle = Beginning;
+	briefingName = "Zone of Freedom";
+	author = "Aloe";
+	overviewText = "Вы спросите меня: чем велик человек? — процитировал он. — Что создал вторую природу? Что привел в движение силы, почти космические? Что в ничтожные сроки завладел планетой и прорубил окно во Вселенную? Нет! Тем, что, несмотря на все это, уцелел и намерен уцелеть и далее";
+	
+	class Beginning {
+		name = "Start";
+		cutscene =;
+		firstMission = loc_03;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+
+		class loc_01: MissionDefault
+		{
+			noaward = true;
+			end1 = loc_02;
+			end2 = loc_03;
+			end3 = ;
+			end4 = ;
+			template = loc_01.namalsk;
+		};
+
+		class loc_02: MissionDefault
+		{
+			noaward = true;
+			end1 = loc_01;
+			end2 = loc_03;
+			end3 = loc_04;
+			end4 = loc_06;
+			template = loc_02.namalsk;
+		};
+		
+		class loc_03: MissionDefault
+		{
+			noaward = true;
+			end1 = loc_02;
+			end2 = loc_01;
+			end3 = ;
+			end4 = ;
+			template = loc_03.namalsk;
+		};
+		class loc_04: MissionDefault
+		{
+			noaward = true;
+			end1 = loc_02;
+			end2 = loc_06;
+			end3 = loc_05;
+			template = loc_04.namalsk;
+		};
+		class loc_05: MissionDefault
+		{
+			noaward = true;
+			end1 = loc_04;
+			end2 = loc_06;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			template = loc_05.namalsk;
+		};
+		class loc_06: MissionDefault
+		{
+			noaward = true;
+			end1 = loc_04;
+			end2 = loc_02;
+			end3 = loc_03;
+			end4 = loc_05;
+			end5 = ;
+			template = loc_06.namalsk;
+		};
+	};
+};
+
+#include "scripts\lib\dialog\common.hpp"
+#include "scripts\lib\dialog\ConfirmLocation\ConfirmLocation.hpp"
+
+#include "scripts\kbs\Identities.hpp"

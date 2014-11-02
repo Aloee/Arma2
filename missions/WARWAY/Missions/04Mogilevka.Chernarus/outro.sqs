@@ -1,0 +1,78 @@
+titleCut ["","Black faded",7];
+c1 setBehaviour "CARELESS"
+BIS_Effects_Burn = compile preprocessFile "\ca\Data\ParticleEffects\SCRIPTS\destruction\burn.sqf"
+this = [ural,5,time,false,false] spawn BIS_Effects_Burn;
+c1 disableAI "MOVE"
+c1 allowFleeing 0
+0 fadesound 0
+1 fademusic 1
+c1 loadstatus "juriy_status_mik2"
+{_x setVariable ["BIS_noCoreConversations", true];_x disableConversation true} foreach allunits;
+enableRadio false
+setAccTime 1
+showcinemaborder false
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+_camera camPrepareFocus [-1,-1]
+playmusic "LastLight"
+~7
+_camera camPrepareTarget [70513.91,81620.33,-16653.50];
+_camera camPreparePos [7429.38,5877.24,2.17];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+2 fadesound 0.7
+titleCut ["","Black in",4];
+c1 enableAI "MOVE"
+~6
+titleCut ["","BLACK OUT", 2]
+~2
+c1 setvectordir [-8407.42,104638.16,-114.23];
+c1 setPos [7507.84,5913.14,1.98]
+~1
+_camera camPrepareTarget [86782.30,58005.70,-31286.79];
+_camera camPreparePos [7467.01,5905.05,7.57];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+titleCut ["","Black in",2];
+_camera camPrepareTarget [76330.84,71195.02,-31418.17];
+_camera camPreparePos [7471.68,5897.22,7.09];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 7
+~8
+playsound "STRD_PIO36"
+_camera camPrepareTarget ural
+_camera camPreparePos [7471.68,5897.22,7.09];
+_camera camPrepareFOV 0.400;
+_camera camCommitPrepared 3
+~5
+_camera camPrepareTarget [-67191.01,71457.88,-11046.11];
+_camera camPreparePos [7538.25,5906.32,3.83];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+playsound "STRD_PIO37"
+~9
+titleCut ["","BLACK OUT", 3]
+~3
+c1 setvectordir [-47722.21,89636.16,-281.88];
+c1 setPos [7417.51,6211.88,1.92];
+c1 disableAi "MOVE"
+c1 setBehaviour "CARELESS"
+~2
+titleCut ["","Black in",4];
+_camera camPrepareTarget [7428.44,106206.13,-65.39];
+_camera camPreparePos [7411.03,6199.35,1.44];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+playsound "STRD_PIO38"
+~5
+titleCut ["","BLACK OUT", 3]
+~4
+1 fademusic 0 
+1 fadesound 0
+~1
+_camera cameraeffect ["terminate", "Back"] 
+camdestroy _camera  
+endMission "END1"

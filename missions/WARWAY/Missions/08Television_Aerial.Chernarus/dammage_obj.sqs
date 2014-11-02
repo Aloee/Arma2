@@ -1,0 +1,9 @@
+; Автор: [SARMAT] PIONEER
+; Уничтожет все указанные постройки:
+; Активация:
+; [[11228,11226]]exec"scripts\dammage_all.sqs"
+
+_o = _this select 0;
+
+
+{([0,0,0] nearestObject _x) setDammage 1} foreach _o

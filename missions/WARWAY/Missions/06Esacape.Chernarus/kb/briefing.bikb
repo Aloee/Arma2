@@ -1,0 +1,302 @@
+class Sentences
+{
+	class STRD_PIO1
+	{
+		text = "$STRD_PIO1";
+		speech[] = {"\sound\STRD_PIO1.ogg"};
+		class Arguments {};
+	};
+
+	class STRD_PIO2 
+	{
+		text = "$STRD_PIO2";
+		speech[] = {"\sound\STRD_PIO2.ogg"};
+		class Arguments {};
+	};
+	
+	class STRD_PIO3
+	{
+		text = "$STRD_PIO3";
+		speech[] = {"\sound\STRD_PIO3.ogg"};
+		class Arguments {};
+	};
+		class STRD_PIO4
+	{
+		text = "$STRD_PIO4";
+		speech[] = {"\sound\STRD_PIO4.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO5
+	{
+		text = "$STRD_PIO5";
+		speech[] = {"\sound\STRD_PIO5.ogg"};
+		class Arguments {};
+	};
+
+	class STRD_PIO6
+	{
+		text = "$STRD_PIO6";
+		speech[] = {"\sound\STRD_PIO6.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO7
+	{
+		text = "$STRD_PIO7";
+		speech[] = {"\sound\STRD_PIO7.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO8
+	{
+		text = "$STRD_PIO8";
+		speech[] = {"\sound\STRD_PIO8.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO9
+	{
+		text = "$STRD_PIO9";
+		speech[] = {"\sound\STRD_PIO9.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO10
+	{
+		text = "$STRD_PIO10";
+		speech[] = {"\sound\STRD_PIO10.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO11
+	{
+		text = "$STRD_PIO11";
+		speech[] = {"\sound\STRD_PIO11.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO12
+	{
+		text = "$STRD_PIO12";
+		speech[] = {"\sound\STRD_PIO12.ogg"};
+		class Arguments {};
+	};
+
+	class STRD_PIO13
+	{
+		text = "$STRD_PIO13";
+		speech[] = {"\sound\STRD_PIO13.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO14
+	{
+		text = "$STRD_PIO14";
+		speech[] = {"\sound\STRD_PIO14.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO15
+	{
+		text = "$STRD_PIO15";
+		speech[] = {"\sound\STRD_PIO15.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO16
+	{
+		text = "$STRD_PIO16";
+		speech[] = {"\sound\STRD_PIO16.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO17
+	{
+		text = "$STRD_PIO17";
+		speech[] = {"\sound\STRD_PIO17.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO18
+	{
+		text = "$STRD_PIO18";
+		speech[] = {"\sound\STRD_PIO18.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO19
+	{
+		text = "$STRD_PIO19";
+		speech[] = {"\sound\STRD_PIO19.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO20
+	{
+		text = "$STRD_PIO20";
+		speech[] = {"\sound\STRD_PIO20.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO21
+	{
+		text = "$STRD_PIO21";
+		speech[] = {"\sound\STRD_PIO21.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO22
+	{
+		text = "$STRD_PIO22";
+		speech[] = {"\sound\STRD_PIO22.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO23
+	{
+		text = "$STRD_PIO23";
+		speech[] = {"\sound\STRD_PIO23.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO24
+	{
+		text = "$STRD_PIO24";
+		speech[] = {"\sound\STRD_PIO24.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO25
+	{
+		text = "$STRD_PIO25";
+		speech[] = {"\sound\STRD_PIO25.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO26
+	{
+		text = "$STRD_PIO26";
+		speech[] = {"\sound\STRD_PIO26.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO27
+	{
+		text = "$STRD_PIO27";
+		speech[] = {"\sound\STRD_PIO27.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO28
+	{
+		text = "";
+		speech[] = {"\sound\STRD_PIO28.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO28_1
+	{
+		text = "$STRD_PIO28";
+		speech[] = {"\sound\STRD_PIO28_1.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO29
+	{
+		text = "$STRD_PIO29";
+		speech[] = {"\sound\STRD_PIO29.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO30
+	{
+		text = "$STRD_PIO30";
+		speech[] = {"\sound\STRD_PIO30.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO31
+	{
+		text = "$STRD_PIO31";
+		speech[] = {"\sound\STRD_PIO31.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO32
+	{
+		text = "$STRD_PIO32";
+		speech[] = {"\sound\STRD_PIO32.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO33
+	{
+		text = "$STRD_PIO33";
+		speech[] = {"\sound\STRD_PIO33.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO34
+	{
+		text = "$STRD_PIO34";
+		speech[] = {"\sound\STRD_PIO34.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO35
+	{
+		text = "$STRD_PIO35";
+		speech[] = {"\sound\STRD_PIO35.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO36
+	{
+		text = "$STRD_PIO36";
+		speech[] = {"\sound\STRD_PIO36.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO37
+	{
+		text = "$STRD_PIO37";
+		speech[] = {"\sound\STRD_PIO37.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO38
+	{
+		text = "$STRD_PIO38";
+		speech[] = {"\sound\STRD_PIO38.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO39
+	{
+		text = "$STRD_PIO39";
+		speech[] = {"\sound\STRD_PIO39.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO40
+	{
+		text = "$STRD_PIO40";
+		speech[] = {"\sound\STRD_PIO40.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO41
+	{
+		text = "$STRD_PIO41";
+		speech[] = {"\sound\STRD_PIO41.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO42
+	{
+		text = "$STRD_PIO42";
+		speech[] = {"\sound\STRD_PIO42.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO45
+	{
+		text = "$STRD_PIO45";
+		speech[] = {"\sound\STRD_PIO45.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO46
+	{
+		text = "$STRD_PIO46";
+		speech[] = {"\sound\STRD_PIO46.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO47
+	{
+		text = "$STRD_PIO47";
+		speech[] = {"\sound\STRD_PIO47.ogg"};
+		class Arguments {};
+	};
+	class STRD_PIO48
+	{
+		text = "$STRD_PIO48";
+		speech[] = {"\sound\STRD_PIO48.ogg"};
+		class Arguments {};
+	};
+
+	class Interrupted
+	{
+		text = "";
+		speech[] = {""};
+		class Arguments {};
+		
+	};
+};
+
+class Arguments{};
+class Special{};
+startWithVocal[] = {hour};
+startWithConsonant[] = {europe, university};

@@ -1,0 +1,20 @@
+; Автор: [SARMAT] PIONEER
+; Скрипт горения техники и зданий(обьектов)
+; Автивация:
+; [обьект,true\false]exec"scripts\fire.sqs"
+; При: true - загорится сразу
+; При: false - задымится после повреждения и следом загорится после уничтожения
+
+_v = _this select 0
+_dom = _this select 1
+
+; горит здание
+?_dom: script = [_v,4,time,false,false] spawn bis_effects_burn; 
+
+; дымится техника
+@! canmove _v
+_script = [_v,1,time,false,false] spawn bis_effects_burn
+; горит техника
+@!alive _v
+_script = [_v,5,time,false,false] spawn bis_effects_burn
+exit

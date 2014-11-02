@@ -1,0 +1,259 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Burn">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Begin",0,250,0.000000,-225.000000,100.000000,-175.000000,0.000000,"Begin"};
+item1[] = {"_",2,250,0.000000,-75.000000,100.000000,-25.000000,0.000000,""};
+item2[] = {"__1",2,250,175.000000,25.000000,275.000000,75.000000,0.000000,""};
+item3[] = {"true",8,218,0.000000,25.000000,100.000000,75.000000,0.000000,"true"};
+item4[] = {"true",8,218,0.000000,-150.000000,100.000000,-100.000000,0.000000,"true"};
+item5[] = {"End_FSM",1,250,-175.000000,75.000000,-75.000000,150.000000,0.000000,"End FSM"};
+item6[] = {"in_area",4,218,175.000000,-75.000000,275.000000,-25.000000,0.000000,"in area"};
+item7[] = {"break",4,218,-175.000000,-75.000000,-75.000000,-25.000000,0.000000,"break"};
+item8[] = {"__2",3,4346,325.000000,-75.000000,425.000000,-25.000000,0.000000,""};
+item9[] = {"",7,210,371.000031,-129.000031,378.999969,-120.999969,0.000000,""};
+item10[] = {"_",4,218,350.000000,-100.000000,400.000000,-75.000000,0.000000,""};
+item11[] = {"_",4,218,350.000000,-25.000000,400.000000,0.000000,2.000000,""};
+link0[] = {0,4};
+link1[] = {1,6};
+link2[] = {1,7};
+link3[] = {2,3};
+link4[] = {2,11};
+link5[] = {3,1};
+link6[] = {4,1};
+link7[] = {6,2};
+link8[] = {7,5};
+link9[] = {8,10};
+link10[] = {9,1};
+link11[] = {9,1};
+link12[] = {10,9};
+link13[] = {11,8};
+globals[] = {25.000000,1,0,0,0,640,480,1,62,6316128,1,-274.631775,684.078064,590.783081,-698.048523,636,855,1};
+window[] = {2,-1,-1,-32000,-32000,766,25,1305,25,3,654};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "Burn";
+  class States
+  {
+    /*%FSM<STATE "Begin">*/
+    class Begin
+    {
+      name = "Begin";
+      init = /*%FSM<STATEINIT""">*/"_epicenter = _this select 0;" \n
+       "_range = _this select 1;" \n
+       "_vfxstate=0;" \n
+       "_dstate=0;" \n
+       "" \n
+       "_objects = [];" \n
+       "" \n
+       "_timeHeartbeat = 0;" \n
+       "_timeHeartbeatSec = 3;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/"_cycleScl=time+ 2;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "break">*/
+        class break
+        {
+          priority = 0.000000;
+          to="End_FSM";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"FZ_BREAK_ANOMALIES"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "in_area">*/
+        class in_area
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"player distance _epicenter <  FZ_MIN_DIST_ACTIVATE_ANOMALIE and time > _cycleScl"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_dist=  player distance [_epicenter select 0, _epicenter select 1, 0];" \n
+           ""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/"_objects = nearestObjects [[_epicenter select 0, _epicenter select 1,  0], [""Land""], _range];" \n
+       "_stoneDetected = (LASTSTONEPOS distance _epicenter <= _range);" \n
+       "" \n
+       "if(_dist<= (_range+20))then{" \n
+       "	if (_vfxstate==0) then {" \n
+       "		""dynamicBlur"" ppEffectEnable true;" \n
+       "		""filmGrain"" ppEffectEnable true;" \n
+       "		""filmGrain"" ppEffectCommit 0.5;" \n
+       "		 _vfxstate=1 " \n
+       "	};" \n
+       "	" \n
+       "		//_fxb=((((_range+10)-_dist)/10)*3);" \n
+       "		_fxb = (floor random 10) / 10;" \n
+       "		""dynamicBlur"" ppEffectAdjust [_fxb];" \n
+       "		""dynamicBlur"" ppEffectCommit 0.1;" \n
+       "		""filmGrain"" ppEffectAdjust [0.1, -1, 0.1, 0.05, 1, false];" \n
+       "" \n
+       "	if(time>_timeHeartbeat)then{ player say ""nuclear_heartbeat""; _timeHeartbeat = time + _timeHeartbeatSec };" \n
+       "	[_dist, _range] spawn fz_fx_showDetector;" \n
+       "}else{" \n
+       "	if(_vfxstate==1)then{" \n
+       "		call fz_fx_backgroundDynamicBlur;" \n
+       "		_vfxstate=0;" \n
+       "	};" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 2.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"count _objects > 0 or _stoneDetected"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_x = _objects select floor random count _objects;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End_FSM">*/
+    class End_FSM
+    {
+      name = "End_FSM";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/"private [""_hundle""];" \n
+       "" \n
+       "if(_stoneDetected)then{" \n
+       "" \n
+       "	_hundle = [LASTSTONEPOS, _epicenter, _range] spawn{" \n
+       "		_xpos = _this select 0;" \n
+       "		_epicenter = _this select 1;" \n
+       "		_range = _this select 2;" \n
+       "" \n
+       "			if (( _xpos distance _epicenter ) < _range)then{					" \n
+       "				" \n
+       "					_flame = ""#particlesource"" createVehicleLocal _xpos;" \n
+       "					_flame setParticleCircle [0, [0, 0, 0]];" \n
+       "					_flame setParticleRandom [0.5, [1, .5, 0], [0.5, 0.5, 15], 0.2, 0.2, [0, 0, 0, 0], 0, 0];" \n
+       "					_flame setParticleParams [[""\ca\Data\ParticleEffects\Universal\Universal"", 16, 11, 32], """", ""Billboard"",1, 0.3, [0, 0, 0], [0, 0, 20], 1, 1, 0.9, 0, [0.1, 0.5, 1], [[1, 0.3, 0.3, 0.5], [1, 0.7, 0.7, 0.5], [1, 1, 0, 0.5]], [0], 0, 10, """", """", _flame];" \n
+       "					_flame setDropInterval 0.0005;" \n
+       "" \n
+       "					_light = ""#lightpoint"" createVehicleLocal _xpos;" \n
+       "					_light setLightBrightness 0.025;" \n
+       "					_light setLightAmbient[1, 0.5, 0.5];" \n
+       "					_light setLightColor[1, 0.5, 0.5];" \n
+       "					_light lightAttachObject [_flame, [0,0,1]];" \n
+       "					" \n
+       "					_flame  say ""dap_burn"";					" \n
+       "" \n
+       "					sleep 1;" \n
+       "					deleteVehicle _flame;" \n
+       "					deleteVehicle _light;" \n
+       "					LASTSTONEPOS=[0,0,0];" \n
+       "			};" \n
+       "	};" \n
+       "	" \n
+       "}else{" \n
+       "" \n
+       "	_hundle = [_x, _epicenter, _range] spawn{" \n
+       "	" \n
+       "		_x = _this select 0;" \n
+       "		_epicenter = _this select 1;" \n
+       "		_range = _this select 2;" \n
+       "" \n
+       "			if (( _x distance _epicenter ) < _range)then{			" \n
+       "				" \n
+       "					_flame = ""#particlesource"" createVehicleLocal getPosATL _x;" \n
+       "					_flame setParticleCircle [0, [0, 0, 0]];" \n
+       "					_flame setParticleRandom [0.5, [1, .5, 0], [0.5, 0.5, 15], 0.2, 0.2, [0, 0, 0, 0], 0, 0];" \n
+       "					_flame setParticleParams [[""\ca\Data\ParticleEffects\Universal\Universal"", 16, 11, 32], """", ""Billboard"",1, 0.3, [0, 0, 0], [0, 0, 20], 1, 1, 0.9, 0, [0.1, 0.5, 1], [[1, 0.3, 0.3, 0.5], [1, 0.7, 0.7, 0.5], [1, 1, 0, 0.5]], [0], 0, 10, """", """", _x];" \n
+       "					_flame setDropInterval 0.0005;" \n
+       "" \n
+       "					_light = ""#lightpoint"" createVehicleLocal getPosATL _x;" \n
+       "					_light setLightBrightness 0.025;" \n
+       "					_light setLightAmbient[1, 0.5, 0.5];" \n
+       "					_light setLightColor[1, 0.5, 0.5];" \n
+       "					_light lightAttachObject [_x, [0,0,1]];" \n
+       "					" \n
+       "					_flame  say ""dap_burn"";" \n
+       "					" \n
+       "					if(!isPlayer _x or _x == player)then{	" \n
+       "						_x setDammage (getDammage _x + 0.3);" \n
+       "					};" \n
+       "	" \n
+       "					sleep 1;" \n
+       "					deleteVehicle _flame;" \n
+       "					deleteVehicle _light;" \n
+       "			};" \n
+       "	};" \n
+       "" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"scriptDone _hundle"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Begin";
+  finalStates[] =
+  {
+    "End_FSM",
+  };
+};
+/*%FSM</COMPILE>*/

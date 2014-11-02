@@ -1,0 +1,9 @@
+#define WM_DIALOG 90001
+#define WM_BCKGRND 90002
+#define WM_TITLE_S 90003
+#define WM_TITLE_ADD 900031
+#define WM_TITLE_REM 900032
+#define WM_ADD 90004
+#define WM_REM 90005
+#define WM_PIC 90006
+

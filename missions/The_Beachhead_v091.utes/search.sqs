@@ -1,0 +1,22 @@
+? ! (isServer) : exit
+
+_leadunit = _this select 0
+_group = group _leadunit
+_searchspot = getpos suspect
+_startpos = getpos _leadunit
+
+_wp0 = _group addWaypoint [_searchspot, 0];
+[_group, 1] setWaypointStatements ["true", ""];
+[_group, 1] setWaypointTimeout [0, 0, 0];
+[_group, 1] showWaypoint "NEVER";
+[_group, 1] setWaypointSpeed "FULL";
+[_group, 1] setWaypointType "SAD";
+
+_wp1 = _group addWaypoint [_startpos, 0];
+[_group, 2] setWaypointStatements ["true", "deleteWaypoint [group this, 1],deleteWaypoint [group this, 2]"];
+[_group, 2] setWaypointTimeout [0, 0, 0];
+[_group, 2] showWaypoint "NEVER";
+[_group, 2] setWaypointSpeed "FULL";
+[_group, 2] setWaypointType "MOVE";
+
+exit

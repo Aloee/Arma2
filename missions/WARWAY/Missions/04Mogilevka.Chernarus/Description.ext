@@ -1,0 +1,1539 @@
+onLoadIntro="$STR_intro";
+onLoadMission = "$STR_init";
+onLoadIntroTime = true;
+onLoadMissionTime = true;
+
+briefing = 1;
+debriefing = 1;
+showCompass = 0;
+showGPS = 0;
+showMap = 1;
+showNotepad = 1;
+showWatch = 1;
+
+class CfgSounds
+{
+	sounds[] = {};
+	
+
+		class sound_e304963
+	{
+		name = "sound_e304963";
+		sound[] = {\sound\sound_e304963.ogg, db + 0, 1.0};
+                       titles[] = {0, ""};
+	};
+	
+	class STRD_PIOBandage
+	{
+		name = "STRD_PIOBandage";
+		sound[] = {\sound\STRD_PIOBandage.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIOBandage"};
+	};
+
+class STRD_PIO1
+	{
+		name = "STRD_PIO1";
+		sound[] = {\sound\STRD_PIO1.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO1"};
+	};
+	class STRD_PIO2
+	{
+		name = "STRD_PIO2";
+		sound[] = {\sound\STRD_PIO2.ogg, 2, 1.0};
+		titles[] = {0, "$STRD_PIO2"};
+	};
+	class STRD_PIO3
+	{
+		name = "STRD_PIO3";
+		sound[] = {\sound\STRD_PIO3.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO3"};
+	};
+	class STRD_PIO4
+	{
+		name = "STRD_PIO4";
+		sound[] = {\sound\STRD_PIO4.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO4"};
+	};
+	class STRD_PIO5
+	{
+		name = "STRD_PIO5";
+		sound[] = {\sound\STRD_PIO5.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO5"};
+};
+
+class STRD_PIO6
+	{
+		name = "STRD_PIO6";
+		sound[] = {\sound\STRD_PIO6.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO6"};
+	};
+	class STRD_PIO7
+	{
+		name = "STRD_PIO7";
+		sound[] = {\sound\STRD_PIO7.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO7"};
+	};
+
+	class STRD_PIO8
+	{
+		name = "STRD_PIO8";
+		sound[] = {\sound\STRD_PIO8.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO8"};
+	};
+	class STRD_PIO9
+	{
+		name = "STRD_PIO9";
+		sound[] = {\sound\STRD_PIO9.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO9"};
+	};
+	class STRD_PIO10
+	{
+		name = "STRD_PIO10";
+		sound[] = {\sound\STRD_PIO10.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO10"};
+	};
+		class STRD_PIO11
+	{
+		name = "STRD_PIO11";
+		sound[] = {\sound\STRD_PIO11.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO11"};
+	};
+		class STRD_PIO12
+	{
+		name = "STRD_PIO12";
+		sound[] = {\sound\STRD_PIO12.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO12"};
+	};
+			class STRD_PIO13
+	{
+		name = "STRD_PIO13";
+		sound[] = {\sound\STRD_PIO13.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO13"};
+	};
+			class STRD_PIO14
+	{
+		name = "STRD_PIO14";
+		sound[] = {\sound\STRD_PIO14.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO14"};
+	};
+			class STRD_PIO15
+	{
+		name = "STRD_PIO15";
+		sound[] = {\sound\STRD_PIO15.ogg,1, 1.0};
+		titles[] = {0, "$STRD_PIO15"};
+	};
+			class STRD_PIO16
+	{
+		name = "STRD_PIO16";
+		sound[] = {\sound\STRD_PIO16.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO16"};
+	};
+		class STRD_PIO17
+	{
+		name = "STRD_PIO17";
+		sound[] = {\sound\STRD_PIO17.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO17"};
+	};
+		class STRD_PIO18
+				{
+	
+		name = "STRD_PIO18";
+		sound[] = {\sound\STRD_PIO18.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO18"};
+	};
+		class STRD_PIO19
+	{
+		name = "STRD_PIO19";
+		sound[] = {\sound\STRD_PIO19.ogg3, 1.0};
+		titles[] = {0, "$STRD_PIO19"};
+	};
+		class STRD_PIO20
+	{
+		name = "STRD_PIO20";
+		sound[] = {\sound\STRD_PIO20.ogg,4, 1.0};
+		titles[] = {0, "$STRD_PIO20"};
+	};
+			class STRD_PIO21
+	{
+		name = "STRD_PIO21";
+		sound[] = {\sound\STRD_PIO21.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO21"};
+	};
+			class STRD_PIO22
+	{
+		name = "STRD_PIO22";
+		sound[] = {\sound\STRD_PIO22.ogg,4, 1.0};
+		titles[] = {0, "$STRD_PIO22"};
+	};
+				class STRD_PIO23
+	{
+		name = "STRD_PIO23";
+		sound[] = {\sound\STRD_PIO23.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO23"};
+	};
+				class STRD_PIO24
+	{
+		name = "STRD_PIO24";
+		sound[] = {\sound\STRD_PIO24.ogg,4, 1.0};
+		titles[] = {0, "$STRD_PIO24"};
+	};
+				class STRD_PIO25
+	{
+		name = "STRD_PIO25";
+		sound[] = {\sound\STRD_PIO25.ogg,4, 1.0};
+		titles[] = {0, "$STRD_PIO25"};
+	};
+				class STRD_PIO26
+	{
+		name = "STRD_PIO26";
+		sound[] = {\sound\STRD_PIO26.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO26"};
+	};
+				class STRD_PIO27
+	{
+		name = "STRD_PIO27";
+		sound[] = {\sound\STRD_PIO27.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO27"};
+	};
+				class STRD_PIO28
+	{
+		name = "STRD_PIO28";
+		sound[] = {\sound\STRD_PIO28.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO28"};
+	};
+				class STRD_PIO29
+	{
+		name = "STRD_PIO29";
+		sound[] = {\sound\STRD_PIO29.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO29"};
+	};
+				class STRD_PIO30
+	{
+		name = "STRD_PIO30";
+		sound[] = {\sound\STRD_PIO30.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO30"};
+	};
+					class STRD_PIO31
+	{
+		name = "STRD_PIO31";
+		sound[] = {\sound\STRD_PIO31.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO31"};
+	};
+					class STRD_PIO32
+	{
+		name = "STRD_PIO32";
+		sound[] = {\sound\STRD_PIO32.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO32"};
+	};
+					class STRD_PIO33
+	{
+		name = "STRD_PIO33";
+		sound[] = {\sound\STRD_PIO33.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO33"};
+	};
+					class STRD_PIO34
+	{
+		name = "STRD_PIO34";
+		sound[] = {\sound\STRD_PIO34.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO34"};
+	};
+					class STRD_PIO35
+	{
+		name = "STRD_PIO35";
+		sound[] = {\sound\STRD_PIO35.ogg,3, 1.0};
+		titles[] = {0, "$STRD_PIO35"};
+	};
+						class STRD_PIO36
+	{
+		name = "STRD_PIO36";
+		sound[] = {\sound\STRD_PIO36.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO36"};
+	};
+						class STRD_PIO37
+	{
+		name = "STRD_PIO37";
+		sound[] = {\sound\STRD_PIO37.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO37"};
+	};
+						class STRD_PIO38
+	{
+		name = "STRD_PIO38";
+		sound[] = {\sound\STRD_PIO38.ogg,2, 1.0};
+		titles[] = {0, "$STRD_PIO38"};
+	};
+	
+};
+class CfgMusic
+{
+	tracks[] = {bunker.ogg, satellite.ogg, Run.ogg, LastLight.ogg,  hero.ogg };
+
+	class bunker
+	{
+		name = "bunker";
+		sound[] = {\music\bunker.ogg, db + 0, 1.0};
+	};
+	class  satellite
+	{
+		name = "satellite";
+		sound[] = {\music\satellite.ogg, db + 0, 1.0};
+	};
+		class  hero
+	{
+		name = "hero";
+		sound[] = {\music\hero.ogg, db + 0, 1.0};
+	};
+		class  Run
+	{
+		name = "Run";
+		sound[] = {\music\Run.ogg, db + 0, 1.0};
+	};
+		class  LastLight
+	{
+		name = "LastLight";
+		sound[] = {\music\LastLight.ogg, db + 0, 1.0};
+	};	
+};
+
+class CfgIdentities
+{
+	class spec_1
+	{
+		name = "$STR_p1";
+		face = "Face50";
+		glasses="none";
+		speaker = "Male01RU";
+		pitch = 1.10;
+	};
+
+	class spec_3
+	{
+		name =  "$STR_p3";
+		face = "Face74";
+		glasses="none";
+		speaker = "Male03RU";
+		pitch = 1.09;
+	};
+		class spec_4
+	{
+		name =  "$STR_p4";
+		face = "Face38";
+		glasses="none";
+		speaker = "Male02CZ";
+		pitch = 1.09;
+	};
+			class spec_6
+	{
+		name =  "$STR_p6";
+		face = "Face61";
+		glasses="none";
+		speaker = "Male03RU";
+		pitch = 1.09;
+	};
+};
+
+#define CT_STATIC 0
+#define ST_LEFT 0
+#define ST_CENTER 2
+#define ST_SHADOW 256
+
+class RscText
+{
+  	type = CT_STATIC;
+  	idc = -1;
+  	style = ST_CENTER;
+  	h = 0.4; 
+  	colorBackground[] = {0, 0, 0, 0};
+  	colorText[] = {1, 0, 1, 0};
+  	font = BitStream;
+  	size = 2;
+};
+class RscTitles
+{
+	class razrab
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=5.5;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"razr"};
+            class razr : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_razrab";
+                  x=0.2;
+                  y=0.2;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class voiced
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 0.5;
+	    fadeout = 0.5;
+            name="razrab";
+            controls[]={"voi"};
+            class voi : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_voiced";
+                  x=0.2;
+                  y=0.3;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class sans
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"san"};
+            class san : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_sans";
+                  x=0.2;
+                  y=0.4;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+		class sans1
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"san1"};
+            class san : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_sans1";
+                  x=0.2;
+                  y=0.4;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v1
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv1"};
+            class vv1 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v1";
+                  x=-0.1;
+                  y=0.1;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v2
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv2"};
+            class vv2 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v2";
+                  x=0.5;
+                  y=0.5;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v3
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv3"};
+            class vv3 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v3";
+                  x=0.2;
+                  y=0.3;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v4
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv4","vvv5","vvv6","vvv7"};
+            class vv4 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v4";
+                  x=-0.1;
+                  y=0.1;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+            class vvv5 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v5";
+                  x=0.5;
+                  y=0.1;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+            class vvv6 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v6";
+                  x=0.5;
+                  y=0.5;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+            class vvv7 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v7";
+                  x=-0.1;
+                  y=0.5;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v5
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv5"};
+            class vv5 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v8";
+                  x=0.2;
+                  y=0.1;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v6
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv6"};
+            class vv6 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v9";
+                  x=0.5;
+                  y=0.3;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v7
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv7"};
+            class vv7 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v10";
+                  x=0.2;
+                  y=0.5;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v8
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv8"};
+            class vv8 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v11";
+                  x=-0.1;
+                  y=0.3;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v9
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv9"};
+            class vv9 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v12";
+                  x=0.5;
+                  y=0.1;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v10
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv10"};
+            class vv10 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v13";
+                  x=0.2;
+                  y=0.3;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v11
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv11"};
+            class vv11 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v14";
+                  x=-0.1;
+                  y=0.5;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v12
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv12"};
+            class vv12 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v15";
+                  x=0.2;
+                  y=0.5;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v13
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv13"};
+            class vv13 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v16";
+                  x=-0.1;
+                  y=0.3;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v14
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv14"};
+            class vv14 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v17";
+                  x=0.5;
+                  y=0.3;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v15
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv15"};
+            class vv15 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v18";
+                  x=-0.1;
+                  y=0.1;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v16
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv16"};
+            class vv16 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v19";
+                  x=0.5;
+                  y=0.1;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v17
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv17"};
+            class vv17 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v20";
+                  x=0.2;
+                  y=0.1;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v18
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv18"};
+            class vv18 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v21";
+                  x=0.2;
+                  y=0.3;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v19
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv19"};
+            class vv19 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v22";
+                  x=0.2;
+                  y=0.5;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v20
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv20"};
+            class vv20 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v23";
+                  x=-0.1;
+                  y=0.5;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v21
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv21"};
+            class vv21 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v24";
+                  x=0.5;
+                  y=0.3;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v22
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv22"};
+            class vv22 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v25";
+                  x=0.5;
+                  y=0.1;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v23
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv23"};
+            class vv23 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v26";
+                  x=-0.1;
+                  y=0.3;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v24
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv24"};
+            class vv24 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v27";
+                  x=0.2;
+                  y=0.1;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class v25
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv25"};
+            class vv25 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v28";
+                  x=0.2;
+                  y=0.5;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+		class v26
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"vv26"};
+            class vv26 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v29";
+                  x=0.2;
+                  y=0.3;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class blag1
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=3;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"blagg1","blagg2","blagg3"};
+            class blagg1 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_blag1";
+                  x=0.2;
+                  y=0.2;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+            class blagg2 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_blag2";
+                  x=0.2;
+                  y=0.3;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+            class blagg3 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_blag3";
+                  x=0.2;
+                  y=0.4;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class blag2
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=3;
+	    fadein = 1;
+	    fadeout = 1;
+            name="razrab";
+            controls[]={"blagg4","blagg5","blagg6","blagg7","blagg8","blagg9"};
+            class blagg4 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v18";
+                  x=-0.1;
+                  y=0.2;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+            class blagg5 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v20";
+                  x=0.2;
+                  y=0.2;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+            class blagg6 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_blag4";
+                  x=0.5;
+                  y=0.2;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+            class blagg7 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_blag5";
+                  x=-0.1;
+                  y=0.4;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+            class blagg8 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_v16";
+                  x=0.2;
+                  y=0.4;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+            class blagg9 : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRM_blag6";
+                  x=0.5;
+                  y=0.4;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+	class sarmat1
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=555;
+	    fadein = 1;
+	    fadeout = 1;
+            name="sarmat1";
+            controls[]={"blackfon","logotip"};
+            	    class blackfon
+		  {
+			   x = -10;
+			   y = -10;
+			   w = 42;
+			   h = 42;
+			   type = 0;
+			   idc = -100;
+			   style = 48;
+			   colorBackground[] = {0,0,0,0};
+			   colorText[] = {1, 1, 1, 1};
+			   font = BitStream;
+			   sizeEx = 0;
+			   lineSpacing = 0;
+			   access = ReadAndWrite;
+			   text = "#(argb,8,8,3)color(0,0,0,1)";
+		  };
+            		class logotip
+		  {
+			   x = 0;
+			   y = 0;
+			   w = 1;
+			   h = 1;
+			   type = 0;
+			   idc = -1;
+			   style = 48;
+			   colorBackground[] = {0, 0, 0, 0};
+			   colorText[] = {1, 1, 1, 1};
+			   font = BitStream;
+			   sizeEx = 0;
+			   lineSpacing = 0;
+			   access = ReadAndWrite;
+			   text = "img\sarmat1.jpg";
+		  };
+	};
+	class sarmat2
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=555;
+	    fadein = 1;
+	    fadeout = 1;
+            name="sarmat2";
+            controls[]={"blackfon","logotip"};
+            	    class blackfon
+		  {
+			   x = -10;
+			   y = -10;
+			   w = 42;
+			   h = 42;
+			   type = 0;
+			   idc = -100;
+			   style = 48;
+			   colorBackground[] = {0,0,0,0};
+			   colorText[] = {1, 1, 1, 1};
+			   font = BitStream;
+			   sizeEx = 0;
+			   lineSpacing = 0;
+			   access = ReadAndWrite;
+			   text = "#(argb,8,8,3)color(0,0,0,1)";
+		  };
+            		class logotip
+		  {
+			   x = 0;
+			   y = 0;
+			   w = 1;
+			   h = 1;
+			   type = 0;
+			   idc = -1;
+			   style = 48;
+			   colorBackground[] = {0, 0, 0, 0};
+			   colorText[] = {1, 1, 1, 1};
+			   font = BitStream;
+			   sizeEx = 0;
+			   lineSpacing = 0;
+			   access = ReadAndWrite;
+			   text = "img\sarmat2.jpg";
+		  };
+	};
+	class sarmat3
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=555;
+	    fadein = 1;
+	    fadeout = 1;
+            name="sarmat3";
+            controls[]={"blackfon","logotip"};
+            	    class blackfon
+		  {
+			   x = -10;
+			   y = -10;
+			   w = 42;
+			   h = 42;
+			   type = 0;
+			   idc = -100;
+			   style = 48;
+			   colorBackground[] = {0,0,0,0};
+			   colorText[] = {1, 1, 1, 1};
+			   font = BitStream;
+			   sizeEx = 0;
+			   lineSpacing = 0;
+			   access = ReadAndWrite;
+			   text = "#(argb,8,8,3)color(0,0,0,1)";
+		  };
+            		class logotip
+		  {
+			   x = 0;
+			   y = 0;
+			   w = 1;
+			   h = 1;
+			   type = 0;
+			   idc = -1;
+			   style = 48;
+			   colorBackground[] = {0, 0, 0, 0};
+			   colorText[] = {1, 1, 1, 1};
+			   font = BitStream;
+			   sizeEx = 0;
+			   lineSpacing = 0;
+			   access = ReadAndWrite;
+			   text = "img\sarmat3.jpg";
+		  };
+	};
+	class sarmat4
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=555;
+	    fadein = 1;
+	    fadeout = 1;
+            name="sarmat4";
+            controls[]={"blackfon","logotip"};
+            	    class blackfon
+		  {
+			   x = -10;
+			   y = -10;
+			   w = 42;
+			   h = 42;
+			   type = 0;
+			   idc = -100;
+			   style = 48;
+			   colorBackground[] = {0,0,0,0};
+			   colorText[] = {1, 1, 1, 1};
+			   font = BitStream;
+			   sizeEx = 0;
+			   lineSpacing = 0;
+			   access = ReadAndWrite;
+			   text = "#(argb,8,8,3)color(0,0,0,1)";
+		  };
+            		class logotip
+		  {
+			   x = 0;
+			   y = 0;
+			   w = 1;
+			   h = 1;
+			   type = 0;
+			   idc = -1;
+			   style = 48;
+			   colorBackground[] = {0, 0, 0, 0};
+			   colorText[] = {1, 1, 1, 1};
+			   font = BitStream;
+			   sizeEx = 0;
+			   lineSpacing = 0;
+			   access = ReadAndWrite;
+			   text = "img\sarmat4.jpg";
+		  };
+	};
+		class campa
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=55;
+	    fadein = 1;
+	    fadeout = 1;
+            name="campa";
+            controls[]={"cc"};
+            class cc : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STR_campa";
+                  x=0.2;
+                  y=0.30;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={0,0,69141,0,85156,1};
+                  font=BitStream;
+                  sizeEx = 0.5 * 0.2000Rnd_23mm_AZP85;
+                  size=1;
+            };
+	};
+	class present
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=555;
+	    fadein = 1;
+	    fadeout = 1;
+            name="present";
+            controls[]={"Ppp","P","Pp"};
+        	
+        class Ppp : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRD_say0";
+                  x=0.001;
+                  y=0.6;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.5 * 0.1;
+                  size=0.5;
+            };
+        
+        class P : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRD_say0_1";
+                  x=0.001;
+                  y=0.5;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.5 * 0.1;
+                  size=0.6;
+            };
+            class Pp : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STRD_say0_2";
+                  x=0.001;
+                  y=0.7;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.5 * 0.1;
+                  size=0.6;
+            };
+
+	};
+	class info
+      {
+            idd=-1;
+            movingEnable=1;
+            duration=4;
+	    fadein = 1;
+	    fadeout = 1;
+            name="info";
+            controls[]={"info"};
+            class info : RscText
+            {
+                  style=CT_STATIC+ST_SHADOW+ST_CENTER;
+                  lineSpacing=1.000000;
+                  text="$STR_info";
+                  x=0.2;
+                  y=0.3;
+                  w=0.60;
+                  h=0.40;
+                  colorText[]={1,1,1,1};
+                  font=BitStream;
+                  sizeEx = 0.4 * 0.1;
+                  size=1;
+            };
+	};
+};

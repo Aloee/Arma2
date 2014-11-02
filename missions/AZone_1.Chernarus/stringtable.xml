@@ -1,0 +1,1160 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project name='Arma2Free'>
+<Package name='ZoneForFree'>
+<Container name='Main'>
+					<Key ID="STRD_description_onloadintro">
+							<English>ZONA [v1]</English>
+							<Russian>Зона [v1]</Russian>
+					</Key>
+					<Key ID="STRD_description_onloadmission">
+							<English>by Jonah</English>
+							<Russian>by Jonah</Russian>
+					</Key>
+					<Key ID="STR_lobby_duty">
+							<English>soldier of the Duty</English>
+							<Russian>солдат Долга</Russian>
+					</Key>
+					<Key ID="STR_lobby_freedom">
+							<English>soldier of the Freedom</English>
+							<Russian>солдат Свободы</Russian>
+					</Key>
+					<Key ID="STR_CFG_PAPABEAR">
+							<English>Kordon</English>
+							<Russian>Кордон</Russian>
+					</Key>
+					<Key ID="STR_CFG_FIREFLYBASE">
+							<English>Informant</English>
+							<Russian>Информатор</Russian>
+					</Key>
+					<Key ID="STR_month_1">
+							<English>January</English>
+							<Russian>Января</Russian>
+					</Key>
+					<Key ID="STR_month_2">
+							<English>February</English>
+							<Russian>Февраля</Russian>
+					</Key>
+					<Key ID="STR_month_3">
+							<English>March</English>
+							<Russian>Марта</Russian>
+					</Key>
+					<Key ID="STR_month_4">
+							<English>April</English>
+							<Russian>Апреля</Russian>
+					</Key>
+					<Key ID="STR_month_5">
+							<English>May</English>
+							<Russian>Мая</Russian>
+					</Key>
+					<Key ID="STR_month_6">
+							<English>June</English>
+							<Russian>Июня</Russian>
+					</Key>
+					<Key ID="STR_month_7">
+							<English>July</English>
+							<Russian>Июля</Russian>
+					</Key>
+					<Key ID="STR_month_8">
+							<English>August</English>
+							<Russian>Августа</Russian>
+					</Key>
+					<Key ID="STR_month_9">
+							<English>September</English>
+							<Russian>Сентября</Russian>
+					</Key>
+					<Key ID="STR_month_10">
+							<English>October</English>
+							<Russian>Октября</Russian>
+					</Key>
+					<Key ID="STR_month_11">
+							<English>November</English>
+							<Russian>Ноября</Russian>
+					</Key>
+					<Key ID="STR_month_12">
+							<English>December</English>
+							<Russian>Декабря</Russian>
+					</Key>
+</Container>
+<Container name='Titles'>
+					<Key ID="STRD_title_jailedCauseTK">
+							<English>%1 has been sent to jail for hit a teammate.</English>
+							<Russian>%1 был отправлен в тюрьму за нападение на товарища по команде.</Russian>
+					</Key>
+					<Key ID="STRD_title_jailedCauseNZ">
+							<English>%1 has been sent to jail for hit in neutral territory</English>
+							<Russian>%1 был отправлен в тюрьму за нападение на нейтральной территории.</Russian>
+					</Key>
+					<Key ID="STRD_title_hellojail">
+							<English>&lt;t size='2.2' align='center' color='#FF0000'&gt;Jail&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1' align='center' color='#FFFFFF'&gt;You will be released after the Jail timer expires.&lt;/t&gt;</English>
+							<Russian>&lt;t size='2.2' align='center' color='#FF0000'&gt;Тюрьма&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1' align='center' color='#FFFFFF'&gt;Вы будете освобождены по истечению тюремного срока.&lt;/t&gt;</Russian>
+					</Key>
+					<Key ID="STRD_title_buyjail">
+							<English>&lt;t size='1.2' align='center' color='#00FF00'&gt;You are free!&lt;/t&gt;&lt;br/&gt;&lt;t size='1' align='center' color='#FFFFFF'>Do not attack more on teammates and on neutral territory!&lt;/t&gt;</English>
+							<Russian>&lt;t size='1.2' align='center' color='#00FF00'&gt;Вы свободны!&lt;/t&gt;&lt;br/&gt;&lt;t size='1' align='center' color='#FFFFFF'>Не нападайте больше на товарищей по команде и на нейтральной территории!&lt;/t&gt;</Russian>
+					</Key>
+					<Key ID="STRD_title_relaisedjail">
+							<English>%1 has been released from jail.</English>
+							<Russian>%1 был освобожден из тюрьмы.</Russian>
+					</Key>
+					<Key ID="STRD_title_escapingjaildead1">
+							<English>YOU WERE SHOT DEAD FOR ESCAPING!</English>
+							<Russian>ВЫ были застрелены за попытку побега!</Russian>
+					</Key>
+					<Key ID="STRD_title_escapingjaildead2">
+							<English>%1 was shot dead after escaping from Jail</English>
+							<Russian>%1 был застрелен за попытку побега из тюрьмы</Russian>
+					</Key>
+					<Key ID="STRD_title_jailTimer">
+							<English>&lt;t size='2.2' align='center' color='#FF0000'&gt;Jail&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='2' align='center' color='#FFFFFF'&gt;0%1:%2:%3&lt;/t&gt;</English>
+							<Russian>&lt;t size='2.2' align='center' color='#FF0000'&gt;Тюрьма&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='2' align='center' color='#FFFFFF'&gt;0%1:%2:%3&lt;/t&gt;</Russian>
+					</Key>
+					<Key ID="STRD_title_surgeDangerHead">
+							<English>Expected surge!</English>
+							<Russian>Ожидается выброс!</Russian>
+					</Key>
+					<Key ID="STRD_title_surgeDangerDesc">
+							<English></English>
+							<Russian></Russian>
+					</Key>
+					<Key ID="STRD_title_convoyStart">
+							<English>Military convoy started moving</English>
+							<Russian>Военный конвой начал движение</Russian>
+					</Key>
+</Container>
+<Container name='TacticalSigns'>
+					<Key ID="STRD_tactical">
+							<English>Signals</English>
+							<Russian>Cигналы</Russian>
+					</Key>
+					<Key ID="STRD_tactical_stop">
+							<English>Stop!</English>
+							<Russian>Стоп!</Russian>
+					</Key>
+					<Key ID="STRD_tactical_go">
+							<English>Go</English>
+							<Russian>Пошли</Russian>
+					</Key>
+					<Key ID="STRD_tactical_cover">
+							<English>Get down</English>
+							<Russian>Ложись!</Russian>
+					</Key>
+					<Key ID="STRD_tactical_attack">
+							<English>Attack</English>
+							<Russian>Атаковать</Russian>
+					</Key>
+					<Key ID="STRD_tactical_ceasefire">
+							<English>Cease fire</English>
+							<Russian>Не стрелять</Russian>
+					</Key>
+					<Key ID="STRD_tactical_follow">
+							<English>Follow</English>
+							<Russian>Следовать</Russian>
+					</Key>
+					<Key ID="STRD_tactical_up">
+							<English>Up</English>
+							<Russian>Подъем</Russian>
+					</Key>
+					<Key ID="STRD_tactical_advance">
+							<English>Advance</English>
+							<Russian>Продвижение</Russian>
+					</Key>
+					<Key ID="STRD_tactical_point">
+							<English>Point</English>
+							<Russian>Точка</Russian>
+					</Key>
+</Container>
+<Container name='SYSTEM'>
+					<Key ID="STR_umessage_error_nostorage">
+							<English>Error: Data storage not connected</English>
+							<Russian>Ошибка: Хранилище данных не подключено</Russian>
+					</Key>
+					<Key ID="STR_umessage_error_ser">
+							<English>Error: Error at serialize!</English>
+							<Russian>Ошибка: Ошибка при сериализации!</Russian>
+					</Key>
+					<Key ID="STR_umessage_error_onload">
+							<English>Error: Not finded object player %1</English>
+							<Russian>Ошибка: Не найден объект игрока %1</Russian>
+					</Key>
+					<Key ID="STR_umessage_cantgetmore">
+							<English>Unable pick up more</English>
+							<Russian>Невозможно взять больше</Russian>
+					</Key>
+					<Key ID="STR_umessage_cantgivemore">
+							<English>You can not pass more than there</English>
+							<Russian>Нельзя передать больше чем есть</Russian>
+					</Key>
+					<Key ID="STR_umessage_cantgivemoredistance">
+							<English>The recipient is too far</English>
+							<Russian>Получатель находится слишком далеко</Russian>
+					</Key>
+					<Key ID="STRD_title_waitServer">
+							<English>Waiting for server...</English>
+							<Russian>Ожидание сервера...</Russian>
+					</Key>
+					<Key ID="STRD_title_aboutMissionbanner">
+							<English>*** Welcome back! Page vk.com/a2zone ***</English>
+							<Russian>*** Добро пожаловать! Страница vk.com/a2zone ***</Russian>
+					</Key>
+					<Key ID="STRD_title_storageSaved">
+							<English>Saved</English>
+							<Russian>Сохранено</Russian>
+					</Key>
+					<Key ID="STRD_title_storageSavedError">
+							<English>Not saved</English>
+							<Russian>Не cохранено</Russian>
+					</Key>
+</Container>
+<Container name='Map'>
+					<Key ID="STR_map_svobase">
+							<English>Freedom</English>
+							<Russian>Свобода</Russian>
+					</Key>
+					<Key ID="STR_map_dolbase">
+							<English>Duty</English>
+							<Russian>Долг</Russian>
+					</Key>
+					<Key ID="STR_map_science">
+							<English>Scientists</English>
+							<Russian>Ученые</Russian>
+					</Key>
+					<Key ID="STR_map_junkyard">
+							<English>Junk yard</English>
+							<Russian>Свалка</Russian>
+					</Key>
+					<Key ID="STR_map_military">
+							<English>Airport Chernarus</English>
+							<Russian>Аэропорт Чернорусии</Russian>
+					</Key>
+					<Key ID="STR_map_psyrepeat">
+							<English>Psy-repeater</English>
+							<Russian>Пси-ретранслятор</Russian>
+					</Key>
+					<Key ID="STR_map_arena">
+							<English>Arena</English>
+							<Russian>Арена</Russian>
+					</Key>
+					<Key ID="STR_map_forester">
+							<English>Foreseter</English>
+							<Russian>Лесничий</Russian>
+					</Key>
+					<Key ID="STR_map_cordon">
+							<English>Cordon</English>
+							<Russian>Кордон</Russian>
+					</Key>
+					<Key ID="STR_map_bar">
+							<English>Bar</English>
+							<Russian>Бар</Russian>
+					</Key>
+					<Key ID="STR_map_bandits">
+							<English>Lair bandits</English>
+							<Russian>Логово бандитов</Russian>
+					</Key>
+					<Key ID="STR_map_cemetryMech">
+							<English>Cemetery of mechanisms</English>
+							<Russian>Кладбище техники</Russian>
+					</Key>
+					<Key ID="STR_map_hospital">
+							<English>Medical camp</English>
+							<Russian>Медицинский лагерь</Russian>
+					</Key>
+					<Key ID="STR_map_outpost">
+							<English>Outpost #6</English>
+							<Russian>Аванпост #6</Russian>
+					</Key>
+					<Key ID="STR_map_carDealer">
+							<English>Buy transport</English>
+							<Russian>Покупка транспорта</Russian>
+					</Key>
+					<Key ID="STR_map_weaponDealer">
+							<English>Buy/Sell weapon</English>
+							<Russian>Покупка/Продажа оружия</Russian>
+					</Key>
+					<Key ID="STR_map_artefactDealer">
+							<English>Buy/Sell artefact</English>
+							<Russian>Покупка/Продажа артефактов</Russian>
+					</Key>
+					<Key ID="STR_map_remPoint">
+							<English>Maintenance</English>
+							<Russian>Тех. обслуживание</Russian>
+					</Key>
+					<Key ID="STR_map_medPoint">
+							<English>Ambulance</English>
+							<Russian>Мед. помощь</Russian>
+					</Key>
+					<Key ID="STR_map_mycamp">
+							<English>My camp</English>
+							<Russian>Мой лагерь</Russian>
+					</Key>
+					<Key ID="STR_map_legend_bandits">
+							<English>Bandits</English>
+							<Russian>Бандиты</Russian>
+					</Key>
+					<Key ID="STR_map_legend_capturePoints">
+							<English>Сheckpoints</English>
+							<Russian>Контрольные точки</Russian>
+					</Key>
+					<Key ID="STR_map_legend_sellAss">
+							<English>Seller / Assignments</English>
+							<Russian>Продавец / Задания</Russian>
+					</Key>
+					<Key ID="STR_map_legend_uncTerritores">
+							<English>Uncontrolled territory</English>
+							<Russian>Неконтролируемые территории</Russian>
+					</Key>
+</Container>
+<Container name='Locations'>
+					<Key ID="STRD_location_duty">
+							<English>camp fraction 'DUTY'</English>
+							<Russian>лагерь фракции 'ДОЛГ'</Russian>
+					</Key>
+					<Key ID="STRD_location_freedom">
+							<English>camp fraction 'FREEDOM'</English>
+							<Russian>лагерь фракции 'СВОБОДА'</Russian>
+					</Key>
+					<Key ID="STRD_location_kordon">
+							<English>Kordon</English>
+							<Russian>Кордон</Russian>
+					</Key>
+					<Key ID="STRD_location_dump">
+							<English>Junk yard</English>
+							<Russian>Свалка</Russian>
+					</Key>
+					<Key ID="STRD_location_artdealer">
+							<English>Goods yard</English>
+							<Russian>Товарный двор</Russian>
+					</Key>
+					<Key ID="STRD_location_greenm">
+							<English>Green mountain</English>
+							<Russian>Зелёная гора</Russian>
+					</Key>
+					<Key ID="STRD_location_mil">
+							<English>Airport</English>
+							<Russian>Аэропорт</Russian>
+					</Key>
+					<Key ID="STRD_location_outpost">
+							<English>Outpost</English>
+							<Russian>Аванпост</Russian>
+					</Key>
+					<Key ID="STRD_location_city13">
+							<English>Sosnovka</English>
+							<Russian>Сосновка</Russian>
+					</Key>
+					<Key ID="STRD_location_city9">
+							<English>Zelenogorsk</English>
+							<Russian>Зеленогорск</Russian>
+					</Key>
+					<Key ID="STRD_location_city26">
+							<English>Drozhino</English>
+							<Russian>Дрожино</Russian>
+					</Key>
+					<Key ID="STRD_location_city10">
+							<English>Bor</English>
+							<Russian>Бор</Russian>
+					</Key>
+					<Key ID="STRD_location_city5">
+							<English>Pavlovo</English>
+							<Russian>Павлово</Russian>
+					</Key>
+					<Key ID="STRD_location_city14">
+							<English>Kamenka</English>
+							<Russian>Каменка</Russian>
+					</Key>
+					<Key ID="STRD_location_city15">
+							<English>Komarovo</English>
+							<Russian>Комарово</Russian>
+					</Key>
+					<Key ID="STRD_location_city37">
+							<English>Balota</English>
+							<Russian>Балота</Russian>
+					</Key>
+					<Key ID="STRD_location_city16">
+							<English>Kozlovka</English>
+							<Russian>Козловка</Russian>
+					</Key>
+					<Key ID="STRD_location_city18">
+							<English>Nadezhdino</English>
+							<Russian>Надеждино</Russian>
+					</Key>
+					<Key ID="STRD_location_city6">
+							<English>Rogovo</English>
+							<Russian>Рогово</Russian>
+					</Key>
+					<Key ID="STRD_location_city7">
+							<English>Pogorevka</English>
+							<Russian>Погоревка</Russian>
+					</Key>
+					<Key ID="STRD_location_city19">
+							<English>Vishnoe</English>
+							<Russian>Вышное</Russian>
+					</Key>
+					<Key ID="STRD_location_city38">
+							<English>Prigorodki</English>
+							<Russian>Пригородки</Russian>
+					</Key>
+					<Key ID="STRD_location_city17">
+							<English>Pusta</English>
+							<Russian>Пуста</Russian>
+					</Key>
+					<Key ID="STRD_location_city30">
+							<English>Staroe</English>
+							<Russian>Старое</Russian>
+					</Key>
+					<Key ID="STRD_location_city31">
+							<English>Msta</English>
+							<Russian>Мста</Russian>
+					</Key>
+					<Key ID="STRD_location_city29">
+							<English>Shahovka</English>
+							<Russian>Шаховка</Russian>
+					</Key>
+					<Key ID="STRD_location_city2">
+							<English>Pustoshka</English>
+							<Russian>Пустошка</Russian>
+					</Key>
+					<Key ID="STRD_location_city4">
+							<English>Grishino</English>
+							<Russian>Гришино</Russian>
+					</Key>
+					<Key ID="STRD_location_city20">
+							<English>Chernogorsk</English>
+							<Russian>Черногорск</Russian>
+					</Key>
+					<Key ID="STRD_location_city32">
+							<English>Dolina</English>
+							<Russian>Долина</Russian>
+					</Key>
+					<Key ID="STRD_location_city22">
+							<English>Gorka</English>
+							<Russian>Горка</Russian>
+					</Key>
+					<Key ID="STRD_location_city25">
+							<English>Dubrovka</English>
+							<Russian>Дубровка</Russian>
+					</Key>
+					<Key ID="STRD_location_city24">
+							<English>Gvozdino</English>
+							<Russian>Гвоздино</Russian>
+					</Key>
+					<Key ID="STRD_location_city36">
+							<English>Solnechny</English>
+							<Russian>Солнечный</Russian>
+					</Key>
+</Container>
+<Container name='Objects'>
+					<Key ID="STR_artefact_Blackdrip">
+							<English>Black drip</English>
+							<Russian>Чёрная капля</Russian>
+					</Key>
+					<Key ID="STR_artefact_Gravi">
+							<English>Gravi</English>
+							<Russian>Грави</Russian>
+					</Key>
+					<Key ID="STR_artefact_Empty">
+							<English>Empty</English>
+							<Russian>Пустота</Russian>
+					</Key>
+					<Key ID="STR_artefact_Ameba">
+							<English>Ameba</English>
+							<Russian>Амёба</Russian>
+					</Key>
+					<Key ID="STR_artefact_Crystal">
+							<English>Crystal</English>
+							<Russian>Кристалл</Russian>
+					</Key>
+					<Key ID="STR_artefact_StoneBlood">
+							<English>Stone Blood</English>
+							<Russian>Кровавый Камень</Russian>
+					</Key>
+					<Key ID="STR_artefact_Meat">
+							<English>Meat</English>
+							<Russian>Мясо</Russian>
+					</Key>
+					<Key ID="STR_artefact_Soul">
+							<English>Soul</English>
+							<Russian>Душа</Russian>
+					</Key>
+					<Key ID="STR_artefact_Electra">
+							<English>Electra</English>
+							<Russian>Электра</Russian>
+					</Key>
+					<Key ID="STR_artefact_Spikes">
+							<English>Spikes</English>
+							<Russian>Шипы</Russian>
+					</Key>
+					<Key ID="STR_artefact_Battery">
+							<English>Battery</English>
+							<Russian>Батарейка</Russian>
+					</Key>
+					<Key ID="STR_stuff_milDocs">
+							<English>Military documents</English>
+							<Russian>Документы военные</Russian>
+					</Key>
+					<Key ID="STR_stuff_scientsDevice">
+							<English>Device for measurings</English>
+							<Russian>Устройство для измерений</Russian>
+					</Key>
+					<Key ID="STR_stuff_aks74uSilencer">
+							<English>Silencer (AKS-74U)</English>
+							<Russian>Глушитель (АКС-74У)</Russian>
+					</Key>
+					<Key ID="STR_stuff_ak74Calimator">
+							<English>CS 'Kobra' (Ak-74)</English>
+							<Russian>KП 'Кобра' (Ak-74)</Russian>
+					</Key>
+					<Key ID="STR_stuff_ak74PSO">
+							<English>PSO-1 (Ak-74/Ak-107)</English>
+							<Russian>ПСO-1 (Ak-74/Ak-107)</Russian>
+					</Key>
+					<Key ID="STR_stuff_ak74GLauncher">
+							<English>GL-25 (Ak-74/Ak-107)</English>
+							<Russian>ГП-25 (Ak-74/Ak-107)</Russian>
+					</Key>
+					<Key ID="STR_stuff_bizonSilencer">
+							<English>Silencer (Bizon)</English>
+							<Russian>Глушитель (Бизон)</Russian>
+					</Key>
+					<Key ID="STR_stuff_g36Collimator">
+							<English>SD Eotech (G36)</English>
+							<Russian>SD Eotech (G36)</Russian>
+					</Key>
+					<Key ID="STR_stuff_m4Collimator">
+							<English>Aim (M4A1)</English>
+							<Russian>Aim (M4A1)</Russian>
+					</Key>
+					<Key ID="STR_stuff_m8GLauncher">
+							<English>GL (M8)</English>
+							<Russian>GL (M8)</Russian>
+					</Key>
+					<Key ID="STR_stuff_m16GLauncher">
+							<English>M203 (M16A2/M16A4)</English>
+							<Russian>M203 (M16A2/M16A4)</Russian>
+					</Key>
+					<Key ID="STR_stuff_M4A1CamoSilencer">
+							<English>Silencer M4A1(CAMO)</English>
+							<Russian>Глушитель M4A1(CAMO)</Russian>
+					</Key>
+					<Key ID="STR_stuff_m16A4ACG">
+							<English>ACG (M16A4)</English>
+							<Russian>ACG (M16A4)</Russian>
+					</Key>
+					<Key ID="STR_stuff_MP5Silencer">
+							<English>Silencer (MP5)</English>
+							<Russian>Глушитель (MP5)</Russian>
+					</Key>
+					<Key ID="STR_stuff_1PN51">
+							<English>1PN51 (PK)</English>
+							<Russian>1ПН51 (PK)</Russian>
+					</Key>
+					<Key ID="STR_stuff_m9Silencer">
+							<English>Silencer (m9)</English>
+							<Russian>Глушитель (m9)</Russian>
+					</Key>
+					<Key ID="STR_stuff_makarovSilencer">
+							<English>Silencer (PM)</English>
+							<Russian>Глушитель (ПМ)</Russian>
+					</Key>
+					<Key ID="STR_stuff_radiationDetector">
+							<English>Radiation detector</English>
+							<Russian>Детектор излучения</Russian>
+					</Key>
+					<Key ID="STR_stuff_flashlight">
+							<English>Flashlight</English>
+							<Russian>Фонарик</Russian>
+					</Key>
+</Container>
+<Container name='Hints'>
+					<Key ID="STR_hint">
+							<English>Hint</English>
+							<Russian>Подсказка</Russian>
+					</Key>
+					<Key ID="STR_hint_camp">
+							<English>&lt;t size='1' align='left' color='#F1F5FA'>You deployed camp!&lt;br /&gt;Now this place - the zone of your spawn.&lt;br /&gt;&lt;br /&gt;Use it to store your equipment, weapons, ammunition.&lt;br /&gt;&lt;br /&gt;The contents of the camp is available to all stalkers.&lt;br /&gt;&lt;br /&gt;The next opportunity to deploy a camp will be in few minutes.&lt;/t&gt; &lt;br /&gt;&lt;br /&gt;</English>
+							<Russian>&lt;t size='1' align='left' color='#F1F5FA'>Ты развернул лагерь!&lt;br /&gt;Теперь это место - зона твоего респауна.&lt;br /&gt;&lt;br /&gt;Используй его для хранения своего снаряжения, оружия, патронов.&lt;br /&gt;&lt;br /&gt;Содержимое лагеря доступно всем сталкерам.&lt;br /&gt;&lt;br /&gt;Следующая возможность развернуть лагерь будет через несколько минут.&lt;/t&gt; &lt;br /&gt;&lt;br /&gt;</Russian>
+					</Key>
+					<Key ID="STR_hint_wpcamp">
+							<English>You can not deploy a camp in this location</English>
+							<Russian>Невозможно развернуть лагерь в этом месте</Russian>
+					</Key>
+					<Key ID="STR_hint_cdcamp">
+							<English>Distance to the city should be more %1 meters</English>
+							<Russian>Дистанция до города должна быть более %1 метров</Russian>
+					</Key>
+					<Key ID="STR_hint_repairDone">
+							<English>Repair done! Field repair kits: %1</English>
+							<Russian>Ремонт завершён! Полевых ремкомплектов: %1</Russian>
+					</Key>
+					<Key ID="STR_hint_repairBreak">
+							<English>Repair break!</English>
+							<Russian>Ремонт прерван!</Russian>
+					</Key>
+					<Key ID="STR_hint_service">
+							<English>Maintenance:</English>
+							<Russian>Обслуживание:</Russian>
+					</Key>
+					<Key ID="STR_hint_serviceDone">
+							<English>Maintenance done! Field repair kits: %1</English>
+							<Russian>Техническое обслуживание завершено! Полевых ремкомплектов: %1</Russian>
+					</Key>
+					<Key ID="STR_hint_serviceBreak">
+							<English>Maintenance break!</English>
+							<Russian>Техническое обслуживание прервано!</Russian>
+					</Key>
+					<Key ID="STR_hint_pickupitems">
+							<English>Received: &lt;br/&gt;&lt;br/&gt;%1</English>
+							<Russian>Получено: &lt;br/&gt;&lt;br/&gt;%1</Russian>
+					</Key>
+					<Key ID="STR_hint_rewardCount">
+							<English>Reward: &lt;br/&gt;&lt;br/&gt;%1</English>
+							<Russian>Награда: &lt;br/&gt;&lt;br/&gt;%1</Russian>
+					</Key>
+					<Key ID="STR_hint_usedCamp">
+							<English>This tent is already in use by %1. Try again later</English>
+							<Russian>Эта палатка уже используется %1. Повтори попытку позже</Russian>
+					</Key>
+					<Key ID="STR_hint_joingroup">
+							<English>You have joined %1</English>
+							<Russian>Вы присоединились к %1</Russian>
+					</Key>
+					<Key ID="STR_event_buy">
+							<English>You purchased %1 for %2p.</English>
+							<Russian>Вы купили %1 за %2р.</Russian>
+					</Key>
+					<Key ID="STR_event_nomoney">
+							<English>You do not have enough money to buy</English>
+							<Russian>Не достаточно денег для покупки</Russian>
+					</Key>
+					<Key ID="STR_event_hotkeysOn">
+							<English>Hotkeys: on</English>
+							<Russian>Горячие клавиши: вкл</Russian>
+					</Key>
+					<Key ID="STR_event_hotkeysOff">
+							<English>Hotkeys: off</English>
+							<Russian>Горячие клавиши: выкл</Russian>
+					</Key>
+					<Key ID="STR_killedHint">
+							<English>Hotkeys: off</English>
+							<Russian>Горячие клавиши: выкл</Russian>
+					</Key>
+					
+</Container>
+<Container name='Gui'>
+					<Key ID="STR_gui_inv_name">
+							<English>Alias</English>
+							<Russian>Псевдоним</Russian>
+					</Key>
+					<Key ID="STR_gui_inv_money">
+							<English>Money</English>
+							<Russian>Деньги</Russian>
+					</Key>
+					<Key ID="STR_gui_inv_side">
+							<English>Fraction</English>
+							<Russian>Фракция</Russian>
+					</Key>
+					<Key ID="STR_gui_inv_sideSvo">
+							<English>'Freedom'</English>
+							<Russian>'Cвобода'</Russian>
+					</Key>
+					<Key ID="STR_gui_inv_sideDolg">
+							<English>'Duty'</English>
+							<Russian>'Долг'</Russian>
+					</Key>
+					<Key ID="STR_gui_inv_artefacts">
+							<English>Artefacts</English>
+							<Russian>Артефакты</Russian>
+					</Key>
+					<Key ID="STR_gui_titlegroups">
+							<English>Stalkers (100m)</English>
+							<Russian>Сталкеры (100м)</Russian>
+					</Key>
+					<Key ID="STR_gui_inv_stuff">
+							<English>Stuff</English>
+							<Russian>Хлам</Russian>
+					</Key>
+					<Key ID="STR_gui_inv_weaponParts">
+							<English>For weapons</English>
+							<Russian>Для оружия</Russian>
+					</Key>
+					<Key ID="STR_gui_inv_heal">
+							<English>Health</English>
+							<Russian>Здоровье</Russian>
+					</Key>
+					<Key ID="STR_gui_titlebox">
+							<English>Storage</English>
+							<Russian>Схрон</Russian>
+					</Key>
+					<Key ID="STR_gui_titlewd">
+							<English>Dealer</English>
+							<Russian>Торговец</Russian>
+					</Key>
+					<Key ID="STR_gui_titleinv">
+							<English>Inventory</English>
+							<Russian>Инвентарь</Russian>
+					</Key>
+					<Key ID="STR_gui_confirm">
+							<English>Confirm</English>
+							<Russian>Подтвердить</Russian>
+					</Key>
+					<Key ID="STR_gui_cansel">
+							<English>Cancel</English>
+							<Russian>Отмена</Russian>
+					</Key>
+					<Key ID="STR_gui_buyprice_andMoney">
+							<English>Money: %2p. Purchase price: %1</English>
+							<Russian>Деньги: %2p. Цена покупки: %1</Russian>
+					</Key>
+					<Key ID="STR_gui_saleprice_andMoney">
+							<English>Money: %2p. Sale price: %1</English>
+							<Russian>Деньги: %2p. Цена продажи: %1</Russian>
+					</Key>
+					<Key ID="STR_gui_buyprice2_andMoney">
+							<English>Money: %2p. Price: %1</English>
+							<Russian>Деньги: %2p. Цена: %1</Russian>
+					</Key>
+					<Key ID="STR_gui_price">
+							<English>Money: %1p.</English>
+							<Russian>Цена: %1р.</Russian>
+					</Key>
+					<Key ID="STR_gui_countUnits">
+							<English>Amount: %1</English>
+							<Russian>Состав: %1</Russian>
+					</Key>
+					<Key ID="STR_gui_leaveGrp">
+							<English>Leave group</English>
+							<Russian>Покинуть группу</Russian>
+					</Key>
+					<Key ID="STR_gui_titlewma">
+							<English>Mount:</English>
+							<Russian>Монтировать:</Russian>
+					</Key>
+					<Key ID="STR_gui_titlewmd">
+							<English>Dismantle:</English>
+							<Russian>Демонтировать:</Russian>
+					</Key>
+					<Key ID="STRD_gui_settings">
+							<English>Settings</English>
+							<Russian>Настройки</Russian>
+					</Key>
+					<Key ID="STRD_gui_fixDisplay">
+							<English>Reset effects</English>
+							<Russian>Cбросить эффекты</Russian>
+					</Key>
+					<Key ID="STRD_gui_attackSayOn">
+							<English>Dynamic shouts: on</English>
+							<Russian>Динамические крики: вкл</Russian>
+					</Key>
+					<Key ID="STRD_gui_attackSayOff">
+							<English>Dynamic shouts: off</English>
+							<Russian>Динамические крики: выкл</Russian>
+					</Key>
+					<Key ID="STRD_gui_servStat">
+							<English>Server stats</English>
+							<Russian>Cервера cтатистика</Russian>
+					</Key>
+					<Key ID="STRD_gui_resPlace1">
+							<English>Set respawn: base</English>
+							<Russian>Возрождение: база</Russian>
+					</Key>
+					<Key ID="STRD_gui_resPlace2">
+							<English>Set respawn: camp</English>
+							<Russian>Возрождение: лагерь</Russian>
+					</Key>
+					<Key ID="STRD_gui_flashlightOn">
+							<English>Flashlight on</English>
+							<Russian>Фонарик вкл.</Russian>
+					</Key>
+					<Key ID="STRD_gui_flashlightOff">
+							<English>Flashlight off</English>
+							<Russian>Фонарик выкл.</Russian>
+					</Key>
+					<Key ID="STR_gui_taskD">
+							<English>Description</English>
+							<Russian>Описание</Russian>
+					</Key>
+					<Key ID="STR_gui_workLayer">
+							<English>Tasks</English>
+							<Russian>Задания</Russian>
+					</Key>
+					<Key ID="STR_gui_curworkLayer">
+							<English>Сurrent task</English>
+							<Russian>Текущее задание</Russian>
+					</Key>
+					<Key ID="STR_gui_use">
+							<English>Use</English>
+							<Russian>Использовать</Russian>
+					</Key>
+					<Key ID="STR_gui_drop">
+							<English>Drop</English>
+							<Russian>Выбросить</Russian>
+					</Key>
+					<Key ID="STR_gui_give">
+							<English>Give to</English>
+							<Russian>Передать</Russian>
+					</Key>
+</Container>
+<Container name='Actions'>
+					<Key ID="STR_action_camp">
+							<English>Camp</English>
+							<Russian>Лагерь</Russian>
+					</Key>
+					<Key ID="STR_action_box">
+							<English>Equipment</English>
+							<Russian>Снаряжение</Russian>
+					</Key>
+					<Key ID="STR_action_remove">
+							<English>Remove camp</English>
+							<Russian>Свернуть лагерь</Russian>
+					</Key>
+					<Key ID="STR_action_tobackpack">
+							<English>to Backpack</English>
+							<Russian>за спину</Russian>
+					</Key>
+					<Key ID="STR_action_tobackpack2">
+							<English>%1 to Backpack</English>
+							<Russian>%1 за спину</Russian>
+					</Key>
+					<Key ID="STR_action_backbackpack">
+							<English>Weapon </English>
+							<Russian>Оружие </Russian>
+					</Key>
+					<Key ID="STR_action_pickup">
+							<English>Pick up artefact</English>
+							<Russian>Поднять артефакт</Russian>
+					</Key>
+					<Key ID="STR_action_weapDealerBuy">
+							<English>Buy / Sale weapon</English>
+							<Russian>Купить / Продать оружие</Russian>
+					</Key>
+					<Key ID="STR_action_carDealerBuy">
+							<English>Buy transport</English>
+							<Russian>Купить транспорт</Russian>
+					</Key>
+					<Key ID="STR_action_artDealerBuy">
+							<English>Buy / Sale Artefacts</English>
+							<Russian>Купить / Продать артефакты</Russian>
+					</Key>
+					<Key ID="STR_action_crews">
+							<English>&lt;t color='#6E9F4A'>Crews&lt;/t$&gt;</English>
+							<Russian>&lt;t color='#6E9F4A'>Экипаж&lt;/t$&gt;</Russian>
+					</Key>
+					<Key ID="STR_action_unlock">
+							<English>&lt;t color='#ffff00'>Unlock vehicle&lt;/t$&gt;</English>
+							<Russian>&lt;t color='#ffff00'>Открыть&lt;/t$&gt;</Russian>
+					</Key>
+					<Key ID="STR_action_lock">
+							<English>&lt;t color='#ffff00'>Lock vehicle&lt;/t$&gt;</English>
+							<Russian>&lt;t color='#ffff00'>Закрыть&lt;/t$&gt;</Russian>
+					</Key>
+					<Key ID="STR_action_fieldrepair">
+							<English>&lt;t color='#B2CCCC'>Field repair&lt;/t$&gt;</English>
+							<Russian>&lt;t color='#B2CCCC'>Полевой ремонт&lt;/t$&gt;</Russian>
+					</Key>
+					<Key ID="STR_action_fieldrepairbreak">
+							<English>&lt;t color='#B2CCCC'>Break repair&lt;/t$&gt;</English>
+							<Russian>&lt;t color='#B2CCCC'>Прервать ремонт&lt;/t$&gt;</Russian>
+					</Key>
+					<Key ID="STR_action_servicePoint">
+							<English>&lt;t color='#B2CCCC'>Maintenance&lt;/t$&gt;</English>
+							<Russian>&lt;t color='#B2CCCC'>Тех. обслуживание&lt;/t$&gt;</Russian>
+					</Key>
+					<Key ID="STR_action_pickupmoney">
+							<English>Pick up %1p.</English>
+							<Russian>Поднять %1р.</Russian>
+					</Key>
+					<Key ID="STR_action_pickupinv">
+							<English>Pick up</English>
+							<Russian>Поднять</Russian>
+					</Key>
+					<Key ID="STR_action_get">
+							<English>Take</English>
+							<Russian>Взять</Russian>
+					</Key>
+					<Key ID="STR_action_task">
+							<English>Assignments</English>
+							<Russian>Задания</Russian>
+					</Key>
+</Container>
+<Container name='Briefing'>
+					<Key ID="STRD_briefing_about">
+							<English>Сontacts</English>
+							<Russian>Контакты</Russian>
+					</Key>
+					<Key ID="STRD_briefing_contact">
+							<English>=></English>
+							<Russian>=></Russian>
+					</Key>
+					<Key ID="STRD_briefing_contact_desc">
+							<English>page: vk.com/a2zone &lt;br/&gt; Developing for Arma2:Free</English>
+							<Russian>страница: vk.com/a2zone &lt;br/&gt; Разрабатывается для Arma2:Free</Russian>
+					</Key>
+					<Key ID="STRD_briefing_grps">
+							<English>Factions</English>
+							<Russian>Фракции</Russian>
+					</Key>
+					<Key ID="STRD_briefing_grps_duty">
+							<English>Duty</English>
+							<Russian>Долг</Russian>
+					</Key>
+					<Key ID="STRD_briefing_grps_free">
+							<English>Freedom</English>
+							<Russian>Свобода</Russian>
+					</Key>
+					<Key ID="STRD_briefing_grps_mil">
+							<English>Military</English>
+							<Russian>Военные</Russian>
+					</Key>
+					<Key ID="STRD_briefing_grps_nothing">
+							<English>No one</English>
+							<Russian>Никого</Russian>
+					</Key>
+					<Key ID="STRD_briefing_grps_zombies">
+							<English>Zombies</English>
+							<Russian>Зомби</Russian>
+					</Key>
+					<Key ID="STRD_briefing_grps_duty_desc">
+							<English>&lt;img image='img\zona_logo_duty.jpg' height = '100' width = '100'/&gt;&lt;br/&gt;&lt;br/&gt;Duty - The militarized group differing strict discipline: her members live actually under the charter.Only representatives of «Duty» don't trade in unique generations of the Zone with the outside world: on the hearings all artifacts found these people are given the scientist. &lt;br/&gt;Each member «Duty» considers as the main goal a defense of peace from Zone influence. &lt;br/&gt;The majority of operations of group are connected with destruction of monsters therefore «Duty» raids quite often relieve ordinary stalkers of many pressing problems. Long ago and furiously is at enmity with Freedom group. &lt;br/&gt;«Duty» consists of the military deserting from regular army during the first break in the Zone</English>
+							<Russian>&lt;img image='img\zona_logo_duty.jpg' height = '100' width = '100'/&gt;&lt;br/&gt;&lt;br/&gt;Долг -  Военизированная группировка отличающаяся строгой дисциплиной: её члены живут фактически по уставу. &lt;br/&gt;Только представители «Долга» не торгуют уникальными порождениями Зоны с внешним миром: по слухам все найденные этими людьми артефакты сдаются учёным. &lt;br/&gt;Каждый «долговец» считает своей главной целью защиту мира от воздействия Зоны. &lt;br/&gt;Большинство операций группировки связаны с истреблением монстров поэтому рейды «Долга» нередко избавляют рядовых сталкеров от многих насущных проблем. &lt;br/&gt;Давно и яростно враждует с группировкой «Свобода». «Долг» состоит из военных дезертировавших из регулярной армии во время первого прорыва в Зону</Russian>
+					</Key>
+					<Key ID="STRD_briefing_grps_free_desc">
+							<English>&lt;img image='img\zona_logo_vola.jpg' height = '100' width = '100'/&gt;&lt;br/&gt;&lt;br/&gt;Freedom - Anarchists and daredevils declared fighters for freedom in the Zone territory and therefore constantly clashing with army divisions military stalkers and Duty faction. Each member Free faction consider that information on the events in the Zone can't be hidden from mankind thus challenging monopoly of the governmental organizations for possession of local secrets and miracles.</English>
+							<Russian>&lt;img image='img\zona_logo_vola.jpg' height = '100' width = '100'/&gt;&lt;br/&gt;&lt;br/&gt;Свобода (ранее Воля) -  Анархисты и сорвиголовы объявившие себя борцами за свободу на территории Зоны  и поэтому постоянно конфликтующие с армейскими подразделениями военными сталкерами и группировкой «Долг». «Свободовцы» считают что информацию о происходящем в Зоне нельзя скрывать от человечества таким образом оспаривая монополию правительственных организаций на владение здешними тайнами и чудесами.</Russian>
+					</Key>
+					<Key ID="STRD_briefing_missions">
+							<English>Missions</English>
+							<Russian>Миссии</Russian>
+					</Key>
+					<Key ID="STRD_briefing_surge">
+							<English>Surge</English>
+							<Russian>Выброс</Russian>
+					</Key>
+					<Key ID="STRD_briefing_surge_description">
+							<English>Time to time, there is a strong surge. During surge, all the people there are have strong hallucinations, after which the person loses consciousness at 6 hours.</English>
+							<Russian>Время от времени, происходит сильнейший выброс. Во время выброса у всех людей возникают сильные галлюцинации, после чего человек теряет сознание на 6 часов.</Russian>
+					</Key>
+					<Key ID="STRD_briefing_surge_anomalies">
+							<English>Anomalies</English>
+							<Russian>Аномалии</Russian>
+					</Key>
+					<Key ID="STRD_briefing_surge_anomalies_description">
+							<English>Each surge zone randomly generates abnormalities, some of which with a certain probability crystallized artifacts.&lt;br/&gt;&lt;br/&gt;There are several types of anomalies: &lt;br/&gt;
+1. Gravy - when contact with this anomaly is a strong collapse of the air within a few meters, resulting in damage to both vehicles and animals. This anomaly was crystallized artifacts - Black drip, gravity, empty &lt;br/&gt;&lt;br/&gt;
+2. Electro - within a few meters form the magnetic field, which spawns the electrical discharges. This anomaly was crystallized artifacts - Electra, Spikes, Battery &lt;br/&gt;&lt;br/&gt;
+3. Mincer - one of the most dangerous anomalies in contact with this anomaly, any animal literally torn apart with a distinctive sound and a huge circular waves in the air, the technique is applied to a critical hit. This anomaly was crystallized artifacts - Blood Stone, Meat, Soul &lt;br/&gt;&lt;br/&gt;
+5. Psi - Psycho Active anomaly causes gollyutsinatsii animals, not crystallized artifacts &lt;br/&gt;&lt;br/&gt;
+6. Radiation - Causes serious damage to health, not crystallized artifacts &lt;br/&gt;&lt;br/&gt;
+							</English>
+							<Russian>Каждый выброс зона рандомно генерирует аномалии, некоторые из которых с определённой вероятностью кристализуют артефакты. &lt;br/&gt;&lt;br/&gt; Существует несколько видов аномалий: &lt;br/&gt;
+1. Грави - при попадании в эту аномалию происходит сильное схлопывание воздуха в радиусе нескольких метров, что приводит к повреждениям как техники так и животного. Эта аномалия кристализует артефакты - Чёрная капля, грави, пусто &lt;br/&gt;&lt;br/&gt;
+2. Электро - в радиусе нескольких метров образуется магнитное поле, которое пораждает электрические разряды. Эта аномалия кристализует артефакты - Электра, Шипы, Батарейка &lt;br/&gt;&lt;br/&gt;
+3. Мясорубка - одна из наиболее опасных аномалий, при попадании в эту аномалию, любое животное буквально разрывает на части с характерным звуком и огромными кольцевыми волнами в воздухе, технике наносится критический урон. Эта аномалия кристализует артефакты - Кровавый Камень, Мясо, Душа &lt;br/&gt;&lt;br/&gt;
+5. Пси - Психо активная аномалия, вызывает голлюцинации у животных, не кристализует артефакты &lt;br/&gt;&lt;br/&gt;
+6. Радиация - Наносит серьёзный урон здоровью, не кристализует артефакты &lt;br/&gt;&lt;br/&gt;
+							</Russian>
+					</Key>
+					<Key ID="STRD_briefing_surge_artefacts">
+							<English>Artefacts</English>
+							<Russian>Артефакты</Russian>
+					</Key>
+					<Key ID="STRD_briefing_surge_artefacts_description_duty">
+							<English>&lt;img image='img\826673823.jpg' width = '350' /&gt;&lt;br/&gt;&lt;br/&gt;Each artifact has its value to the scientific community. The price can learn directly from Professor Sakharov</English>
+							<Russian>&lt;img image='img\826673823.jpg' width = '350' /&gt;&lt;br/&gt;&lt;br/&gt;Каждый артефакт имеет свою ценность для научного сообщества. Цену можно узнать непосредственно у профессора Сахарова </Russian>
+					</Key>
+					<Key ID="STRD_briefing_surge_artefacts_description_freedom">
+							<English>&lt;img image='img\826673823.jpg'  width = '350' /&gt;&lt;br/&gt;&lt;br/&gt;Each artifact has its value. Dealer may sell, Sidorovich or scientist, the latest purchase artifacts at cost</English>
+							<Russian>&lt;img image='img\826673823.jpg'  width = '350' /&gt;&lt;br/&gt;&lt;br/&gt;Каждый артефакт имеет свою ценность. Продать можно дилеру, сидоровичу или учёным, последние покупают артефакты по себестоимости</Russian>
+					</Key>
+					<Key ID="STRD_briefing_camp">
+							<English>Camp</English>
+							<Russian>Лагерь</Russian>
+					</Key>
+					<Key ID="STRD_briefing_camp_description">
+							<English>&lt;img image='img\Camp_00.jpg'  width = '350' /&gt;&lt;br/&gt;&lt;br/&gt;In the Actions menu, you can deploy anywhere in the camp area. Determines the location of the camp you belong respawn after death. You can keep your gear in the camp. After restarting the server all the camps are newly created. Your camp gear available to all players. After you take off your camp, you can create it again in a few minutes</English>
+							<Russian>&lt;img image='img\Camp_00.jpg'  width = '350' /&gt;&lt;br/&gt;&lt;br/&gt;В меню действий можно развернуть лагерь в любом месте зоны. Местоположение лагеря определяет твоё место респауна после смерти. Ты можешь сохранять своё снаряжение в лагере. После рестарта сервера все лагеря создаются вновь. Снаряжение твоего лагеря доступно всем игрокам. После того как ты снимешь лагерь, ты сможешь создать его снова через несколько минут</Russian>
+					</Key>
+					<Key ID="STRD_briefing_keys">
+							<English>Hot keys</English>
+							<Russian>Горячие клавиши</Russian>
+					</Key>
+					<Key ID="STRD_briefing_keys_description">
+							<English>Hotkeys: &lt;br/&gt;TAB - on / off&lt;br/&gt;&lt;br/&gt;1 - Inventory&lt;br/&gt;2 - Inventory manager&lt;br/&gt;3 - Upgradeable Weapon&lt;br/&gt;T - Join groups &lt;br/&gt;Y - Tactical signals &lt;br/&gt;L - Flashlight &lt;br/&gt;Shift + E - Blow&lt;br/&gt;[0-9] - Other</English>
+							<Russian>Горячие клавиши: &lt;br/&gt;TAB - вкл / откл&lt;br/&gt;&lt;br/&gt;1 - Инвентарь&lt;br/&gt;2 - Менеджер инвентаря&lt;br/&gt;3 - Модификация оружия&lt;br/&gt;T - Вступить в группу &lt;br/&gt;Y - Тактические сигналы&lt;br/&gt;L - Фонарик &lt;br/&gt;Shift + E - Удар&lt;br/&gt;[0-9] - Другое</Russian>
+					</Key>
+</Container>
+<Container name='Kbs'>
+					<Key ID="STRD_sidorch_name">
+							<English>Sydorovych</English>
+							<Russian>Сидорович</Russian>
+					</Key>
+					<Key ID="STRD_voronin_name">
+							<English>Vyacheslav Voronin</English>
+							<Russian>Вячеслав Воронин</Russian>
+					</Key>
+					<Key ID="STRD_luka_name">
+							<English>Luka</English>
+							<Russian>Лука</Russian>
+					</Key>
+					<Key ID="STRD_barmen_name">
+							<English>Бармен Арни</English>
+							<Russian>Бармен Арни</Russian>
+					</Key>
+					<Key ID="STRD_saharov_name">
+							<English>Saharov</English>
+							<Russian>Сахаров</Russian>
+					</Key>
+					<Key ID="STRD_sidorch_grpID">
+							<English>(Kordon) Sydorovych</English>
+							<Russian>(Кордон) Сидорович</Russian>
+					</Key>
+					<Key ID="STRD_saharov_grpID">
+							<English>(Ученые) Saharov</English>
+							<Russian>(Ученые) Сахаров</Russian>
+					</Key>
+					<Key ID="STRD_voronin_grpID">
+							<English>(Duty) Vyacheslav Voronin</English>
+							<Russian>(Долг) Вячеслав Воронин</Russian>
+					</Key>
+					<Key ID="STRD_luka_grpID">
+							<English>(Freedom) Luka</English>
+							<Russian>(Свобода) Лука</Russian>
+					</Key>
+					<Key ID="STRD_gui_tasks">
+							<English>Assignments</English>
+							<Russian>Задания</Russian>
+					</Key>
+					<Key ID="STRD_title_surgeDanger">
+							<English>Attention! Expected surge</English>
+							<Russian>Внимание! Ожидается выброс</Russian>
+					</Key>
+					<Key ID="STRD_title_surgeDangerOut">
+							<English></English>
+							<Russian></Russian>
+					</Key>
+</Container>
+<Container name='Tasks'>
+				<Key ID="STRD_tasks_newTask">
+						<English>New Task</English>
+						<Russian>Новое задание</Russian>
+				</Key>
+				<Key ID="STRD_tasks_doingWork">
+						<English>This work is performed</English>
+						<Russian>Эта работа выполняется</Russian>
+				</Key>
+				<Key ID="STRD_tasks_limitWork">
+						<English>Do you already have a job</English>
+						<Russian>У тебя уже есть работа</Russian>
+				</Key>
+				<Key ID="STRD_tasks_taskDoneS">
+						<English>Task Done</English>
+						<Russian>Задание выполнено</Russian>
+				</Key>
+				<Key ID="STRD_tasks_taskDoneReward">
+						<English>Great job stalker you can go back for a reward</English>
+						<Russian>Отличная работа сталкер можешь возвращаться за наградой</Russian>
+				</Key>
+				<Key ID="STRD_tasks_taskDoneC">
+						<English>Task Canceled</English>
+						<Russian>Задание отменено</Russian>
+				</Key>
+				<Key ID="STR_tasks_sabotageT">
+						<English>Sabotage</English>
+						<Russian>Саботаж</Russian>
+				</Key>
+				<Key ID="STR_tasks_sabotageD">
+						<English>Enter the checkpoint and destroy radiotower</English>
+						<Russian>Проберись на блокпост и уничтожь радиовышку</Russian>
+				</Key>
+				<Key ID="STRD_task_sabotageTitle">
+						<English>Destroy radiotower</English>
+						<Russian>Взорвать радиовышку</Russian>
+				</Key>
+				<Key ID="STRD_task_sabotageTitlePers">
+						<English>%1: Destroy radiotower</English>
+						<Russian>%1: Взорвать радиовышку</Russian>
+				</Key>
+				<Key ID="STR_tasks_captureT">
+						<English>Capture</English>
+						<Russian>Захват</Russian>
+				</Key>
+				<Key ID="STR_tasks_captureD">
+						<English>Clean up and сapture territory</English>
+						<Russian>Зачистить и захватить территорию</Russian>
+				</Key>
+				<Key ID="STRD_task_captureTitle">
+						<English>Capture location</English>
+						<Russian>Захват локации</Russian>
+				</Key>
+				<Key ID="STRD_task_captureTitleLocation">
+						<English>%1 now under the control of the fraction %2</English>
+						<Russian>%1 теперь под контролем фракции %2</Russian>
+				</Key>
+				<Key ID="STRD_task_captureTitlePers">
+						<English>%1: Capture location</English>
+						<Russian>%1: Захват локации</Russian>
+				</Key>
+				<Key ID="STRD_task_captureDone">
+						<English>All locations under our control</English>
+						<Russian>Все локации под нашим контролем</Russian>
+				</Key>
+				<Key ID="STR_tasks_cleanseT">
+						<English>Cleanse</English>
+						<Russian>Зачистка</Russian>
+				</Key>
+				<Key ID="STR_tasks_cleanseD">
+						<English>Clean up the location of the zombies</English>
+						<Russian>Зачистить локацию от зомби</Russian>
+				</Key>
+				<Key ID="STRD_task_cleanseTitle">
+						<English>Cleanse location</English>
+						<Russian>Зачистка локации</Russian>
+				</Key>
+				<Key ID="STRD_task_cleanseTitleLocation">
+						<English>%1 cleansed fraction %2</English>
+						<Russian>%1 зачищен фракцией %2</Russian>
+				</Key>
+				<Key ID="STRD_task_cleanseTitlePers">
+						<English>%1: Cleanse location</English>
+						<Russian>%1: Зачистка локации</Russian>
+				</Key>
+				<Key ID="STR_tasks_mountingT">
+						<English>Mounting</English>
+						<Russian>Монтаж</Russian>
+				</Key>
+				<Key ID="STR_tasks_mountingD">
+						<English>Installation of measuring devices in the area</English>
+						<Russian>Установка измерительных приборов в области</Russian>
+				</Key>
+				<Key ID="STRD_task_mountingTitle">
+						<English>Installation device</English>
+						<Russian>Установка прибора</Russian>
+				</Key>
+				<Key ID="STRD_task_mountingTitlePers">
+						<English>%1: Installation devices</English>
+						<Russian>%1: Установка приборов</Russian>
+				</Key>
+				<Key ID="STRD_task_mountingAction">
+						<English>Install the device</English>
+						<Russian>Установить прибор</Russian>
+				</Key>
+				<Key ID="STR_tasks_huntingT">
+						<English>Headhunting</English>
+						<Russian>Охота за головами</Russian>
+				</Key>
+				<Key ID="STR_tasks_huntingD">
+						<English>Find and kill a stalker</English>
+						<Russian>Найти и убить сталкера</Russian>
+				</Key>
+				<Key ID="STRD_task_huntingTitle">
+						<English>Hunting</English>
+						<Russian>Охота</Russian>
+				</Key>
+				<Key ID="STRD_task_huntingTitlePers">
+						<English>%1: Headhunting</English>
+						<Russian>%1: Охота за головами</Russian>
+				</Key>
+				<Key ID="STRD_task_huntingNone">
+						<English>Orders unavailable</English>
+						<Russian>Заказов пока нет</Russian>
+				</Key>
+</Container>
+</Package>	
+</Project>

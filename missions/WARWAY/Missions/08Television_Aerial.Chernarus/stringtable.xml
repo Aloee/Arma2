@@ -1,0 +1,288 @@
+﻿<Project name="Name">
+<Package name="Second name">
+
+
+<Container name="Breefing">
+
+<Key ID="STRD_Task1">
+<Original>Передать сообщение в эфир и уничтожить рубку.</Original>
+</Key>
+<Key ID="STRD_Task1_1">
+<Original>Вы начинаете &lt;marker name="01"&gt;недалеко&lt;/marker&gt; от горы Зелёная.  
+&lt;br/&gt;
+Необходимо пробраться на телевизионную &lt;marker name="02"&gt;антенну&lt;/marker&gt; и передать сообщение президента в прямой эфир. Все необходимое оборудование находится на 2 ярусе. После этого, необходимо заминировать рубку, дабы не сорвать планы намеченной операции.
+</Original>
+</Key>
+<Key ID="STRD_Task2">
+<Original>Отступить на юг</Original>
+</Key>
+<Key ID="STRD_Task2_1">
+<Original>Сообщение уже запущено в прямой эфир! Отступайте к &lt;marker name="05"&gt;точке назначения&lt;/marker&gt;</Original>
+</Key>
+
+<Key ID="STRD_Plan_Title">
+<Original>Ситуация</Original>
+</Key>
+<Key ID="STRD_Plan">
+<Original>Вышка охраняется примерно 15 военными. Не следует забывать и об обслуживающем персонале, который также может поднять тревогу. Данные о наличии бронетехники отсутствуют.
+&lt;br/&gt;
+В соседних поселках наверняка есть американские блокпосты: &lt;marker name="03_1"&gt;Погоревка&lt;/marker&gt;,&lt;marker name="03_2"&gt;Козловка&lt;/marker&gt;, &lt;marker name="03_3"&gt;Зеленогорск&lt;/marker&gt;
+&lt;br/&gt; &lt;img image='img\tele2.paa' width='320'  height='320' &gt; ;&lt;br/&gt;&lt;br/&gt;
+</Original>
+</Key>
+<Key ID="STRD_Plan_Title1">
+<Original>План</Original>
+</Key>
+<Key ID="STRD_Plan1">
+<Original>Было решено оставить сержанта с президентом. Майор Юрий Михайлович заминировал нижнюю дорогу идущую от Зеленогорска. В случае поднятия тревога сержант подорвет вражескую бронетехнику, и у вас появится дополнительный шанс выйграть время.
+&lt;br/&gt;
+Вам необходимо добраться до ретранслятора, расположенного на горе Зелёная. На втором ярусе есть необходимая аппаратура для передачи сообщения в прямой эфир. Сразу же необходимо поставить таймер бомбы на 3 минуты. Территория хорошо охраняется. Однако, по словам сержанта, в периметр можно пробраться не только через главный вход. Следует поискать лазейку.
+&lt;br/&gt;
+Ваше обнаружение приведет к поднятию тревоги и привлечению бронетехники.
+</Original>
+</Key>
+</Container>
+
+<Container name="System">
+<Key ID="STR_intro">
+<Original>Ночь. Где-то в лесу.</Original>
+</Key>
+<Key ID="STR_init">
+<Original>Возле горы Зелёная.</Original>
+</Key>
+<Key ID="STRD_end">
+<Original></Original>
+</Key>
+<Key ID="STR_end1">
+<Original>Теперь до точки эвакуации!</Original>
+</Key> 
+<Key ID="STR_end2">
+<Original>В дебрифинге при выйграше2.</Original>
+</Key>   
+<Key ID="STR_end3">
+<Original>В дебрифинге при выйграше3.</Original>
+</Key>   
+<Key ID="STR_end4">
+<Original>В дебрифинге при выйграше4.</Original>
+</Key>   
+<Key ID="STR_end5">
+<Original>В дебрифинге при выйграше5.</Original>
+</Key>   
+<Key ID="STR_end6">
+<Original>В дебрифинге при выйграше6</Original>
+</Key>  
+<Key ID="STR_Loser">
+<Original>Вы не выполнили поставленных задач!</Original>
+</Key>
+<Key ID="STR_proval1">
+<Original>Миссия провалена.Президент и сержант были схвачены.</Original>
+</Key>
+<Key ID="STR_proval2">
+<Original>Миссия провалена.Время вышло.</Original>
+</Key>
+
+
+
+
+<Key ID="STR_info">
+<Original>Республика Черноруссия\n 11.10.1996</Original>
+</Key>
+<Key ID="STR_campa">
+<Original>ПРЕВЕД</Original>
+</Key>
+<Key ID="STRD_SAY0_1">
+<Original>Электрозаводск</Original>
+</Key>
+<Key ID="STRD_SAY0">
+<Original>6 июня</Original>
+</Key>
+<Key ID="STRD_SAY0_2">
+<Original>18:20</Original>
+</Key>
+
+<Container name="Says">
+<Key ID="STRD_PIOBandage">
+<Original>- Мне нечем себя перевязать.</Original>
+</Key>
+<Key ID="STR_ID1">
+<Original>Перевязать себя</Original>
+</Key>
+<Key ID="STRD_PIO1">
+<Original>... двойной забор. Вход всего один - через главные ворота. Вокруг лес, так что можно подобраться незаметно. Через главные ворота простреливается большая часть территории вышки.</Original>
+</Key>
+<Key ID="STRD_PIO2">
+<Original>Транслятор находится на втором ярусе, именно туда и надо подключиться.Вокруг лес, так что можно подобраться незаметно. И именно он является наиболее уязвимым местом, поэтому его следует уничтожить в первую очередь по завершению передачи. </Original>
+</Key>
+<Key ID="STRD_PIO3">
+<Original>Сколько человек ходило в караул?</Original>
+</Key>
+<Key ID="STRD_PIO4">
+<Original>7 человек. Но это в мирное время.</Original>
+</Key>
+<Key ID="STRD_PIO5">
+<Original>Значит раза в два больше будет.</Original>
+</Key>
+<Key ID="STRD_PIO6">
+<Original>Если оцепят всю гору, то уйти будет проблематично. Как-то раз мужик кабель стащил с подстанции, так через 15 минут уже взяли его.</Original>
+</Key>
+<Key ID="STRD_PIO7">
+<Original>Понятно.</Original>
+</Key>
+<Key ID="STRD_PIO8">
+<Original>Просёлочная дорога идёт к вышке с двух противоположных сторон. Но уходить будем по руслу ручья, там хоть кусты есть.</Original>
+</Key>
+<Key ID="STRD_PIO9">
+<Original>Ты останешься с президентом. Ему нельзя рисковать, а ты единственный, кому я могу его доверить. Но нам ты поможешь. Будешь сидеть в кустах на краю леса. Я заминирую дорогу с этой стороны, а твоя задача - подорвать мину в нужный момент. </Original>
+</Key>
+<Key ID="STRD_PIO10">
+<Original>Небольшая задержка и замешательство противника должно позволить нам уйти. По руслу ручья говоришь?</Original>
+</Key>
+<Key ID="STRD_PIO11">
+<Original>Да, кусты почти до дороги тянутся.</Original>
+</Key>
+<Key ID="STRD_PIO12">
+<Original>Там посмотрим по ситуации. Но в любом случае, после подрыва заряда ты уходишь с президентом к месту встречи. Если в течении часа мы не придём туда, то двигаешься в точку эвакуации.</Original>
+</Key>
+<Key ID="STRD_PIO13">
+<Original>Сделаю</Original>
+</Key>
+<Key ID="STRD_PIO18"> 
+<Original>-Ну а теперь марш-бросок до точки эвакуации. Утром надо быть уже там.</Original>
+</Key>
+</Container>
+
+<Container name="Persons">
+<Key ID="STR_p1">
+<Original>Юрий Михайлович</Original>
+</Key>
+<Key ID="STR_p2">
+<Original>Александр Васильевич</Original>
+</Key>
+<Key ID="STR_p3">
+<Original>Владимир Градецкий</Original>
+</Key>
+<Key ID="STR_p4">
+<Original>Спецназовец</Original>
+</Key>
+<Key ID="STR_p5">
+<Original>Механик</Original>
+</Key>
+<Key ID="STR_p6">
+<Original>Сержант Самойлоко</Original>
+</Key>
+
+
+<Key ID="STRM_razrab">
+<Original>TSFH</Original>
+</Key>
+
+<Key ID="STRM_voiced">
+<Original>Two Steps From Hell</Original>
+</Key>
+<Key ID="STRM_sans">
+<Original>Посередке</Original>
+</Key>
+<Key ID="STRM_sans1">
+<Original>Посередке</Original>
+</Key>
+
+<Key ID="STRM_v1">
+<Original>Редактор: Mikezar</Original>
+</Key>
+<Key ID="STRM_v2">
+<Original>На следующий день</Original>
+</Key>
+<Key ID="STRM_v3">
+<Original>Кампания: Пламя Империи</Original>
+</Key>
+<Key ID="STRM_v4">
+<Original></Original>
+</Key>
+<Key ID="STRM_v5">
+<Original>В5</Original>
+</Key>
+<Key ID="STRM_v6">
+<Original>Той же ночью./</Original>
+</Key>
+<Key ID="STRM_v7">
+<Original>0900.На пути к Чернорусской базе</Original>
+</Key>
+<Key ID="STRM_v8">
+<Original></Original>
+</Key>
+<Key ID="STRM_v9">
+<Original>Спустя час...</Original>
+</Key>
+<Key ID="STRM_v10">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v11">
+<Original>Республика</Original>
+</Key>
+<Key ID="STRM_v12">
+<Original>17 июля. Где-то в лесу.</Original>
+</Key>
+<Key ID="STRM_v13">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v14">
+<Original>В14</Original>
+</Key>
+<Key ID="STRM_v15">
+<Original>Электрозаводск.5 часов спустя.</Original>
+</Key>
+<Key ID="STRM_v16">
+<Original>3-мя часами ранее...</Original>
+</Key>
+<Key ID="STRM_v17">
+<Original>14 июля.18:20</Original>
+</Key>
+<Key ID="STRM_v18">
+<Original>В18</Original>
+</Key>
+<Key ID="STRM_v19">
+<Original>В19</Original>
+</Key>
+<Key ID="STRM_v20">
+<Original>В20</Original>
+</Key>
+<Key ID="STRM_v21">
+<Original>В21</Original>
+</Key>
+<Key ID="STRM_v22">
+<Original>В22</Original>
+</Key>
+<Key ID="STRM_v23">
+<Original>В23</Original>
+</Key>
+<Key ID="STRM_v24">
+<Original>В24</Original>
+</Key>
+<Key ID="STRM_v25">
+<Original>В25</Original>
+</Key>
+<Key ID="STRM_v26">
+<Original>В26</Original>
+</Key>
+<Key ID="STRM_blag1">
+<Original>благ 1</Original>
+</Key>
+<Key ID="STRM_blag2">
+<Original>благ 2</Original>
+</Key>
+<Key ID="STRM_blag3">
+<Original>благ 3</Original>
+</Key>
+<Key ID="STRM_blag4">
+<Original>благ 4</Original>
+</Key>
+<Key ID="STRM_blag5">
+<Original>благ 5</Original>
+</Key>
+<Key ID="STRM_blag6">
+<Original>благ 6</Original>
+</Key>
+
+</Container>
+</Package>
+</Project>

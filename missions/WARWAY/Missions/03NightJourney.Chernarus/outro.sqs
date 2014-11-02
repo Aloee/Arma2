@@ -1,0 +1,76 @@
+titleCut ["","Black faded",7];
+0 fadesound 0
+f1 disableAI "MOVE"
+1 fademusic 0.7
+{_x setVariable ["BIS_noCoreConversations", true];_x disableConversation true} foreach allunits;
+enableRadio false
+setAccTime 1
+showcinemaborder false
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+_camera camPrepareFocus [-1,-1]
+~3
+playmusic "Conquerors"
+f1 enableAI "MOVE"
+0 fadesound 0.7
+2 fadesound 0.7
+_camera camPrepareTarget car
+_camera camPrepareRelPos [-3,6,0.4]
+_camera camCommitPrepared 0
+titleRSC ["v6", "PLAIN",4]
+~4
+titleCut ["","Black in",2];
+_wait1=time+12
+#car
+_camera camPrepareTarget car
+_camera camPrepareRelPos [-3,6,0.4]
+_camera camCommitPrepared 0
+~0.01
+?_wait1>=time:goto "car"
+_camera camPrepareTarget [90083.35,52622.73,261.45];
+_camera camPreparePos [2232.82,4849.52,1.99];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+_camera camPrepareTarget [90083.35,52622.73,261.45];
+_camera camPreparePos [2232.63,4849.72,27.54];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 10
+~10
+_camera camPrepareTarget [79424.72,68407.47,-4884.47];
+_camera camPreparePos [2351.25,4897.02,26.52];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 6
+~6
+_camera camPrepareTarget car1
+_camera camPreparePos [2351.25,4897.02,26.52];
+_camera camCommitPrepared 6
+_camera camPrepareFOV 0.200;
+~6
+;comment "12:14:26";
+f2 setpos [2238.77,4851.92,1.73];
+f3 setpos [2238.01,4852.19,1.73];
+f2 disableAi "MOVE"
+f3 disableAi "MOVE"
+f2 setvectordir  [90772.74,51337.38,1070.75];
+f3 setvectordir [90772.74,51337.38,1070.75];
+_camera camPrepareTarget btr
+_camera camPreparePos [2351.25,4897.02,26.52];
+_camera camCommitPrepared 6
+_camera camPrepareFOV 0.200;
+~6
+_camera camPrepareTarget [-14203.83,-93780.80,746.25];
+_camera camPreparePos [2239.42,4855.97,1.79];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+playsound "STRD_PIO20"
+~5
+playsound  "STRD_PIO21"
+~8
+titleCut ["","BLACK OUT", 3]
+~3
+1 fademusic 0 
+1 fadesound 0
+~1
+_camera cameraeffect ["terminate", "Back"] 
+camdestroy _camera  
+endMission "END1"

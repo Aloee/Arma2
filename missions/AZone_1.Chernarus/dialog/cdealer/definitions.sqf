@@ -1,0 +1,5 @@
+#define CD_DIALOG 30001
+#define CD_BCKGRND 30002
+#define CD_TITLE_W 300031
+#define CD_B_C 30004
+#define CD_B_I 30005

@@ -1,0 +1,307 @@
+﻿<Project name="Name">
+<Package name="Second name">
+
+
+<Container name="Breefing">
+
+<Key ID="STRD_Task1">
+<Original>Защитить Президента</Original>
+</Key>
+<Key ID="STRD_Task1_1">
+<Original>Обеспечьте полную безопастность господину Президенту Чернорусской Республики.</Original>
+</Key>
+<Key ID="STRD_Task2">
+<Original>Следовать указаниям координатора</Original>
+</Key>
+<Key ID="STRD_Task2_1">
+<Original>Следуйте указаниям координатора! Будьте осторожны! Не попадайтесь на глаза американцев!</Original>
+</Key>
+
+<Key ID="STRD_Plan_Title">
+<Original>Ситуация</Original>
+</Key>
+<Key ID="STRD_Plan">
+<Original>Похоже наши планы о подписании договора стали известны им. Наши аналитики в ГРУ полагают, что они хотят взять президента живым и заставить его легализировать их десант и получить разрешение на размещение военной базы на побережье. Мы понимаем, что это почти невозможно, но другого выхода просто нет – необходимо вывести президента из города. Не пытайтесь прорваться по дороге - данные спутника показывают, что все выезды или блокированы, или буду блокированы в течении ближайших 5 минут – их вертолёты уже в пути. Наши специалисты сейчас определяют оптимальный вариант эвакуации. 
+&lt;br/&gt;
+Вот Вам карта и спутниковый телефон для связи со штабом. Канал шифрованный, но связь могут заглушить, так что будьте готовы действовать самостоятельно. Ваша задача – вывеси президента к посёлку &lt;marker name="Marker4"&gt;Mогилёвка&lt;/marker&gt;. Там вас будет ждать транспорт. 
+&lt;br/&gt;
+А мы пока попробуем отвлечь внимание американцев.
+&lt;br/&gt;
+Удачи вам.
+</Original>
+</Key>
+<Key ID="STRD_Plan_Title1">
+<Original>Задача</Original>
+</Key>
+<Key ID="STRD_Plan1">
+<Original>Вы, как помощник атташе и специальный агент, выполняющий поручение ГРУ, обязаны защитить господина Президента Руспублики Черноруссии.
+&lt;br/&gt;
+Не бросайте президента ни в коем случае!
+&lt;br/&gt;
+Президент не должен погибнуть!
+&lt;br/&gt;
+Президент не должен попасть в плен!
+&lt;br/&gt;
+У вас есть лишь 30 минут, чтобы выбраться из города. Затем, к Черногорску будут подтянуты основные силы и побег будет невозможен.
+</Original>
+</Key>
+</Container>
+
+<Container name="System">
+<Key ID="STR_intro">
+<Original>В номере отеля...</Original>
+</Key>
+<Key ID="STR_init">
+<Original>Спустя 5 минут...</Original>
+</Key>
+<Key ID="STRD_end">
+<Original></Original>
+</Key>
+<Key ID="STR_end1">
+<Original>Вы успешно вывели президента из Черногорска.</Original>
+</Key> 
+<Key ID="STR_end2">
+<Original>В дебрифинге при выйграше2.</Original>
+</Key>   
+<Key ID="STR_end3">
+<Original>В дебрифинге при выйграше3.</Original>
+</Key>   
+<Key ID="STR_end4">
+<Original>В дебрифинге при выйграше4.</Original>
+</Key>   
+<Key ID="STR_end5">
+<Original>В дебрифинге при выйграше5.</Original>
+</Key>   
+<Key ID="STR_end6">
+<Original>В дебрифинге при выйграше6</Original>
+</Key>  
+<Key ID="STR_Loser">
+<Original>Вы не выполнили поставленных задач!</Original>
+</Key>
+<Key ID="STR_proval1">
+<Original>Миссия провалена.Вы оставили президента.</Original>
+</Key>
+<Key ID="STR_proval2">
+<Original>Миссия провалена.Вы не успели вывести президента. Город окружен.</Original>
+</Key>
+<Key ID="STR_proval3">
+<Original>Миссия провалена.Президент был убит.</Original>
+</Key>
+<Key ID="STR_proval4">
+<Original>Миссия провалена.Вы попали в плен.</Original>
+</Key>
+
+
+<Key ID="STR_info">
+<Original>Республика Черноруссия\n 11.10.1996</Original>
+</Key>
+<Key ID="STR_campa">
+<Original>ПРЕВЕД</Original>
+</Key>
+<Key ID="STRD_SAY0_1">
+<Original>Электрозаводск</Original>
+</Key>
+<Key ID="STRD_SAY0">
+<Original>6 июня</Original>
+</Key>
+<Key ID="STRD_SAY0_2">
+<Original>18:20</Original>
+</Key>
+
+<Container name="Says">
+<Key ID="STRD_PIO1">
+<Original>-Юрий Михайлович, вставайте! Это Александр Васильевич!</Original>
+</Key>
+<Key ID="STRD_PIO2">
+<Original>-Американцы начали интервенцию. Похоже наши планы о подписании договора стали известны им. </Original>
+</Key>
+<Key ID="STRD_PIO3">
+<Original>-Наши аналитики в ГРУ полагают, что они хотят взять президента живым и заставить его легализировать их десант и получить разрешение на размещение военной базы на побережье.  </Original>
+</Key>
+<Key ID="STRD_PIO4">
+<Original>-Мы понимаем, что это почти невозможно, но другого выхода просто нет – необходимо вывести президента из города.  </Original>
+</Key>
+<Key ID="STRD_PIO5">
+<Original>-Не пытайтесь прорваться по дороге - данные спутника показывают, что все выезды или блокированы, или буду блокированы в течении ближайших 5 минут – их вертолёты уже в пути.</Original>
+</Key>
+<Key ID="STRD_PIO6">
+<Original>-Вот вам карта и спутниковый телефон для связи со штабом. Канал шифрованный, но связь могут заглушить, так что будьте готовы действовать самостоятельно. </Original>
+</Key>
+<Key ID="STRD_PIO7">
+<Original>-А мы пока попробуем отвлечь внимание американцев.Удачи вам.</Original>
+</Key>
+<Key ID="STRD_PIO8">
+<Original>-Вас понял. Будет выполнено.</Original>
+</Key>
+<Key ID="STRD_PIO9">
+<Original>-Господин Президент. Следуйте за мной.</Original>
+</Key>
+<Key ID="STRD_PIO10">
+<Original>Юрий, двигайтесь в квадрат 067-126. Наши специалисты сейчас определяют оптимальный вариант эвакуации. Прием.</Original>
+</Key>
+<Key ID="STRD_PIO11">
+<Original>Выполняю.Конец связи.</Original>
+</Key>
+<Key ID="STRD_PIO12">
+<Original>-Черт, свет вырубили.</Original>
+</Key>
+<Key ID="STRD_PIO13">
+<Original>Спрячьтесь, по одной из дорог двигается патруль.</Original>
+</Key>
+<Key ID="STRD_PIO14">
+<Original>Двигайтесь в квадрат 067-123.</Original>
+</Key>
+<Key ID="STRD_PIO15">
+<Original>По дороге двигается патруль – спрячьтесь.</Original>
+</Key>
+<Key ID="STRD_PIO16">
+<Original>Двигайтесь в квадрат 070-120</Original>
+</Key>
+<Key ID="STRD_PIO17">
+<Original>Дв… в ..адр... 0...2-11...</Original>
+</Key>
+<Key ID="STRD_PIO18">
+<Original>-Чёрт, похоже, стали глушить и спутниковую связь.</Original>
+</Key>
+<Key ID="STRD_PIO19">
+<Original>Hey! Hold it right there!  One move and I'll shoot! Arms on the nape!</Original>
+</Key>
+<Key ID="STRD_PIO20">
+<Original>-Чёрт возьми, что здесь происходит?</Original>
+</Key>
+<Key ID="STRD_PIO21">
+<Original>-Войска США... не знаю уж, что здесь происходит... знаю лишь одно... сейчас я должен быть со своим подразделением.</Original>
+</Key>
+
+
+</Container>
+
+<Container name="Persons">
+<Key ID="STR_p1">
+<Original>Юрий Михайлович</Original>
+</Key>
+<Key ID="STR_p2">
+<Original>Александр Васильевич</Original>
+</Key>
+<Key ID="STR_p3">
+<Original>Владимир Градецкий</Original>
+</Key>
+<Key ID="STR_p4">
+<Original>КООРДИНАТОР</Original>
+</Key>
+
+
+<Key ID="STRM_razrab">
+<Original>TSFH</Original>
+</Key>
+
+<Key ID="STRM_voiced">
+<Original>Two Steps From Hell</Original>
+</Key>
+<Key ID="STRM_sans">
+<Original>Посередке</Original>
+</Key>
+<Key ID="STRM_sans1">
+<Original>Посередке</Original>
+</Key>
+
+<Key ID="STRM_v1">
+<Original>Редактор: Mikezar</Original>
+</Key>
+<Key ID="STRM_v2">
+<Original>На следующий день</Original>
+</Key>
+<Key ID="STRM_v3">
+<Original>Кампания: Пламя Империи</Original>
+</Key>
+<Key ID="STRM_v4">
+<Original></Original>
+</Key>
+<Key ID="STRM_v5">
+<Original>В5</Original>
+</Key>
+<Key ID="STRM_v6">
+<Original>Той же ночью./</Original>
+</Key>
+<Key ID="STRM_v7">
+<Original>0900.На пути к Чернорусской базе</Original>
+</Key>
+<Key ID="STRM_v8">
+<Original></Original>
+</Key>
+<Key ID="STRM_v9">
+<Original>Спустя час...</Original>
+</Key>
+<Key ID="STRM_v10">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v11">
+<Original>Республика</Original>
+</Key>
+<Key ID="STRM_v12">
+<Original>16 июля. 2:40.</Original>
+</Key>
+<Key ID="STRM_v13">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v14">
+<Original>В14</Original>
+</Key>
+<Key ID="STRM_v15">
+<Original>Электрозаводск.5 часов спустя.</Original>
+</Key>
+<Key ID="STRM_v16">
+<Original>3-мя часами ранее...</Original>
+</Key>
+<Key ID="STRM_v17">
+<Original>14 июля.18:20</Original>
+</Key>
+<Key ID="STRM_v18">
+<Original>В18</Original>
+</Key>
+<Key ID="STRM_v19">
+<Original>В19</Original>
+</Key>
+<Key ID="STRM_v20">
+<Original>В20</Original>
+</Key>
+<Key ID="STRM_v21">
+<Original>В21</Original>
+</Key>
+<Key ID="STRM_v22">
+<Original>В22</Original>
+</Key>
+<Key ID="STRM_v23">
+<Original>В23</Original>
+</Key>
+<Key ID="STRM_v24">
+<Original>В24</Original>
+</Key>
+<Key ID="STRM_v25">
+<Original>В25</Original>
+</Key>
+<Key ID="STRM_v26">
+<Original>В26</Original>
+</Key>
+<Key ID="STRM_blag1">
+<Original>благ 1</Original>
+</Key>
+<Key ID="STRM_blag2">
+<Original>благ 2</Original>
+</Key>
+<Key ID="STRM_blag3">
+<Original>благ 3</Original>
+</Key>
+<Key ID="STRM_blag4">
+<Original>благ 4</Original>
+</Key>
+<Key ID="STRM_blag5">
+<Original>благ 5</Original>
+</Key>
+<Key ID="STRM_blag6">
+<Original>благ 6</Original>
+</Key>
+
+</Container>
+</Package>
+</Project>

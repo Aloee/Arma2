@@ -1,0 +1,91 @@
+	/*
+	Author: code34 nicolas_boiteux@yahoo.fr
+	Copyright (C) 2013 Nicolas BOITEUX
+
+	CLASS OO_GRID STRATEGIC GRID
+	
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+	
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+	
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+	*/
+
+
+
+
+/*
+	Function: _grid = ["new", [SCxmapsize,SCymapsize,SCxsectorsize,SCysectorsize]] call OO_GRID;
+	Create a new grid object
+	
+	Parameters:
+		SCxmapsize - X map size
+		SCymapsize - Y map size
+		SCxsectorsize - X sector size
+		SCysectorsize - X sector size
+	
+*/
+
+/*
+	Function: = ["delete", _grid] call OO_GRID;
+	Delete the grid object
+	
+	Parameters:
+		grid - OO GRID object.
+	
+*/
+
+/*
+	Function: = ["Draw"] spawn _grid;
+	Draw the grid object
+	
+	Parameters:
+		none
+	
+*/
+
+/*
+	Function: ["UnDraw"] spawn _grid;
+	Un Draw the grid object
+	
+	Parameters:
+		none
+	
+*/
+
+/*
+	Function: ["getSectorFromPos", object] spawn _grid;
+	Get index of sector from position
+	
+	Parameters:
+		object - position of the object (unit, vehicle, etc) will be use to find the index
+	
+*/
+
+/*
+	Function: ["getSectorAround", object] spawn _grid;
+	Get index of all sector around the sector (3x3 sectors)
+	
+	Parameters:
+		object - position of the object (unit, vehicle, etc) will be use to find the index
+	
+*/
+
+/*
+	Function: ["getPosFromSector", SCindex] spawn _grid;
+	Get a position from an index
+	
+	Parameters:
+		SCindex - index to convert to a position
+	
+*/
+
+
+

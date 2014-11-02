@@ -1,0 +1,136 @@
+class Sentences
+{
+	/*
+	===================================================REPLICS
+	*/
+//Tasks
+	class STR_tasks
+	{
+		text = "$STR_tasks";
+		speech[] = {};
+		class Arguments {};
+	};
+	class STR_taskStuff
+	{
+		text = "$STR_taskStuff";
+		speech[] = {};
+		class Arguments {};
+	};
+	class STRD_tasks_doingWork
+	{
+		text = "$STRD_tasks_doingWork";
+		speech[] = {};
+		class Arguments {};
+	};
+	class STR_tasks_nopresent
+	{
+		text = "$STR_tasks_nopresent";
+		speech[] = {};
+		class Arguments {};
+	};
+	class STR_tasks_comeonesidor
+	{
+		text = "$STR_tasks_comeonesidor";
+		speech[] = {};
+		class Arguments {};
+	};
+	class STR_tasks_comeonecommandor
+	{
+		text = "$STR_tasks_comeonecommandor";
+		speech[] = {};
+		class Arguments {};
+	};
+	
+
+//Negative
+	class STR_nounderstand
+	{
+		text = "$STR_nounderstand";
+		speech[] = {};
+		class Arguments {};
+	};
+	class STR_not
+	{
+		text = "$STR_not";
+		speech[] = {};
+		class Arguments {};
+	};
+	class STR_no
+	{
+		text = "$STR_no";
+		speech[] = {};
+		class Arguments {};
+	};
+
+	
+	
+	
+//News
+	class STR_news
+	{
+		text = "$STR_news";
+		speech[] = {};
+		class Arguments {};
+	};
+//News Negative
+	class STR_news_no
+	{
+		text = "$STR_news_no";
+		speech[] = {};
+		class Arguments {};
+	};
+	class STR_news_no2
+	{
+		text = "$STR_news_no2";
+		speech[] = {};
+		class Arguments {};
+	};
+	class STR_news_no3
+	{
+		text = "$STR_news_no3";
+		speech[] = {};
+		class Arguments {};
+	};
+	
+	
+	
+	
+//Bargain
+	class STR_bargain
+	{
+		text = "$STR_bargain";
+		speech[] = {};
+		class Arguments {};
+	};
+	
+	
+	/*
+	===================================================DESCRIPTIONS
+	*/
+//Tasks Penetrations
+	class STRD_task_penetration_predesc_stealDocs
+	{
+		text = "$STRD_task_penetration_predesc_stealDocs";
+		speech[] = {};
+		class Arguments {};
+	};
+//Tasks Sabotage
+	class STRD_task_sabotage_predesc_stealDocs
+	{
+		text = "$STRD_task_sabotage_predesc_stealDocs";
+		speech[] = {};
+		class Arguments {};
+	};
+//Tasks Hunting
+	class STRD_task_hunting_predesc_stealDocs
+	{
+		text = "$STRD_task_hunting_predesc_stealDocs";
+		speech[] = {};
+		class Arguments {};
+	};
+};
+
+class Arguments{};
+class Special{};
+startWithVocal[] = {hour};
+startWithConsonant[] = {europe, university};

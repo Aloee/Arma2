@@ -1,0 +1,17 @@
+~ 10
+
+titleCut ["Three hours later...","BLACK OUT", 3]
+
+3 fadesound 0
+
+~ 4
+
+skiptime 3
+
+~ 3
+
+titleCut ["Three hours later...","BLACK IN", 3]
+
+5 fadesound 1
+
+exit

@@ -1,0 +1,168 @@
+respawn="side";
+onloadmission="The Beachhead"
+
+titleParam1="Time of day:";
+valuesParam1[]={0,1,2,3};
+defvalueParam1=0;
+textsParam1[]={"Night","Dawn","Day","Dusk"};
+
+class RscTitles
+{	
+   class tr1
+   {
+      idd=-1;
+      movingEnable=true;
+      duration=7;
+      name="tr1";
+      controls[]={"text1","text2"};
+
+      class text1
+      {
+         idc = -1;
+         type = 0;
+         style = 2;
+         x = 0;
+         y = 0.65;
+         w = 1;
+         h = 0.2;
+	 font = "Zeppelin32";
+         sizeEx = 0.06;
+         colorBackground[] = {0, 0, 0, 0};
+   	 colorText[] = {1, 1, 1, 0.8};
+  	 text = "THE BEACHHEAD";
+      };
+
+      class text2
+      {
+         idc = -1;
+         type = 0;
+         style = 2;
+         x = 0.005;
+         y = 0.652;
+         w = 0.995;
+         h = 0.2;
+	 font = "Zeppelin32";
+         sizeEx = 0.06;
+         colorBackground[] = {0, 0, 0, 0};
+	 colorText[] = {1, 0, 0, 1};
+         text = "THE BEACHHEAD";
+      };
+   };
+
+   class tr2
+   {
+      idd=-1;
+      movingEnable=true;
+      duration=7;
+      name="tr2";
+      controls[]={"text1","text2"};
+
+      class text1
+      {
+         idc = -1;
+         type = 0;
+         style = 2;
+         x = 0;
+         y = 0.65;
+         w = 1;
+         h = 0.2;
+	 font = "Zeppelin32";
+         sizeEx = 0.04;
+         colorBackground[] = {0, 0, 0, 0};
+   	 colorText[] = {1, 1, 1, 0.8};
+  	 text = "A mission by LAGGY";
+      };
+
+      class text2
+      {
+         idc = -1;
+         type = 0;
+         style = 2;
+         x = 0.005;
+         y = 0.652;
+         w = 0.995;
+         h = 0.2;
+	 font = "Zeppelin32";
+         sizeEx = 0.04;
+         colorBackground[] = {0, 0, 0, 0};
+	 colorText[] = {1, 0, 0, 1};
+  	 text = "A mission by LAGGY";
+      };
+   };
+};
+
+class CfgRadio
+{
+	sounds[] = {};
+
+	class ra1
+	{
+		name = "";
+		sound[] = {"sound\ra1.ogg", 1, 1.0};
+		title = "Okay marines this is it. Stick together and stay out of sight from those shilkas, if they spot us we are gonners for sure. Good luck and see you on the beach.";
+	};
+	class ra2
+	{
+		name = "";
+		sound[] = {"sound\ra2.ogg", 1, 1.05};
+		title = "Roger that sir, don't forget to tell me if you want us to team up.";
+	};
+	class ra3
+	{
+		name = "";
+		sound[] = {"sound\ra3.ogg", 1, 1.0};
+		title = "Radar installation is history.";
+	};
+	class ra4
+	{
+		name = "";
+		sound[] = {"sound\ra4.ogg", 1, 1.0};
+		title = "The radio antenna is destroyed.";
+	};
+	class ra5
+	{
+		name = "";
+		sound[] = {"sound\ra5.ogg", 1, 1.0};
+		title = "Sea Lion, this is Orca1, we completed our objectives. You can commence the assault. Over.";
+	};
+	class ra6
+	{
+		name = "";
+		sound[] = {"sound\ra6.ogg", 1, 1.0};
+		title = "Orca1, this is Sea Lion, affermative, eta 3 hours. Out.";
+	};
+	class ra7
+	{
+		name = "";
+		sound[] = {"sound\ra7.ogg", 1, 1.0};
+		title = "Sea Lion to all units, we have seized Utes airport, excellent work marines.";
+	};
+};
+
+class CfgSounds
+{
+	sounds[] = { };
+
+	class arabargue
+	{
+		name = "arabargue";
+		sound[] = {"arabargue.ogg", db-40, 1.0};
+		titles[] = 
+		{
+		};
+	};
+};
+
+class CfgMusic
+
+{
+ tracks[]={};
+
+ class Lento
+ {
+  name = "Lento";
+  sound[] = {"\music\Lento.ogg", db+50, 1.0};
+ };
+
+
+};

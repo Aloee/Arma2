@@ -1,0 +1,224 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Radiation">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Begin",0,250,0.000000,-225.000000,100.000000,-175.000000,0.000000,"Begin"};
+item1[] = {"_",2,250,0.000000,-75.000000,100.000000,-25.000000,0.000000,""};
+item2[] = {"__1",2,250,175.000000,25.000000,275.000000,75.000000,0.000000,""};
+item3[] = {"true",8,218,0.000000,25.000000,100.000000,75.000000,0.000000,"true"};
+item4[] = {"true",8,218,0.000000,-150.000000,100.000000,-100.000000,0.000000,"true"};
+item5[] = {"End_FSM",1,250,-175.000000,75.000000,-75.000000,150.000000,0.000000,"End FSM"};
+item6[] = {"in_area",4,218,175.000000,-75.000000,275.000000,-25.000000,0.000000,"in area"};
+item7[] = {"break",4,218,-175.000000,-75.000000,-75.000000,-25.000000,0.000000,"break"};
+item8[] = {"attack",4,218,300.000000,-75.000000,400.000000,-25.000000,1.000000,"attack"};
+item9[] = {"",7,210,158.500031,120.999947,166.499954,129.000046,0.000000,""};
+item10[] = {"effect_off",4,218,300.000000,100.000000,400.000000,150.000000,2.000000,"effect off"};
+item11[] = {"effect_on",3,4346,250.000000,-150.000000,350.000000,-100.000000,0.000000,"effect on"};
+link0[] = {0,4};
+link1[] = {1,6};
+link2[] = {1,7};
+link3[] = {2,3};
+link4[] = {2,8};
+link5[] = {2,10};
+link6[] = {3,1};
+link7[] = {4,1};
+link8[] = {6,2};
+link9[] = {7,5};
+link10[] = {8,11};
+link11[] = {9,1};
+link12[] = {9,1};
+link13[] = {10,9};
+link14[] = {11,4};
+globals[] = {25.000000,1,0,0,0,640,480,1,57,6316128,1,-214.132111,495.503693,435.523010,-515.477905,637,855,1};
+window[] = {2,-1,-1,-32000,-32000,766,25,1305,25,3,655};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "Radiation";
+  class States
+  {
+    /*%FSM<STATE "Begin">*/
+    class Begin
+    {
+      name = "Begin";
+      init = /*%FSM<STATEINIT""">*/"_epicenter = _this select 0;" \n
+       "_range = _this select 1;" \n
+       "_vfxstate=0;" \n
+       "_dstate=0;" \n
+       "" \n
+       "_geigerWait = 0;" \n
+       "_geigerSec = 4;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/"_cycleScl=time+2;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "break">*/
+        class break
+        {
+          priority = 0.000000;
+          to="End_FSM";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"FZ_BREAK_ANOMALIES"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "in_area">*/
+        class in_area
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"player distance [_epicenter select 0, _epicenter select 1, 0]  < FZ_MIN_DIST_ACTIVATE_ANOMALIE and time > _cycleScl"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_dist =  player distance [_epicenter select 0, _epicenter select 1, 0];"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/"_objects = nearestObjects [[_epicenter select 0, _epicenter select 1,  0], [""Land""], _range];" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "effect_off">*/
+        class effect_off
+        {
+          priority = 2.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_dist>(_range+25) and _vfxstate==1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"titleCut ["" "",""BLACK IN"",0.5];" \n
+           "call fx_backgroundDynamicBlur;" \n
+           "_vfxstate=0;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "attack">*/
+        class attack
+        {
+          priority = 1.000000;
+          to="effect_on";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"{alive _x} count _objects > 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"{" \n
+           "	if ((_x distance _epicenter)<_range) then {" \n
+           "		_dmg = _x getVariable ""DAP_XRAY_DAMAGE"";	if ( isNil ""_dmg"" ) then { _dmg=0 };" \n
+           "		" \n
+           "		_dmg = _dmg+0.005;" \n
+           "		_x setVariable [""DAP_XRAY_DAMAGE"", _dmg];" \n
+           "					" \n
+           "		if(_x == vehicle _x)then{" \n
+           "			_x setDammage _dmg;" \n
+           "		}else{" \n
+           "			{_x setDammage _dmg} foreach crew _x;" \n
+           "		};" \n
+           "	};" \n
+           "} foreach _objects;" \n
+           "" \n
+           ""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End_FSM">*/
+    class End_FSM
+    {
+      name = "End_FSM";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "effect_on">*/
+    class effect_on
+    {
+      name = "effect_on";
+      init = /*%FSM<STATEINIT""">*/"if(_dist<= (_range+25))then{" \n
+       "" \n
+       "if (_vfxstate==0) then {" \n
+       "	""dynamicBlur"" ppEffectEnable true;" \n
+       "	""filmGrain"" ppEffectEnable true;" \n
+       "	""filmGrain"" ppEffectCommit 0.5;" \n
+       "	_vfxstate=1;" \n
+       "};" \n
+       "			" \n
+       "	_fxb = (floor random 10) / 10;" \n
+       "			" \n
+       "	""dynamicBlur"" ppEffectAdjust [_fxb]; " \n
+       "	""dynamicBlur"" ppEffectCommit 0.1;" \n
+       "			" \n
+       "	""filmGrain"" ppEffectAdjust [0.1, -1, 0.1, 0.05, 2, false];" \n
+       "" \n
+       "	" \n
+       "	if(_dist<=(_range+25) && getDammage player > 0.5 && _vfxstate==1)then{" \n
+       "		titleCut ["" "",""BLACK IN"",0.5];" \n
+       "			" \n
+       "		""colorCorrections"" ppEffectCommit 0.5;""colorCorrections"" ppEffectEnable true;" \n
+       "		""colorCorrections"" ppEffectCommit 3;" \n
+       "		""colorCorrections"" ppEffectAdjust [1, 1, 0, [0.2,0.7,0.2,0], [1,0.5,0,0], [1,1,1,0]];" \n
+       "" \n
+       "	};" \n
+       "	" \n
+       "" \n
+       "	if(time > _geigerWait)then{ player say ""nuclear_geiger"" ; _geigerWait = time+_geigerSec };" \n
+       "	[_dist, _range] spawn fz_fx_showDetector;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Begin";
+  finalStates[] =
+  {
+    "End_FSM",
+  };
+};
+/*%FSM</COMPILE>*/

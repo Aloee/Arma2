@@ -1,0 +1,13 @@
+1 setRadioMsg "Null"
+2 setRadioMsg "Null"
+3 setRadioMsg "Null"
+
+? isServer : hidden = true; publicvariable "hidden"
+? isServer : beforelanding = true; publicvariable "beforelanding"
+? isServer : exit
+
+@ ! (isNil "beforelanding")
+
+? ! beforelanding : skiptime 3
+
+exit

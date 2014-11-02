@@ -1,0 +1,4 @@
+#define TEAM_DIALOG 80001
+#define TEAM_BCKGRND 80002
+#define TEAM_TITLE_W 800031
+#define TEAM_B_C 80004

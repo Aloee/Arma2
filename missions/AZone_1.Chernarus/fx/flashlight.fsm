@@ -1,0 +1,224 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Flashlight">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Begin",0,4346,0.000000,-225.000000,100.000000,-175.000000,0.000000,"Begin"};
+item1[] = {"End_FSM",1,250,-125.000000,0.000000,-25.000000,75.000000,0.000000,"End FSM"};
+item2[] = {"_",8,218,0.000000,-150.000000,100.000000,-100.000000,0.000000,""};
+item3[] = {"_",2,250,0.000000,-75.000000,100.000000,-25.000000,0.000000,""};
+item4[] = {"__alive",4,218,-125.000000,-75.000000,-25.000000,-25.000000,0.000000,"!alive"};
+item5[] = {"alive",4,218,250.000000,-75.000000,350.000000,-25.000000,0.000000,"alive"};
+item6[] = {"__1",2,250,250.000000,0.000000,350.000000,50.000000,0.000000,""};
+item7[] = {"move",4,218,125.000000,0.000000,225.000000,50.000000,0.000000,"move"};
+item8[] = {"off",4,218,125.000000,75.000000,225.000000,125.000000,0.000000,"off"};
+item9[] = {"",7,210,46.000000,21.000000,54.000000,29.000000,0.000000,""};
+item10[] = {"__2",2,250,125.000000,150.000000,225.000000,200.000000,0.000000,""};
+item11[] = {"wait",4,218,0.000000,150.000000,100.000000,200.000000,0.000000,"wait"};
+link0[] = {0,2};
+link1[] = {2,3};
+link2[] = {3,4};
+link3[] = {3,5};
+link4[] = {4,1};
+link5[] = {5,6};
+link6[] = {6,7};
+link7[] = {6,8};
+link8[] = {7,9};
+link9[] = {8,10};
+link10[] = {9,3};
+link11[] = {10,11};
+link12[] = {11,9};
+globals[] = {25.000000,1,0,0,0,640,480,1,66,6316128,1,-169.924057,387.620270,408.940643,-340.588287,635,855,1};
+window[] = {2,-1,-1,-1,-1,866,125,1405,125,3,653};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "Flashlight";
+  class States
+  {
+    /*%FSM<STATE "Begin">*/
+    class Begin
+    {
+      name = "Begin";
+      init = /*%FSM<STATEINIT""">*/"_pos = getPosATL _this;" \n
+       "_maxGround = 10;" \n
+       "_timeDelayMove = 0.02;" \n
+       "_delay = 0;" \n
+       "" \n
+       "_lights = [];" \n
+       "for ""_i"" from 0 to 2 do {" \n
+       "	_l = ""#lightpoint"" createVehicle ([0,0,0]);" \n
+       "	_lights set [count _lights, _l];" \n
+       "};" \n
+       "" \n
+       "_l0 = _lights select 0;" \n
+       "_l2 = _lights select 1;" \n
+       "_l3 = _lights select 2;" \n
+       "" \n
+       "possdcd = {" \n
+       "	_m = _this select 0;" \n
+       "	_v = _this select 1;" \n
+       "	_p = _this select 2;" \n
+       "" \n
+       " [(getPosATL _p select 0)+_m * sin(getDir _p),(getPosATL _p select 1)+_m * cos(getDir _p),_v]" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End_FSM">*/
+    class End_FSM
+    {
+      name = "End_FSM";
+      init = /*%FSM<STATEINIT""">*/"_lights spawn {" \n
+       "	_ambient = 0.5;" \n
+       "" \n
+       "	while{_ambient > 0}do{" \n
+       "		{ _x setLightAmbient [_ambient,_ambient,_ambient] }foreach _this;" \n
+       "		_ambient = _ambient - 0.1;" \n
+       "	sleep 0.3;" \n
+       "	};	" \n
+       "	" \n
+       "	sleep 3;" \n
+       "	{deleteVehicle _x} foreach _this;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "alive">*/
+        class alive
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"alive _this"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__alive">*/
+        class __alive
+        {
+          priority = 0.000000;
+          to="End_FSM";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!alive _this"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "off">*/
+        class off
+        {
+          priority = 0.000000;
+          to="__2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"isNil {_this getVariable ""flashlight_on""} or _this != vehicle _this"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"{_x setLightBrightness 0}foreach _lights;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "move">*/
+        class move
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!isNil {_this getVariable ""flashlight_on""} "/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"if(time > _delay)then{" \n
+           "" \n
+           "	_l0 setLightBrightness 0.02; //l0 cursortarget dis - 1.5" \n
+           "			" \n
+           "	_l2 setLightBrightness 0.02; //l2 cursor on objects" \n
+           "	//_l2 setLightAmbient [1,0,0]; _l2 setLightColor [1,0,0];" \n
+           "				" \n
+           "	_l3 setLightBrightness 0.005;" \n
+           "	//_l3 setLightAmbient [0,1,0]; _l3 setLightColor [0,1,0];" \n
+           "" \n
+           "	{_x setLightAmbient [.5,.5,.8]; _x setLightColor [.1,.1,.1]} foreach _lights;" \n
+           "" \n
+           "	_l3 setpos ( [2,1.7+((_this weaponDirection ""throw"") select 2)*3.2, _this] call possdcd);" \n
+           "		" \n
+           "	if(_this distance screenToWorld [0.5,0.5] <= _maxGround)then{" \n
+           "		if(typeof cursortarget != """") then {" \n
+           "		" \n
+           "			_dis = (_this distance cursortarget)-0.2-((sizeOf typeof cursortarget)/5);" \n
+           "			_l2 setpos ([_dis,1.5+((_this weaponDirection ""throw"") select 2)* _dis, _this] call possdcd);" \n
+           "		" \n
+           "		}else{" \n
+           "		" \n
+           "			_distance = _this distance screenToWorld [0.5,0.5];" \n
+           "			_l2 setpos ([_distance ,1.7+((_this weaponDirection ""throw"") select 2)*3.2, _this] call possdcd);" \n
+           "			_l2 setLightBrightness (_distance / 1000);" \n
+           "			" \n
+           "			_l3 setLightBrightness (if(_distance < getpos _l3 distance _this)then{0}else{ 0.005 });" \n
+           "		};" \n
+           "	}else{" \n
+           "		_l2 setpos ([_maxGround ,1.7+((_this weaponDirection ""throw"") select 2)*3.2, _this] call possdcd);" \n
+           "	};" \n
+           "" \n
+           "	_delay = time + _timeDelayMove;" \n
+           "};"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__2">*/
+    class __2
+    {
+      name = "__2";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!isNil {_this getVariable ""flashlight_on""} or !alive _this"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Begin";
+  finalStates[] =
+  {
+    "End_FSM",
+  };
+};
+/*%FSM</COMPILE>*/

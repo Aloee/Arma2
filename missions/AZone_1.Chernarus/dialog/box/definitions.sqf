@@ -1,0 +1,10 @@
+#define BOX_DIALOG 20001
+#define BOX_BCKGRND 20002
+#define BOX_TITLE_P 20003
+#define BOX_TITLE_W 200031
+#define BOX_B_W 20004
+#define BOX_B_M 20005
+#define BOX_B_I 20006
+#define BOX_P_W 200041
+#define BOX_P_M 200051
+#define BOX_P_I 200061

@@ -1,0 +1,22 @@
+class CfgOO {
+	class MyClass {
+		class Attributes {
+			class myAttribute {
+				type = "SCALAR";
+				defaultValue = 13;
+			};
+		};
+		class Methods {
+			//Constructor
+			class MyClass {
+				parameterTypes[] = {"OBJECT"};
+				script = "oo\classes\MyClass.sqf";
+			};
+			class myMethod {
+				parameterTypes[] = {"OBJECT", "SCALAR", "STRING"};
+				returnType = "SCALAR";
+				script = "oo\methods\myMethod.sqf";
+			};
+		};
+	};
+};

@@ -1,0 +1,620 @@
+disabledAI = true;
+enableSaving = [false,false];
+respawn=3;
+respawnDelay=25;
+briefing = 1;
+debriefing = 1;
+showCompass = 1;
+showGPS = 1;
+showMap = 1;
+showNotepad = 1;
+showWatch = 1;
+
+
+#include "dialog\common.hpp"
+
+class RscText
+{
+  	type = CT_STATIC;
+  	idc = -1;
+  	style = ST_LEFT;
+  	h = 0.04; 
+  	colorBackground[] = {0, 0, 0, 0};
+  	colorText[] = {1, 0, 1, 0};
+  	font = "Zeppelin32";
+  	size = 1;
+};
+
+class RscStdText
+{
+	type=0;
+	idc=-1;
+	style=2;
+	colorBackground[]={0,0,0,0};
+	colorText[]={1,1,1,1};
+	font="BitStream";
+	size=1;
+};
+
+class RscTitleText
+{
+	type=0;
+	idc=-1;
+	style=2;
+	colorBackground[]={0,0,0,0};
+	colorText[]={1,1,1,1};
+	font="Zeppelin32";
+	x=0;
+	y=0;
+	w=0;
+	h=0;
+	size=1;
+};
+class RscStructuredText
+{
+	type=CT_STRUCTURED_TEXT;
+	idc=-1;
+	access=ReadAndWrite;
+	style=ST_MULTI;
+	sizeEx=0.028;
+	size=0.028;
+	lineSpacing=1;
+	colorbackground[]={0,0,0,0};
+	colorText[]={1,1,1,1};
+	text="";
+	x=-1;
+	y=-1;
+	w=0;
+	h=0;
+	class Attributes
+	{
+		font=Zeppelin32;
+		color="#ffffff";
+		align="left";
+		shadow=false;
+	};
+};
+
+class RscTitles
+{
+	titles[]={};
+	class DETECTOR_PIC
+	{
+		idd = 764520;
+		movingEnable = false;
+		duration=2;
+		name = "detector_pic";
+		sizeEx = 256;
+		onLoad = "uinamespace setvariable ['DETECTOR_PIC',_this select 0]"; 
+		onUnLoad = "uinamespace setvariable ['DETECTOR_PIC',nil]"; 
+
+		controls[]= {"Pic", "Field"};
+
+		class Pic : RscStdText
+		{
+			style=48;
+			x = 0.006354 * safezoneW + safezoneX;
+			y = 0.788704 * safezoneH + safezoneY;
+			w = 0.14 * safezoneW;
+			h = 0.172778 * safezoneH;
+			text="DAPANOMALIES\Icons\DETECTOR.paa";
+			sizeEx = 1;
+		};
+		
+		class Field : RscText
+		{
+			idc = 764522;
+			style = ST_SHADOW+CT_STATIC;
+			lineSpacing = 1.0;
+			text = "0.00";
+			x = 0.060354 * safezoneW + safezoneX;
+			y = 0.808704 * safezoneH + safezoneY;
+			w = 0.14 * safezoneW;
+			h = 0.172778 * safezoneH;
+			colorText[] = {0.3, 0.3, 0.3, 0.6};
+			font = "Zeppelin32";
+			sizeEx = 0.25 * 0.1;
+			size = 0.8;
+		};
+	};
+};
+
+class CfgSounds
+{
+	class jail
+	{
+		name="jail";
+		sound[]={\sound\jail.ogg,1,1};
+		titles[]={};
+	};
+	class psidogattack
+	{
+		name="psidogattack";
+		sound[]={\sound\psidogattack.ogg,0.1,1};
+		titles[]={};
+	};
+	
+	class attack1
+	{
+		name="attack1";
+		sound[]={\sound\attack1.ogg,0.1,1};
+		titles[]={};
+	};
+	class attack2
+	{
+		name="attack2";
+		sound[]={\sound\attack2.ogg,0.1,1};
+		titles[]={};
+	};
+	class attack3
+	{
+		name="attack3";
+		sound[]={\sound\attack3.ogg,0.1,1};
+		titles[]={};
+	};
+	class attack4
+	{
+		name="attack4";
+		sound[]={\sound\attack4.ogg,0.1,1};
+		titles[]={};
+	};
+	class chase1
+	{
+		name="chase1";
+		sound[]={\sound\chase1.ogg,0.1,1};
+		titles[]={};
+	};
+	class chase2
+	{
+		name="chase2";
+		sound[]={\sound\chase2.ogg,0.1,1};
+		titles[]={};
+	};
+	class chase3
+	{
+		name="chase3";
+		sound[]={\sound\chase3.ogg,0.1,1};
+		titles[]={};
+	};
+	class chase4
+	{
+		name="chase4";
+		sound[]={\sound\chase4.ogg,0.1,1};
+		titles[]={};
+	};
+	class chase5
+	{
+		name="chase5";
+		sound[]={\sound\chase5.ogg,0.1,1};
+		titles[]={};
+	};
+	class chase6
+	{
+		name="chase6";
+		sound[]={\sound\chase6.ogg,0.1,1};
+		titles[]={};
+	};
+	class chase7
+	{
+		name="chase7";
+		sound[]={\sound\chase7.ogg,0.1,1};
+		titles[]={};
+	};
+	class chase8
+	{
+		name="chase8";
+		sound[]={\sound\chase8.ogg,0.1,1};
+		titles[]={};
+	};
+	class die1
+	{
+		name="die1";
+		sound[]={\sound\die1.ogg,0.1,1};
+		titles[]={};
+	};
+	class die2
+	{
+		name="die2";
+		sound[]={\sound\die2.ogg,0.1,1};
+		titles[]={};
+	};
+	class idle1
+	{
+		name="idle1";
+		sound[]={\sound\idle1.ogg,0.1,1};
+		titles[]={};
+	};
+	class idle2
+	{
+		name="idle2";
+		sound[]={\sound\idle2.ogg,0.1,1};
+		titles[]={};
+	};
+	class idle3
+	{
+		name="idle3";
+		sound[]={\sound\idle3.ogg,0.1,1};
+		titles[]={};
+	};
+	class idle4
+	{
+		name="idle4";
+		sound[]={\sound\idle4.ogg,0.1,1};
+		titles[]={};
+	};
+	class idle5
+	{
+		name="idle5";
+		sound[]={\sound\idle5.ogg,0.1,1};
+		titles[]={};
+	};
+	class idle6
+	{
+		name="idle6";
+		sound[]={\sound\idle6.ogg,0.1,1};
+		titles[]={};
+	};
+	class idle7
+	{
+		name="idle7";
+		sound[]={\sound\idle7.ogg,0.1,1};
+		titles[]={};
+	};
+	class idle8
+	{
+		name="idle8";
+		sound[]={\sound\idle8.ogg,0.1,1};
+		titles[]={};
+	};
+	class scream1
+	{
+		name="scream1";
+		sound[]={\sound\scream1.ogg,0.1,1};
+		titles[]={};
+	};
+	class scream2
+	{
+		name="scream2";
+		sound[]={\sound\scream2.ogg,0.1,1};
+		titles[]={};
+	};
+	class scream3
+	{
+		name="scream3";
+		sound[]={\sound\scream3.ogg,0.1,1};
+		titles[]={};
+	};
+	class sc1
+	{
+		name="svo1";
+		sound[]={\sound\svo1.ogg,0.5,1};
+		titles[]={};
+	};
+
+
+	class sc2
+	{
+		name="svo2";
+		sound[]={\sound\svo2.ogg,0.5,1};
+		titles[]={};
+	};
+
+
+	class sc3
+	{
+		name="meg2";
+		sound[]={\sound\meg2.ogg,0.5,1};
+		titles[]={};
+	};
+
+
+	class sc4
+	{
+		name="meg1";
+		sound[]={\sound\meg1.ogg,0.5,1};
+		titles[]={};
+	};
+
+
+	class sc5
+	{
+		name="dolg1";
+		sound[]={\sound\dolg1.ogg,0.5,1};
+		titles[]={};
+	};
+
+
+	class sc6
+	{
+		name="dolg2";
+		sound[]={\sound\dolg2.ogg,0.5,1};
+		titles[]={};
+	};
+	
+
+	class attack_phrase_2
+	{
+		name="attack_phrase_2";
+		sound[]={\sound\stalkers\attack_phrase_2.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_3
+	{
+		name="attack_phrase_3";
+		sound[]={\sound\stalkers\attack_phrase_3.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_4
+	{
+		name="attack_phrase_4";
+		sound[]={\sound\stalkers\attack_phrase_4.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_5
+	{
+		name="attack_phrase_5";
+		sound[]={\sound\stalkers\attack_phrase_5.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_6
+	{
+		name="attack_phrase_6";
+		sound[]={\sound\stalkers\attack_phrase_6.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_7
+	{
+		name="attack_phrase_7";
+		sound[]={\sound\stalkers\attack_phrase_7.ogg,0.5,1};
+		titles[]={};
+	};
+	class attack_phrase_8
+	{
+		name="attack_phrase_8";
+		sound[]={\sound\stalkers\attack_phrase_8.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_9
+	{
+		name="attack_phrase_9";
+		sound[]={\sound\stalkers\attack_phrase_9.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_10
+	{
+		name="attack_phrase_10";
+		sound[]={\sound\stalkers\attack_phrase_10.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_11
+	{
+		name="attack_phrase_11";
+		sound[]={\sound\stalkers\attack_phrase_11.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_12
+	{
+		name="attack_phrase_12";
+		sound[]={\sound\stalkers\attack_phrase_12.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_13
+	{
+		name="attack_phrase_13";
+		sound[]={\sound\stalkers\attack_phrase_13.ogg,0.5,1};
+		titles[]={};
+	};
+	class attack_phrase_14
+	{
+		name="attack_phrase_14";
+		sound[]={\sound\stalkers\attack_phrase_14.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_15
+	{
+		name="attack_phrase_15";
+		sound[]={\sound\stalkers\attack_phrase_15.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_16
+	{
+		name="attack_phrase_16";
+		sound[]={\sound\stalkers\attack_phrase_16.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_17
+	{
+		name="attack_phrase_17";
+		sound[]={\sound\stalkers\attack_phrase_17.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_18
+	{
+		name="attack_phrase_18";
+		sound[]={\sound\stalkers\attack_phrase_18.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_19
+	{
+		name="attack_phrase_19";
+		sound[]={\sound\stalkers\attack_phrase_19.ogg,0.5,1};
+		titles[]={};
+	};
+	class attack_phrase_20
+	{
+		name="attack_phrase_20";
+		sound[]={\sound\stalkers\attack_phrase_20.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_21
+	{
+		name="attack_phrase_21";
+		sound[]={\sound\stalkers\attack_phrase_21.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_22
+	{
+		name="attack_phrase_22";
+		sound[]={\sound\stalkers\attack_phrase_22.ogg,0.05,1};
+		titles[]={};
+	};
+	class attack_phrase_23
+	{
+		name="attack_phrase_23";
+		sound[]={\sound\stalkers\attack_phrase_23.ogg,0.05,1};
+		titles[]={};
+	};
+	class hero_down_1
+	{
+		name="hero_down_1";
+		sound[]={\sound\stalkers\hero_down_1.ogg,0.5,1};
+		titles[]={};
+	};
+	class hero_down_2
+	{
+		name="hero_down_2";
+		sound[]={\sound\stalkers\hero_down_2.ogg,0.5,1};
+		titles[]={};
+	};
+	class hero_down_3
+	{
+		name="hero_down_3";
+		sound[]={\sound\stalkers\hero_down_3.ogg,0.5,1};
+		titles[]={};
+	};
+	class hero_down_4
+	{
+		name="hero_down_4";
+		sound[]={\sound\stalkers\hero_down_4.ogg,0.5,1};
+		titles[]={};
+	};
+	class hero_down_5
+	{
+		name="hero_down_5";
+		sound[]={\sound\stalkers\hero_down_5.ogg,0.5,1};
+		titles[]={};
+	};
+	class hero_down_6
+	{
+		name="hero_down_6";
+		sound[]={\sound\stalkers\hero_down_6.ogg,0.5,1};
+		titles[]={};
+	};
+	class fx_electro
+	{
+		name="fx_electro";
+		sound[]={\sound\fx\fx_electro.ogg, 0.7, 1};
+		titles[]={};	
+	};
+	class cordon_theme
+	{
+		name="cordon_theme";
+		sound[]={\sound\radio\radio_stalkerov.ogg, 0.05, 1};
+		titles[]={};
+	};
+	class svoboda_theme
+	{
+		name="svoboda_theme";
+		sound[]={\sound\radio\radio_svobody.ogg, 0.05, 1};
+		titles[]={};
+	};
+	class bandits_theme
+	{
+		name="bandits_theme";
+		sound[]={\sound\radio\radio_banditov.ogg, 0.05, 1};
+		titles[]={};
+	};
+	class cordon_theme2
+	{
+		name="cordon_theme2";
+		sound[]={\sound\radio\radio_kordon.ogg, 0.05, 1};
+		titles[]={};
+	};
+	class DAPSURGESOUND
+	{
+		name = "DAP_SURGE_STORM";
+		sound[] = {\sound\surge\SURGECM.ogg, 1, 1};
+		titles[] = {};
+	};
+	class DAPSURGESOUNDFULL 
+	{
+		name = "DAP_SURGE_STORM_FULL";
+		sound[] = {\sound\surge\SURGE.ogg, 1, 1};
+		titles[] = {};
+	};
+	class dap_gravi_blast 
+	{
+		name = "dap_gravi_blast";
+		sound[] = {\sound\dapanomali\gravi_blast.ogg, 1.2500000, 1.000000};
+		titles[] = { };
+	};
+	class dap_mincer_wind
+	{
+		name = "dap_mincer_wind";
+		sound[] = {\sound\dapanomali\mincer_wind.ogg, 0.05, 1};
+		titles[] = { };
+	};
+	class dap_electro_strike 
+	{
+		name = "dap_electro_strike";
+		sound[] = {\sound\fx\fx_electro.ogg, 0.5, 1};
+		titles[] = { };
+	};
+	class dap_galantine 
+	{
+		name = "dap_galantine";
+		sound[] = {\sound\dapanomali\galantine.ogg, 0.0750000, 1.000000};
+		titles[] = { };
+	};
+	class dap_psy_a 
+	{
+		name = "dap_psy_a";
+		sound[] = {\sound\dapanomali\psy_a.ogg, 0.5, 1};
+		titles[] = { };
+	};
+	class dap_psy_b 
+	{
+		name = "dap_psy_b";
+		sound[] = {\sound\dapanomali\psy_b.ogg, 0.5, 1};
+		titles[] = { };
+	};
+	class dap_psy_c 
+	{
+		name = "dap_psy_c";
+		sound[] = {\sound\dapanomali\psy_c.ogg, 0.5, 1};
+		titles[] = { };
+	};
+	class dap_burn 
+	{
+		name = "dap_burn";
+		sound[] = {\sound\dapanomali\burn.ogg, 0.5, 1};
+		titles[] = { };
+	};
+
+
+	class nuclear_alarm
+	{
+		name = "nuclear_alarm";
+		sound[] = {\sound\fx\boom\alarm.ogg,  0.05, 1};
+		titles[] = {};
+	};
+	class nuclear_boom
+	{
+		name = "nuclear_boom";
+		sound[] = {\sound\fx\boom\boom.ogg,  0.05, 1}; //db+24
+		titles[] = {};
+	};
+	class nuclear_geiger
+	{
+		name = "nuclear_geiger";
+		sound[] = {\sound\fx\boom\geiger.ogg,  0.05, 1};
+		titles[] = {};
+	};
+	class nuclear_heartbeat
+	{
+		name = "nuclear_heartbeat";
+		sound[] = {\sound\fx\boom\heartbeat.ogg,  0.05, 1};
+		titles[] = {};
+	};
+
+};

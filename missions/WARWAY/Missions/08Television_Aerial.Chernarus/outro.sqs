@@ -1,0 +1,53 @@
+titleCut ["","Black faded",7];
+0 fadesound 0
+1 fademusic 1
+removeallweapons e1
+{_x setVariable ["BIS_noCoreConversations", true];_x disableConversation true} foreach allunits;
+enableRadio false
+setAccTime 1
+showcinemaborder false
+of setidentity "spec_3"
+e2 setidentity "spec_1"
+e1 setidentity "spec_6"
+player loadstatus "juriy_status_mik6"; 
+player setdammage 0
+~1
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+_camera camPrepareFocus [-1,-1]
+~7
+_camera camPrepareTarget [102100.48,27991.27,821.86];
+_camera camPreparePos [4692.86,5359.12,1.83];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+2 fadesound 0.7
+titleCut ["","Black in",4];
+_camera camPrepareTarget [102100.48,27991.27,822.13];
+_camera camPreparePos [4697.99,5362.49,3.36];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 6
+~6
+_camera camPrepareTarget e2
+_camera camPreparePos [4698.00,5362.51,3.36];
+_camera camPrepareFOV 0.200;
+_camera camCommitPrepared 6
+~6
+
+_camera camPrepareTarget [-42387.29,-82792.63,362.96];
+_camera camPreparePos [4768.91,5390.67,1.57];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+_camera camPrepareTarget [-83656.49,-41304.25,223.84];
+_camera camPreparePos [4774.36,5386.20,1.57];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 9
+playsound "STRD_PIO18"
+~5
+titleCut ["","BLACK OUT", 3]
+~3
+1 fademusic 0 
+1 fadesound 0
+~1
+_camera cameraeffect ["terminate", "Back"] 
+camdestroy _camera  
+endMission "END1"

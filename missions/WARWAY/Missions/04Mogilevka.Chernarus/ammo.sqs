@@ -1,0 +1,15 @@
+clearweaponCargo crate
+clearmagazineCargo crate
+~0.5
+crate addweaponcargo ["AK_47_M", 2] 
+crate addweaponcargo ["AKS_74", 3] 
+crate addmagazinecargo ["30Rnd_545x39_AK", 15] 
+crate addmagazinecargo ["30Rnd_762x39_AK47", 10] 
+crate addweaponcargo ["AK_74_GL_kobra", 1] 
+crate addmagazinecargo ["1Rnd_HE_GP25", 10] 
+crate addmagazinecargo ["HandGrenade_East", 15] 
+crate addweaponcargo ["SVD", 1] 
+crate addmagazinecargo ["10Rnd_762x54_SVD", 5] 
+crate addweaponcargo ["RPG7V", 3] 
+crate addmagazinecargo ["PG7V", 7] 
+crate addweapon ["binocular"]

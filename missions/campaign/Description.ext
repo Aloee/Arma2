@@ -1,0 +1,63 @@
+class MissionDefault
+{
+ 	lives = -1;
+
+	lost = ;
+	end1 = ;
+	end2 = ;
+	end3 = ;
+	end4 = ;
+	end5 = ;
+	end6 = ;
+};
+
+class Campaign {
+	name = $STR_camapign_name;
+	firstBattle = Beginning;
+
+	class Beginning {
+		name = "Start";
+		cutscene =;
+		firstMission = C0;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+
+		class C0: MissionDefault
+		{
+			end1 = C1;
+			end2 = C0;
+			end3 = C2;
+			end4 = C2;
+			template = missia_1.Utes;
+		};
+
+		class C1: MissionDefault
+		{
+			end1 = C2;
+			end2 = C2;
+			end3 = C1;
+			end4 = C1;
+			template = missia_2.Chernarus;
+		};
+		
+		class C2: MissionDefault
+		{
+			end1 = C3;
+			end2 = C1;
+			end3 = C1;
+			end4 = C3;
+			template = missia_3.Chernarus;
+		};
+		
+		class C3: MissionDefault
+		{
+			end1 = C0;
+			end2 = C3;
+			end3 = C3;
+			end4 = C3;
+			template = missia_4.Chernarus;
+		};
+	};
+};

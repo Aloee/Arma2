@@ -1,0 +1,180 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"caweapons_ammoboxes",
+		"utes",
+		"caweapons_e_ammoboxes",
+		"jwc_weapon_flashlight",
+		"CAWheeled"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"jwc_weapon_flashlight",
+		"caweapons_ammoboxes",
+		"caweapons_e_ammoboxes",
+		"utes"
+	};
+	randomSeed=11747279;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=2008;
+		month=10;
+		day=11;
+		hour=2;
+		minute=20;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3462.9053,19,3604.4607};
+					azimut=96.802101;
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="removeAllWeapons this;                                 removeAllItems this;                                              nul = execVM 'monWeap.sqf'";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3463.0059,19,3638.0901};
+					id=3;
+					side="LOGIC";
+					vehicle="JWC_FL_Logic";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=2;
+		class Item0
+		{
+			position[]={3468.8784,19,3604.7236};
+			azimut=85.425697;
+			id=1;
+			side="EMPTY";
+			vehicle="USBasicAmmunitionBox";
+			skill=0.60000002;
+			init="clearWeaponCargo this;                              clearMagazineCargo this;                                           this addWeaponCargo ['jwc_tacticalFlashlight',1];";
+		};
+		class Item1
+		{
+			position[]={3465.3225,19,3604.5566};
+			azimut=87.44442;
+			id=2;
+			side="EMPTY";
+			vehicle="USBasicWeapons_EP1";
+			skill=0.60000002;
+			init="nul = [this] execVM 'fillCrate.sqf';";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={3476.9385,19,3639.1428};
+			a=5;
+			b=5;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="time > 1";
+			expActiv="nul = execVM 'info.sqf'";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=7174518;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=16181264;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=12505577;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

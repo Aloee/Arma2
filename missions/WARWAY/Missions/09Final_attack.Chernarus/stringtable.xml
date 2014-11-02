@@ -1,0 +1,317 @@
+﻿<Project name="Name">
+<Package name="Second name">
+
+
+<Container name="Breefing">
+
+<Key ID="STRD_Task1">
+<Original>Прорвать оборону</Original>
+</Key>
+<Key ID="STRD_Task1_1">
+<Original>Вы начинаете &lt;marker name="05"&gt;недалеко&lt;/marker&gt; от &lt;marker name="06"&gt;Нового Собора&lt;/marker&gt;.  
+&lt;br/&gt;
+ЧСО будет наступать с севера. Ваша задача - координировать действия артиллерии и помочь союзным силам прорвать оборону.
+</Original>
+</Key>
+<Key ID="STRD_Task2">
+<Original>Выдвинуться к точке эвакуации</Original>
+</Key>
+<Key ID="STRD_Task2_1">
+<Original>Выдвигайтесь с отрядом за Лесной хребет для &lt;marker name="07"&gt;дальнейшей встречи&lt;/marker&gt; с силами поддержки и переброски Господина Президента в горы. .</Original>
+</Key>
+
+<Key ID="STRD_Plan_Title">
+<Original>Ситуация</Original>
+</Key>
+<Key ID="STRD_Plan">
+<Original>Новый и Старый Соборы заняты силами США. Здесь же размещена линия фронта и опорные пункты врага. Враг численно превосходит вас, имея в своем распоряжении легкую и тяэелую бронетехнику, пушки и стационарные пусковые установки. 
+&lt;br/&gt;
+По данным разведки основные силы находятся &lt;marker name="01"&gt;здесь&lt;/marker&gt;, так же значительные пехотные силы размещены в &lt;marker name="06"&gt;Новом Соборе&lt;/marker&gt;. В случае нападения сил ЧСО, стоит ожидать подкрепления со стороны Старого Собора и южной базы Нового Собора. </Original>
+</Key>
+<Key ID="STRD_Plan_Title1">
+<Original>План</Original>
+</Key>
+<Key ID="STRD_Plan1">
+<Original>Ваша задача уничтожить подавляющее большинство сил противника. Через 10 минут в ваше распоряжение перейдет артиллерийская батарея. Имейте в виду, что батарее требуется время для перезарядки после выполненного залпа. 
+&lt;br/&gt;
+У вас будет время на вооружение ваших бойцов и разведку местности. Для прорыва линии фронта нужно уничтожить большую часть пехоты и бронетехники США.
+&lt;br/&gt;
+Затем ваш отряд сможет прорваться в горы.
+</Original>
+</Key>
+</Container>
+
+<Container name="System">
+<Key ID="STR_intro">
+<Original>В точке эвакуации...</Original>
+</Key>
+<Key ID="STR_init">
+<Original>Близ Нового Собора.</Original>
+</Key>
+<Key ID="STRD_end">
+<Original></Original>
+</Key>
+<Key ID="STR_end1">
+<Original>Теперь до точки эвакуации!</Original>
+</Key> 
+<Key ID="STR_end2">
+<Original>В дебрифинге при выйграше2.</Original>
+</Key>   
+<Key ID="STR_end3">
+<Original>В дебрифинге при выйграше3.</Original>
+</Key>   
+<Key ID="STR_end4">
+<Original>В дебрифинге при выйграше4.</Original>
+</Key>   
+<Key ID="STR_end5">
+<Original>В дебрифинге при выйграше5.</Original>
+</Key>   
+<Key ID="STR_end6">
+<Original>В дебрифинге при выйграше6</Original>
+</Key>  
+<Key ID="STR_Loser">
+<Original>Вы не выполнили поставленных задач!</Original>
+</Key>
+<Key ID="STR_proval1">
+<Original>Миссия провалена.Атака союзных сил захлебнулась.</Original>
+</Key>
+<Key ID="STR_proval2">
+<Original>Миссия провалена.Войска разгромлены.</Original>
+</Key>
+<Key ID="STR_proval3">
+<Original>Миссия провалена.Президент погиб.</Original>
+</Key>
+<Key ID="STR_proval4">
+<Original>Миссия провалена.Сержант погиб.</Original>
+</Key>
+
+
+
+
+<Key ID="STR_info">
+<Original>Республика Черноруссия\n 11.10.1996</Original>
+</Key>
+<Key ID="STR_campa">
+<Original>ПРЕВЕД</Original>
+</Key>
+<Key ID="STRD_SAY0_1">
+<Original>Электрозаводск</Original>
+</Key>
+<Key ID="STRD_SAY0">
+<Original>6 июня</Original>
+</Key>
+<Key ID="STRD_SAY0_2">
+<Original>18:20</Original>
+</Key>
+
+<Container name="Says">
+<Key ID="STRD_PIOBandage">
+<Original>- Мне нечем себя перевязать.</Original>
+</Key>
+<Key ID="STR_ID1">
+<Original>Перевязать себя</Original>
+</Key>
+<Key ID="STRD_PIO1">
+<Original>-Мы уже начали беспокоиться.</Original>
+</Key>
+<Key ID="STRD_PIO2">
+<Original>-Прогулка была не близкой. Как там наша трансляция, произвела фуррор? </Original>
+</Key>
+<Key ID="STRD_PIO3">
+<Original>-Ещё какой. Демонстрации и акции протеста по всей стране. Наши солдаты воспряли духом и полны решимости гнать янки из страны.</Original>
+</Key>
+<Key ID="STRD_PIO4">
+<Original>-Но теперь к делу. Пять минут назад американцы начали наступление в направлении дороги через горы и вдоль побережья. У нас есть ещё минут 5-7, что бы приготовиться к атаке на этом участке.</Original>
+</Key>
+<Key ID="STRD_PIO5">
+<Original>-Когда их главные силы втянутся в бой на флангах мы ударим в центре и выведем вас в горы.</Original>
+</Key>
+<Key ID="STRD_PIO6">
+<Original>-Не думаю, что мои люди в состоянии сейчас вступить в бой. Они бежали всю ночь. Надо дать передохнуть.</Original>
+</Key>
+<Key ID="STRD_PIO7">
+<Original>-Вашего активного участия не понадобится - охраняйте президента. Он сейчас наше главное оружие - символ нашего сопротивления. Вот оружие, снаряжайте своих людей. </Original>
+</Key>
+<Key ID="STRD_PIO8">
+<Original>-Что же нам, сидеть и смотреть теперь?</Original>
+</Key>
+<Key ID="STRD_PIO9">
+<Original>-Ну почему же. Есть одно дело, которое я хотел бы Вам поручить. Оно очень важное и от него зависит успех нашей атаки - корректировать огонь артиллерии.</Original>
+</Key>
+<Key ID="STRD_PIO10">
+<Original>-Возьмите рацию и засядьте где нибудь в кустах так, что бы видеть как можно больше.</Original>
+</Key>
+<Key ID="STRD_PIO11">
+<Original>-Договорились.</Original>
+</Key>
+<Key ID="STRD_PIO12">
+<Original>Мы готовы к наступлению. Начинайте арт-подготовку.</Original>
+</Key>
+<Key ID="STRD_PIO13">
+<Original>Мы наступаем. Продолжайте обстрел противника, но не попадите по нам.</Original>
+</Key>
+<Key ID="STRD_PIO14">
+<Original>К противнику идёт подмога со стороны Cтарого Собора. По возможности накройте их артиллерийским огнём.</Original>
+</Key>
+<Key ID="STRD_PIO15">
+<Original>Батарея готова.</Original>
+</Key>
+<Key ID="STRD_PIO16">
+<Original>Противник отступает. Высылаем за вами транспорт. Двигайтесь в точку эвакуации.</Original>
+</Key>
+<Key ID="STRD_PIO17">
+<Original>- Юрий Михайлович, господин президент, сержант Самойлоко - быстро в БРДМ!</Original>
+</Key>
+<Key ID="STRD_PIO18"> 
+<Original>Ну вот и добрались</Original>
+</Key>
+<Key ID="STRD_PIO19">
+<Original>Спасибо Вам огромное. Отодохните и ночью наши проводники проведут Вас через горы к Российской границе.</Original>
+</Key>
+<Key ID="STRD_PIO20">
+<Original>Удачи вам в вашем деле.</Original>
+</Key>
+<Key ID="STRD_PIO21">
+<Original>Спасибо. Правда нам придётся отстаивать свою независимость партизанской войной. Американцы имеют подавляющее превосходство в технике и современном вооружении. </Original>
+</Key>
+<Key ID="STRD_PIO22">
+<Original>Но мы не сдадимся. Рано или поздно мы заставим их убраться и свергнем их марионеток. Это наша страна и только нам решать как жить, с кем дружить и какое государство строить.</Original>
+</Key>
+<Key ID="STRD_PIO23">
+<Original>Да, у нас не идеальное правительство и жизнь не сахар, но то, что предлагают они - лишь мишура, за которой ничего нет. Пусть убираются к себе домой. Им тут делать нечего</Original>
+</Key>
+
+</Container>
+
+<Container name="Persons">
+<Key ID="STR_p1">
+<Original>Юрий Михайлович</Original>
+</Key>
+<Key ID="STR_p2">
+<Original>Офицер ЧСО</Original>
+</Key>
+<Key ID="STR_p3">
+<Original>Владимир Градецкий</Original>
+</Key>
+<Key ID="STR_p4">
+<Original>Офицер ЧСО</Original>
+</Key>
+<Key ID="STR_p6">
+<Original>Сержант Самойлоко</Original>
+</Key>
+
+
+<Key ID="STRM_razrab">
+<Original>TSFH</Original>
+</Key>
+
+<Key ID="STRM_voiced">
+<Original>Two Steps From Hell</Original>
+</Key>
+<Key ID="STRM_sans">
+<Original>Посередке</Original>
+</Key>
+<Key ID="STRM_sans1">
+<Original>Посередке</Original>
+</Key>
+
+<Key ID="STRM_v1">
+<Original>Редактор: Mikezar</Original>
+</Key>
+<Key ID="STRM_v2">
+<Original>На следующий день</Original>
+</Key>
+<Key ID="STRM_v3">
+<Original>Кампания: Пламя Империи</Original>
+</Key>
+<Key ID="STRM_v4">
+<Original></Original>
+</Key>
+<Key ID="STRM_v5">
+<Original>В5</Original>
+</Key>
+<Key ID="STRM_v6">
+<Original>Той же ночью./</Original>
+</Key>
+<Key ID="STRM_v7">
+<Original>0900.На пути к Чернорусской базе</Original>
+</Key>
+<Key ID="STRM_v8">
+<Original></Original>
+</Key>
+<Key ID="STRM_v9">
+<Original>Спустя час...</Original>
+</Key>
+<Key ID="STRM_v10">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v11">
+<Original>Республика</Original>
+</Key>
+<Key ID="STRM_v12">
+<Original>17 июля. Где-то в лесу.</Original>
+</Key>
+<Key ID="STRM_v13">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v14">
+<Original>В14</Original>
+</Key>
+<Key ID="STRM_v15">
+<Original>Электрозаводск.5 часов спустя.</Original>
+</Key>
+<Key ID="STRM_v16">
+<Original>3-мя часами ранее...</Original>
+</Key>
+<Key ID="STRM_v17">
+<Original>14 июля.18:20</Original>
+</Key>
+<Key ID="STRM_v18">
+<Original>В18</Original>
+</Key>
+<Key ID="STRM_v19">
+<Original>В19</Original>
+</Key>
+<Key ID="STRM_v20">
+<Original>В20</Original>
+</Key>
+<Key ID="STRM_v21">
+<Original>В21</Original>
+</Key>
+<Key ID="STRM_v22">
+<Original>В22</Original>
+</Key>
+<Key ID="STRM_v23">
+<Original>В23</Original>
+</Key>
+<Key ID="STRM_v24">
+<Original>В24</Original>
+</Key>
+<Key ID="STRM_v25">
+<Original>В25</Original>
+</Key>
+<Key ID="STRM_v26">
+<Original>В26</Original>
+</Key>
+<Key ID="STRM_blag1">
+<Original>благ 1</Original>
+</Key>
+<Key ID="STRM_blag2">
+<Original>благ 2</Original>
+</Key>
+<Key ID="STRM_blag3">
+<Original>благ 3</Original>
+</Key>
+<Key ID="STRM_blag4">
+<Original>благ 4</Original>
+</Key>
+<Key ID="STRM_blag5">
+<Original>благ 5</Original>
+</Key>
+<Key ID="STRM_blag6">
+<Original>благ 6</Original>
+</Key>
+
+</Container>
+</Package>
+</Project>

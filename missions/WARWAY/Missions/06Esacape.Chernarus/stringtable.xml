@@ -1,0 +1,432 @@
+﻿<Project name="Name">
+<Package name="Second name">
+
+
+<Container name="Breefing">
+
+<Key ID="STRD_Task1">
+<Original>Основная задача: Спасти президента</Original>
+</Key>
+<Key ID="STRD_Task1_1">
+<Original>В посёлке &lt;marker name="Marker6"&gt;Старое&lt;/marker&gt;, президента вместе с другими военнослужащими удерживают в плену. Поскольку в момент, когда схватили президента - он был одет в форму ЧСО, то вероятнее всего его личность еше не установлена.
+&lt;br/&gt;
+Ваша задача: Найти лагерь с заключенными. Ликвидировать охрану и освободить всех пленников, включая президента и скрыться &lt;marker name="Marker9"&gt;в этом направлении&lt;/marker&gt;. Внимание: поселок хорошо охраняется, на звук стрельбы могут сбежаться не только патрули, но и быть поднята общая тревога.
+</Original>
+</Key>
+<Key ID="STRD_Task2">
+<Original>Подзадание: Опрос местных жителей</Original>
+</Key>
+<Key ID="STRD_Task2_1">
+<Original>Поговорить с местными жителями (хотя бы с двумя). Это поможет вам оценить силы противника и выяснить местонахождение заключеных. Опросить лучше местных, которые находятся недалеко от поселка ( например, грибников). На Вашей карте сержант отметил те районы, в которых чаще всего встречаются грибники.</Original>
+</Key>
+<Key ID="STRD_Task3">
+<Original>Подзадание:Отвлекающий манёвр</Original>
+</Key>
+<Key ID="STRD_Task3_1">
+<Original>Без шума убрать охрану у сарая не получится. Но в таком случае весь гарнизон посёлка будет у сарая через минуту. Следует придпринять действия по отвлечению внимания.
+&lt;br/&gt;
+Задача: Отвлечь внимание гарнизона чем-нибудь. Походите по поселку и придумайте как можно отвлечь внимание американцев. 
+&lt;br/&gt;
+Внимание: Следует предупредить гражданское население, дабы избежать несчастных случаев.
+</Original>
+</Key>
+<Key ID="STRD_Task4">
+<Original>Подзадание:Блокировать дорогу из Шаховки</Original>
+</Key>
+<Key ID="STRD_Task4_1">
+<Original>&lt;marker name="Marker7_1"&gt;Шаховка&lt;/marker&gt; находится ближе всех к посёлку &lt;marker name="Marker6"&gt;Старое&lt;/marker&gt;. В случае шума подкрепление к противнику отсюда придёт быстрее всего. Для задержки подхода подкреплений необходимо заблокировать дорогу их Шаховки на небольшом участке проходящим через лес. Подрыв дерева исключается - шум взрыва  будет услышан на блок-посту и в посёлке.
+&lt;br/&gt;
+Задача: Заминировать самодельной миной дорогу из Шаховки в квадрате 098:091.</Original>
+</Key>
+<Key ID="STRD_Task5">
+<Original>Подзадание:Раздобыть динамит</Original>
+</Key>
+<Key ID="STRD_Task5_1">
+<Original> Раздобыть динамит в домике лесника. Динамит можно использовать для блокирования дороги из &lt;marker name="Marker7_1"&gt;Шаховка&lt;/marker&gt;.
+&lt;br/&gt;
+Задача: Раздобыть динамит и собрать, из него и подручных материалов, мину.</Original>
+</Key>
+
+
+
+<Key ID="STRD_Plan_Title">
+<Original>Ситуация</Original>
+</Key>
+<Key ID="STRD_Plan">
+<Original>Президент был пойман. Сержант успел обменяться перед этим с ним одеждой, поэтому американцы еше не догадываются о том, кто находится среди пленных. Президента, вместе с другими военнослужащими удерживают в одном из зданий в поселке &lt;marker name="Marker6"&gt;Старое&lt;/marker&gt;.
+&lt;br/&gt;
+Нельзя допустить смерть президента или сержанта.
+&lt;br/&gt;
+Нельзя допустить разоблачение президента!
+&lt;br/&gt;
+Ни в коем случае не допускайте гибель гражданского населения!
+&lt;br/&gt;
+</Original>
+</Key>
+<Key ID="STRD_Plan_Title1">
+<Original>План</Original>
+</Key>
+<Key ID="STRD_Plan1">
+<Original>Ваша задача: Осмотреть местность вокруг поселка &lt;marker name="Marker6"&gt;Старое&lt;/marker&gt;. Для полной оценки ситуации нужно поговорить с местными жителями. Не следует забывать, что опрос местных в поселке может выявить подозрения военных. В связи с этим, найдите в окрестностях местных и опросите их. </Original>
+</Key>
+</Container>
+
+<Container name="System">
+<Key ID="STR_intro">
+<Original></Original>
+</Key>
+<Key ID="STR_init">
+<Original>Возле Старого.</Original>
+</Key>
+<Key ID="STRD_end">
+<Original>Президент и другие пленные были успешно спасены!</Original>
+</Key>
+<Key ID="STR_end1">
+<Original>Президент и другие пленные были успешно спасены!</Original>
+</Key> 
+<Key ID="STR_end2">
+<Original>В дебрифинге при выйграше2.</Original>
+</Key>   
+<Key ID="STR_end3">
+<Original>В дебрифинге при выйграше3.</Original>
+</Key>   
+<Key ID="STR_end4">
+<Original>В дебрифинге при выйграше4.</Original>
+</Key>   
+<Key ID="STR_end5">
+<Original>В дебрифинге при выйграше5.</Original>
+</Key>   
+<Key ID="STR_end6">
+<Original>В дебрифинге при выйграше6</Original>
+</Key>  
+<Key ID="STR_Loser">
+<Original>Вы не выполнили поставленных задач!</Original>
+</Key>
+<Key ID="STR_proval1">
+<Original>Миссия провалена.Сержант погиб.</Original>
+</Key>
+<Key ID="STR_proval2">
+<Original>Миссия провалена.Личность президента была установлена.</Original>
+</Key>
+<Key ID="STR_proval3">
+<Original>Миссия провалена.Президент погиб.</Original>
+</Key>
+<Key ID="STR_proval4">
+<Original>Миссия провалена.Есть потери среди гражданского населения.</Original>
+</Key>
+
+
+
+
+<Key ID="STR_info">
+<Original>Республика Черноруссия\n 11.10.1996</Original>
+</Key>
+<Key ID="STR_campa">
+<Original>ПРЕВЕД</Original>
+</Key>
+<Key ID="STRD_SAY0_1">
+<Original>Электрозаводск</Original>
+</Key>
+<Key ID="STRD_SAY0">
+<Original>6 июня</Original>
+</Key>
+<Key ID="STRD_SAY0_2">
+<Original>18:20</Original>
+</Key>
+
+<Container name="Says">
+<Key ID="STRD_PIOBandage">
+<Original>- Мне нечем себя перевязать.</Original>
+</Key>
+<Key ID="STR_ID1">
+<Original>Перевязать себя</Original>
+</Key>
+<Key ID="STRD_PIO1">
+<Original>Вечер добрый.</Original>
+</Key>
+<Key ID="STRD_PIO2">
+<Original>Добрый.</Original>
+</Key>
+<Key ID="STRD_PIO3">
+<Original>Американцев много в посёлке?</Original>
+</Key>
+<Key ID="STRD_PIO4">
+<Original>Да, многова-то, лагерь свой развернули напротив церкви.</Original>
+</Key>
+<Key ID="STRD_PIO5">
+<Original>Местных обижают?</Original>
+</Key>
+<Key ID="STRD_PIO6">
+<Original>Опрашивают, обыскивают, конфисковывают охотничье оружие, задерживают тех, кто в форме армии Черноруссии или у кого находят армейское оружие или форму. А ещё офицер ходил с какой-то фотографией и всех сверял.</Original>
+</Key>
+<Key ID="STRD_PIO7">
+<Original>А где задержанных держат?</Original>
+</Key>
+<Key ID="STRD_PIO8">
+<Original>В старом хлеву.</Original>
+</Key>
+<Key ID="STRD_PIO9">
+<Original>Охраны много?</Original>
+</Key>
+<Key ID="STRD_PIO10">
+<Original>Не знаю, туда близко местных не пускают, гоняют.</Original>
+</Key>
+<Key ID="STRD_PIO11">
+<Original>В соседних посёлках есть американцы?</Original>
+</Key>
+<Key ID="STRD_PIO12">
+<Original>В Шаховке точно есть.Да и в остальных, говорят, тоже. Везде они, супостаты проклятые.</Original>
+</Key>
+<Key ID="STRD_PIO13">
+<Original>Спасибо. Удачного вечера. Вы нас не видели.</Original>
+</Key>
+<Key ID="STRD_PIO14">
+<Original>Удачи Вам, будьте осторожны, американцы очень нервные, чуть что - стреляют.</Original>
+</Key>
+<Key ID="STRD_PIO15">
+<Original>Добрый вечер.</Original>
+</Key>
+<Key ID="STRD_PIO16">
+<Original>Уф, ну и напугали вы меня. Добрый, чего надо?</Original>
+</Key>
+<Key ID="STRD_PIO17">
+<Original>Вы из посёлка?</Original>
+</Key>
+<Key ID="STRD_PIO18">
+<Original>Ну из посёлка.</Original>
+</Key>
+<Key ID="STRD_PIO19">
+<Original>Американцы есть в посёлке?</Original>
+</Key>
+<Key ID="STRD_PIO20">
+<Original>Есть, рядом с церковью встали, окоянные.</Original>
+</Key>
+<Key ID="STRD_PIO21">
+<Original>Как с местными обращаются?</Original>
+</Key>
+<Key ID="STRD_PIO22">
+<Original>Обыскивают, допрашивают, но гражданских не трогают. А Вы уж никак в посёлок собрались? Не надо нам тут шуму, идите своей дорогой.</Original>
+</Key>
+<Key ID="STRD_PIO23">
+<Original>Да куда уж нам против них? Мы товарищей своих ищем, говорят их держат где-то здесь под стражей?</Original>
+</Key>
+<Key ID="STRD_PIO24">
+<Original>Держат, в старом хлеву.</Original>
+</Key>
+<Key ID="STRD_PIO25">
+<Original>Охраны много?</Original>
+</Key>
+<Key ID="STRD_PIO26">
+<Original>Ходит патруль и у входа ещё пару человек.</Original>
+</Key>
+<Key ID="STRD_PIO27">
+<Original>В соседних посёлках есть американцы?</Original>
+</Key>
+<Key ID="TRD_PIO28">
+<Original>Есть. Они везде есть.Если в посёлок пойдёте - держитесь подальше от янки в очках. Уж очень он подозрительный. Даже лесника нашего задержал. Мы уж думали из-за динамита, что он для рыбалки использует. Но потом отпустили, допросили и отпустили.</Original>
+</Key>
+<Key ID="STRD_PIO29">
+<Original>А он не рассказывал, что его спрашивали?</Original>
+</Key>
+<Key ID="STRD_PIO30">
+<Original>Да он сразу и наклюкался на радостях, что отпустили - думал его из-за динамита взяли, что он для рыбалки прячет. А они его о президенте спрашивали и всяких личностях не местных.</Original>
+</Key>
+<Key ID="STRD_PIO31">
+<Original>И где он сейчас?</Original>
+</Key>
+<Key ID="STRD_PIO32">
+<Original>Мужики его отвезли домой проспаться.</Original>
+</Key>
+<Key ID="STRD_PIO33">
+<Original>Спасибо Вам огромное. Только Вы никому не говорите, что нас видели.</Original>
+</Key>
+<Key ID="STRD_PIO34">
+<Original>Да не скажу я, что мне, неприятностей что ли захотелось?</Original>
+</Key>
+<Key ID="STRD_PIO35">
+<Original>Добрый вечер.</Original>
+</Key>
+<Key ID="STRD_PIO36">
+<Original>Ик... вечер...</Original>
+</Key>
+<Key ID="STRD_PIO37">
+<Original>Дело есть, срочное...</Original>
+</Key>
+<Key ID="STRD_PIO38">
+<Original>Я согласен, сейчас закусон принесу.</Original>
+</Key>
+<Key ID="STRD_PIO39">
+<Original>Закусон потом, динамит нужен.</Original>
+</Key>
+<Key ID="STRD_PIO40">
+<Original>Динамит? Нахрена тебе динамит?</Original>
+</Key>
+<Key ID="STRD_PIO41">
+<Original>Рыбу глушить - солёненькую потом под пивко...</Original>
+</Key>
+<Key ID="STRD_PIO42">
+<Original>О! Это святое дело   ик... там, в ящике, за домом.</Original>
+</Key>
+<Key ID="STRD_PIO43">
+<Original>-Сержант, двигайся к лесу и жди меня там. Не нужно нам двоим тут светиться.</Original>
+</Key>
+<Key ID="STRD_PIO44">
+<Original>-Так точно.</Original>
+</Key>
+<Key ID="STRD_PIO45">
+<Original>Добрый вечер.</Original>
+</Key>
+<Key ID="STRD_PIO46">
+<Original>Добрый.</Original>
+</Key>
+<Key ID="STRD_PIO47">
+<Original>Передай всем, чтобы возвращались домой и ни при каких обстоятельствах не выходили. Сделаешь это?</Original>
+</Key>
+<Key ID="STRD_PIO48">
+<Original>Хорошо</Original>
+</Key>
+<Key ID="STRD_PIO49">
+<Original>-Все за мной. </Original>
+</Key>
+<Key ID="STRD_PIO50">
+<Original>- Думаю урал подходящая цель... только надо бы предупредить местных...  </Original>
+</Key>
+
+
+</Container>
+
+<Container name="Persons">
+<Key ID="STR_p1">
+<Original>Юрий Михайлович</Original>
+</Key>
+<Key ID="STR_p2">
+<Original>Александр Васильевич</Original>
+</Key>
+<Key ID="STR_p3">
+<Original>Владимир Градецкий</Original>
+</Key>
+<Key ID="STR_p4">
+<Original>Грибник</Original>
+</Key>
+<Key ID="STR_p5">
+<Original>Местный</Original>
+</Key>
+<Key ID="STR_p6">
+<Original>Сержант Самойлоко</Original>
+</Key>
+
+
+<Key ID="STRM_razrab">
+<Original>TSFH</Original>
+</Key>
+
+<Key ID="STRM_voiced">
+<Original>Two Steps From Hell</Original>
+</Key>
+<Key ID="STRM_sans">
+<Original>Посередке</Original>
+</Key>
+<Key ID="STRM_sans1">
+<Original>Посередке</Original>
+</Key>
+
+<Key ID="STRM_v1">
+<Original>Редактор: Mikezar</Original>
+</Key>
+<Key ID="STRM_v2">
+<Original>На следующий день</Original>
+</Key>
+<Key ID="STRM_v3">
+<Original>Кампания: Пламя Империи</Original>
+</Key>
+<Key ID="STRM_v4">
+<Original></Original>
+</Key>
+<Key ID="STRM_v5">
+<Original>В5</Original>
+</Key>
+<Key ID="STRM_v6">
+<Original>Той же ночью./</Original>
+</Key>
+<Key ID="STRM_v7">
+<Original>0900.На пути к Чернорусской базе</Original>
+</Key>
+<Key ID="STRM_v8">
+<Original></Original>
+</Key>
+<Key ID="STRM_v9">
+<Original>Спустя час...</Original>
+</Key>
+<Key ID="STRM_v10">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v11">
+<Original>Республика</Original>
+</Key>
+<Key ID="STRM_v12">
+<Original>10 часов утра. Площадь Черногорска.</Original>
+</Key>
+<Key ID="STRM_v13">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v14">
+<Original>В14</Original>
+</Key>
+<Key ID="STRM_v15">
+<Original>Электрозаводск.5 часов спустя.</Original>
+</Key>
+<Key ID="STRM_v16">
+<Original>3-мя часами ранее...</Original>
+</Key>
+<Key ID="STRM_v17">
+<Original>14 июля.18:20</Original>
+</Key>
+<Key ID="STRM_v18">
+<Original>В18</Original>
+</Key>
+<Key ID="STRM_v19">
+<Original>В19</Original>
+</Key>
+<Key ID="STRM_v20">
+<Original>В20</Original>
+</Key>
+<Key ID="STRM_v21">
+<Original>В21</Original>
+</Key>
+<Key ID="STRM_v22">
+<Original>В22</Original>
+</Key>
+<Key ID="STRM_v23">
+<Original>В23</Original>
+</Key>
+<Key ID="STRM_v24">
+<Original>В24</Original>
+</Key>
+<Key ID="STRM_v25">
+<Original>В25</Original>
+</Key>
+<Key ID="STRM_v26">
+<Original>В26</Original>
+</Key>
+<Key ID="STRM_blag1">
+<Original>благ 1</Original>
+</Key>
+<Key ID="STRM_blag2">
+<Original>благ 2</Original>
+</Key>
+<Key ID="STRM_blag3">
+<Original>благ 3</Original>
+</Key>
+<Key ID="STRM_blag4">
+<Original>благ 4</Original>
+</Key>
+<Key ID="STRM_blag5">
+<Original>благ 5</Original>
+</Key>
+<Key ID="STRM_blag6">
+<Original>благ 6</Original>
+</Key>
+
+</Container>
+</Package>
+</Project>

@@ -1,0 +1,7 @@
+_time =0
+_wait = _time +3600
+#time
+_time = _time +1
+~1
+?_wait>=time:goto "time"
+p=[] execvm "loose2.sqf"

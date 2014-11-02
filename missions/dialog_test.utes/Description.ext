@@ -1,0 +1,2 @@
+#include "GUI\common.hpp"
+#include "GUI\TestDialog.hpp"

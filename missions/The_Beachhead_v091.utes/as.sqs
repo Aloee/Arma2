@@ -1,0 +1,12 @@
+? ! (isServer) : exit
+
+_aszone = _this select 0
+
+_wp0 = airsupport addWaypoint [_aszone, 0];
+[airsupport, 1] setWaypointStatements ["true", ""];
+[airsupport, 1] setWaypointTimeout [0, 0, 0];
+[airsupport, 1] showWaypoint "NEVER";
+[airsupport, 1] setWaypointSpeed "FULL";
+[airsupport, 1] setWaypointType "GUARD";
+
+exit

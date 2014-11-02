@@ -1,0 +1,214 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Mincer">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Begin",0,250,0.000000,-225.000000,100.000000,-175.000000,0.000000,"Begin"};
+item1[] = {"_",2,250,0.000000,-75.000000,100.000000,-25.000000,0.000000,""};
+item2[] = {"__1",2,250,175.000000,25.000000,275.000000,75.000000,0.000000,""};
+item3[] = {"true",8,218,0.000000,25.000000,100.000000,75.000000,0.000000,"true"};
+item4[] = {"true",8,218,0.000000,-150.000000,100.000000,-100.000000,0.000000,"true"};
+item5[] = {"End_FSM",1,250,-175.000000,75.000000,-75.000000,150.000000,0.000000,"End FSM"};
+item6[] = {"in_area",4,218,175.000000,-75.000000,275.000000,-25.000000,0.000000,"in area"};
+item7[] = {"break",4,218,-175.000000,-75.000000,-75.000000,-25.000000,0.000000,"break"};
+item8[] = {"attack",4,4314,325.000000,-25.000000,425.000000,25.000000,3.000000,"attack"};
+item9[] = {"effect_on",4,218,375.000000,0.000000,475.000000,50.000000,1.000000,"effect on"};
+item10[] = {"",7,210,421.000031,-141.500031,428.999969,-133.499985,0.000000,""};
+item11[] = {"effect_off",4,218,425.000000,25.000000,525.000000,75.000000,2.000000,"effect off"};
+link0[] = {0,4};
+link1[] = {1,6};
+link2[] = {1,7};
+link3[] = {2,3};
+link4[] = {2,8};
+link5[] = {2,9};
+link6[] = {2,11};
+link7[] = {3,1};
+link8[] = {4,1};
+link9[] = {6,2};
+link10[] = {7,5};
+link11[] = {8,10};
+link12[] = {9,10};
+link13[] = {10,1};
+link14[] = {10,1};
+link15[] = {11,10};
+globals[] = {25.000000,1,0,0,0,640,480,1,56,6316128,1,-199.724518,509.911224,427.786743,-524.707214,636,855,1};
+window[] = {2,-1,-1,-1,-1,916,175,1455,175,3,654};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "Mincer";
+  class States
+  {
+    /*%FSM<STATE "Begin">*/
+    class Begin
+    {
+      name = "Begin";
+      init = /*%FSM<STATEINIT""">*/"_epicenter = _this select 0;" \n
+       "_range = _this select 1;" \n
+       "_vfxstate=0;" \n
+       "_dstate=0;" \n
+       "" \n
+       "_timeHeartbeat = 0; _timeMincerWind = 0;" \n
+       "_timeHeartbeatSec = 3;" \n
+       "_timeMincerWindSec = 8;" \n
+       "" \n
+       "_logic = LOGICGRP createUnit [""LOGIC"", _epicenter, [], 0, """"];" \n
+       "" \n
+       "_particleSource = ""#particlesource"" createVehicleLocal _epicenter;" \n
+       "_particleSource setParticleParams [[""\Ca\Data\ParticleEffects\Hit_Leaves\Leaves_Green.p3d"",1,0,1,0],"""",""SpaceObject"",2,10,[0,0,0],[0,0,0],1,1.5,1,0.1,[3],[[1,1,1,1]],[1],0.1,0.1,"""","""",""""];" \n
+       "_particleSource setParticleRandom [0.1,[0,0,0],[0.15,0.15,0],0,0.5,[-0.05,-0.05,5,0],0,0];" \n
+       "_particleSource setParticleCircle [1.5,[-2,-2,10]];" \n
+       "_particleSource setDropInterval 0.1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/"_cycleScl=time+1;" \n
+       "" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "break">*/
+        class break
+        {
+          priority = 0.000000;
+          to="End_FSM";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"break_anomalies"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "in_area">*/
+        class in_area
+        {
+          priority = 0.000000;
+          to="__1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"player distance _epicenter < MIN_DIST_ACTIVATE_ANOMALIE and time > _cycleScl"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_dist= player distance [_epicenter select 0, _epicenter select 1, 0];"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "__1">*/
+    class __1
+    {
+      name = "__1";
+      init = /*%FSM<STATEINIT""">*/"_objects = nearestObjects [[_epicenter select 0, _epicenter select 1,  0], [""Land""], _range];" \n
+       "_stoneDetected = (LASTSTONEPOS distance _epicenter <= _range);" \n
+       "if(time > _timeMincerWind)then{player say ""dap_mincer_wind""; _timeMincerWind = time + _timeMincerWindSec};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "attack">*/
+        class attack
+        {
+          priority = 3.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"{alive _x} count _objects > 0  or _stoneDetected"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_logic say ""Explosion1"";" \n
+           "" \n
+           "if(_stoneDetected)then{" \n
+           "	[LASTSTONEPOS select 0, LASTSTONEPOS select 1, 15, 10, [0.7, 0.7, 1, 1]] call PRECMPL_ANOMALI_MINCERWAVE;" \n
+           "	LASTSTONEPOS=[0,0,0];" \n
+           "}else{" \n
+           "	{" \n
+           "		//[nil, nil, rSPAWN, [getPosATL _x select 0, getPosATL _x select 1, (getPosATL _x select 2)+15, 10, [0.7, 0.7, 1, 1]], PRECMPL_ANOMALI_MINCERWAVE] call RE;" \n
+           "		//[nil, nil, rSPAWN, [_logic, _x, _range], PRECMPL_ANOMALI_TORNADO] call RE;" \n
+           "	" \n
+           "		if(!isPlayer _x or _x == player)then{" \n
+           "			[_logic, _x, _range] call PRECMPL_ANOMALI_TORNADO;" \n
+           "			[getPosATL _x select 0, getPosATL _x select 1, (getPosATL _x select 2)+15, 10, [0.7, 0.7, 1, 1]] call PRECMPL_ANOMALI_MINCERWAVE;" \n
+           "		};" \n
+           "" \n
+           "	}ForEach _objects;" \n
+           "};"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "effect_off">*/
+        class effect_off
+        {
+          priority = 2.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_dist>(_range+10) and _vfxstate==1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"call fx_backgroundDynamicBlur;" \n
+           "_vfxstate=0;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "effect_on">*/
+        class effect_on
+        {
+          priority = 1.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_dist<= (_range+20)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"if (_vfxstate==0) then {" \n
+           "	""dynamicBlur"" ppEffectEnable true;" \n
+           "	""filmGrain"" ppEffectEnable true;" \n
+           "" \n
+           "	""filmGrain"" ppEffectCommit 0.5;" \n
+           "	""filmGrain"" ppEffectAdjust [0.1, -1, 0.1, 0.05, 1, false];" \n
+           "	" \n
+           " _vfxstate=1 " \n
+           "};" \n
+           "	" \n
+           "		//_fxb=((((_range+10)-_dist)/10)*3);" \n
+           "		_fxb = (floor random 10) / 10;" \n
+           "		""dynamicBlur"" ppEffectAdjust [_fxb];" \n
+           "		""dynamicBlur"" ppEffectCommit 0.1;" \n
+           "		" \n
+           "" \n
+           "if(time > _timeHeartbeat)then{player say ""nuclear_heartbeat""; _timeHeartbeat = time + _timeHeartbeatSec};"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End_FSM">*/
+    class End_FSM
+    {
+      name = "End_FSM";
+      init = /*%FSM<STATEINIT""">*/"deleteVehicle _particleSource;" \n
+       "deleteVehicle _logic;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Begin";
+  finalStates[] =
+  {
+    "End_FSM",
+  };
+};
+/*%FSM</COMPILE>*/

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project name='Arma2'>
+	<Package name='TEST'>
+		<Container name='GUI'>
+			<Key ID="STR_gui_confirm">
+				<English>Ok</English>
+				<Russian>Да</Russian>
+			</Key>
+			<Key ID="STR_gui_cansel">
+				<English>No</English>
+				<Russian>Нет</Russian>
+			</Key>
+		</Container>
+		<Container name='Titles'>
+			<Key ID="STR_titles_response">
+				<English>Well and good</English>
+				<Russian>Ну и ладно</Russian>
+			</Key>
+			<Key ID="STR_titles_question">
+				<English>Yes or not?</English>
+				<Russian>Да или нет?</Russian>
+			</Key>				
+		</Container>
+	</Package>	
+</Project>

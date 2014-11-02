@@ -1,0 +1,4 @@
+class SF_OO_Cfg {
+	#include "classes\Soldier\Soldier.h"
+	#include "classes\Player\Player.h"
+};

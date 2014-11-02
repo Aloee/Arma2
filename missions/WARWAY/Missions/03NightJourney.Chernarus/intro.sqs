@@ -1,0 +1,92 @@
+titleCut ["","Black faded",10];
+p3 disableAI "MOVE"
+0 fadesound 0
+1 fademusic 1
+{_x setVariable ["BIS_noCoreConversations", true];_x disableConversation true} foreach allunits;
+enableRadio false
+setAccTime 1
+showcinemaborder false
+p1 playmove "AidlPpneMstpSnonWnonDnon_SleepA_sleep3"
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+_camera camPrepareFocus [-1,-1]
+~9
+_camera camPrepareTarget [-17055.21,-91177.09,-25979.68];
+_camera camPreparePos [6834.20,2384.44,6.11];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+2 fadesound 0.7
+
+titleCut ["","Black in",4];
+_camera camPrepareTarget [-17055.21,-91177.09,-25979.68];
+_camera camPreparePos [6834.20,2384.44,6.11];
+_camera camPrepareFOV 0.400;
+_camera camCommitPrepared 4
+~1
+cutRSC ["v9", "PLAIN", 5]
+~4
+playsound "Knock"
+p1 playmove "AidlPpneMstpSnonWnonDnon_SleepC_standUp"
+~5
+playsound  "STRD_PIO1"
+titleCut ["","BLACK OUT", 2]
+~3
+deletevehicle p1
+p3 setvectordir [-49066.75,80358.65,-28686.64];
+p3 setPos [6832.48,2381.33,5.91];
+BIS_lightEmitor01 = "#lightpoint" createVehicleLocal getpos s1;  
+BIS_lightEmitor01 setLightColor [1, 1, 1];
+BIS_lightEmitor01 setLightBrightness 0.1;
+BIS_lightEmitor01 setLightAmbient [1,1,1];
+BIS_lightEmitor01 lightAttachObject [s1, [0, 0, 0.1]];
+~1
+titleCut ["","Black in",3];
+_camera camPrepareTarget [-20748.68,94336.00,-28466.19];
+_camera camPreparePos [6832.83,2379.47,6.47];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+p2 playmove "AidlPercSnonWnonDnon_talk5"
+playsound  "STRD_PIO2"
+~5
+playsound "STRD_PIO3"
+~9
+playsound "STRD_PIO4"
+~7
+playsound "STRD_PIO5"
+~9
+playsound "STRD_PIO6"
+~8
+TitleText [localize "STRD_PIO7","PLAIN DOWN"]
+~4
+_camera camPrepareTarget [79848.63,-62631.48,-20995.39];
+_camera camPreparePos [6830.13,2383.67,6.48];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+playsound "STRD_PIO8"
+~2
+p3 setvectordir [-90371.17,25574.19,-4167.23];
+p3  setPos [6826.26,2389.52,1.72];
+_camera camPrepareTarget [88850.39,59415.73,-3875.27];
+_camera camPreparePos [6794.94,2387.97,1.72];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+;comment "9:12:03";
+_camera camPrepareTarget [104763.05,-17313.59,-3875.37];
+_camera camPreparePos [6802.87,2393.79,1.72];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 6
+~6
+playsound "STRD_PIO9"
+_camera camPrepareTarget [104763.05,-17313.59,-3875.37];
+_camera camPreparePos [6802.87,2393.79,1.72];
+_camera camPrepareFOV 0.200;
+_camera camCommitPrepared 4
+~2
+titleCut ["","BLACK OUT", 3]
+~3
+1 fademusic 0 
+1 fadesound 0
+~1
+_camera cameraeffect ["terminate", "Back"] 
+camdestroy _camera  
+endMission "END1"

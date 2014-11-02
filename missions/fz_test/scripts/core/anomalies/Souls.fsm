@@ -1,0 +1,63 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Souls">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Begin",0,4346,0.000000,-225.000000,100.000000,-175.000000,0.000000,"Begin"};
+item1[] = {"End_FSM",1,250,0.000000,25.000000,100.000000,100.000000,0.000000,"End FSM"};
+item2[] = {"break",4,218,0.000000,-100.000000,100.000000,-50.000000,0.000000,"break"};
+link0[] = {0,2};
+link1[] = {2,1};
+globals[] = {25.000000,1,0,0,0,640,480,1,56,6316128,1,-190.027695,471.398895,403.219574,-483.175018,636,855,1};
+window[] = {2,-1,-1,-1,-1,916,175,1455,175,3,654};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "Souls";
+  class States
+  {
+    /*%FSM<STATE "Begin">*/
+    class Begin
+    {
+      name = "Begin";
+      init = /*%FSM<STATEINIT""">*/"_epicenter = _this select 0;" \n
+       "_range = _this select 1;" \n
+       "" \n
+       "_PS = ""#particlesource"" createVehicle _epicenter;" \n
+       "_PS setParticleCircle [0, [0, 0, 0]];" \n
+       "_PS setParticleRandom [0, [5, 5, 0], [0.25, 0.25, 0], 0, 1.5, [0, 0, 0, 0], 0, 0];" \n
+       "_PS setParticleParams [""ca\Data\kouleSvetlo"", """", ""billboard"", 1, 10, [0,0,0], [0, 0, 0], 5, 0.05, 0.04, 0, [0.5,1,2], [[1,1,1,0.3],[0.5,0.46,0.81,0.4],[1,0,0,0]], [0.2], 0.2, 0.25, ""core\anomalies\Souls_act.sqf"", """", _epicenter];" \n
+       "_PS setDropInterval 1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "break">*/
+        class break
+        {
+          priority = 0.000000;
+          to="End_FSM";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"FZ_BREAK_ANOMALIES"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End_FSM">*/
+    class End_FSM
+    {
+      name = "End_FSM";
+      init = /*%FSM<STATEINIT""">*/"deleteVehicle _Ps;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Begin";
+  finalStates[] =
+  {
+    "End_FSM",
+  };
+};
+/*%FSM</COMPILE>*/

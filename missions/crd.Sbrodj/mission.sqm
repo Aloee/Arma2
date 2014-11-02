@@ -1,0 +1,89 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"sbrodj"
+	};
+	addOnsAuto[]=
+	{
+		"sbrodj"
+	};
+	randomSeed=5492056;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"sbrodj"
+	};
+	addOnsAuto[]=
+	{
+		"sbrodj"
+	};
+	randomSeed=15140839;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"sbrodj"
+	};
+	addOnsAuto[]=
+	{
+		"sbrodj"
+	};
+	randomSeed=3568336;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"sbrodj"
+	};
+	addOnsAuto[]=
+	{
+		"sbrodj"
+	};
+	randomSeed=13876371;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

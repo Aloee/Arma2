@@ -1,0 +1,17 @@
+clearweaponCargo truck
+clearmagazineCargo truck
+~1
+truck addweaponCargo ["SMAW", 2]
+truck addmagazineCargo ["SMAW_HEAA", 6]
+truck addweaponCargo ["DMR", 1]
+truck addmagazineCargo ["20Rnd_762x51_DMR", 10]
+truck addweaponCargo ["M240", 1]
+truck addmagazineCargo ["100Rnd_762x51_M240", 5]
+truck addweaponCargo ["M4A1_HWS_GL", 1]
+truck addweaponCargo ["M16A4_ACG_GL", 1]
+truck addmagazineCargo ["30Rnd_556x45_Stanag", 40]
+truck addmagazineCargo ["1Rnd_HE_M203", 10]
+truck addmagazineCargo ["1Rnd_SmokeRed_M203", 10]
+truck addmagazineCargo ["1Rnd_SmokeGreen_M203", 10]
+truck addweaponCargo ["m16a4", 6]
+truck addmagazineCargo ["HandGrenade_West", 20]

@@ -1,0 +1,141 @@
+﻿class MissionDefault
+{
+ 	lives = -1;
+
+	lost = ;
+	end1 = ;
+	end2 = ;
+	end3 = ;
+	end4 = ;
+	end5 = ;
+	end6 = ;
+};
+
+class Campaign
+{
+	name = "Дорогами войны";
+	firstBattle = Beginning;
+	
+                  class Beginning
+	
+                  {
+		name = "MIK"
+		cutscene =;
+		firstMission = 01FLY;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
+		lost = ;
+
+                class 01FLY: MissionDefault
+		{
+			end1 = 02Inspection;
+			end2 = 02Inspection;
+			end3 = 02Inspection;
+			end4 = 02Inspection;
+			end5 = 02Inspection;
+			end6 = 02Inspection;
+			lost = 02Inspection;
+			template = 01FLY.Chernarus;
+		};
+
+		class 02Inspection: MissionDefault
+		{
+			end1 = 03NightJourney;
+			end2 = 03NightJourney;
+			end3 = 03NightJourney;
+			end4 = 03NightJourney;
+			end5 = 03NightJourney;
+			end6 = 03NightJourney;
+			lost = 03NightJourney;
+			template = 02Inspection.Chernarus;
+		};
+
+		class 03NightJourney: MissionDefault
+		{
+			end1 = 04Mogilevka;
+			end2 = 04Mogilevka;
+			end3 = 04Mogilevka;
+			end4 = 04Mogilevka;
+			end5 = 04Mogilevka;
+			end6 = 04Mogilevka;
+			lost = 03NightJourney;
+			template = 03NightJourney.Chernarus;
+		};
+
+		class 04Mogilevka: MissionDefault
+		{
+			end1 = 05RunForPresident;
+			end2 = 05RunForPresident;
+			end3 = 05RunForPresident;
+			end4 = 05RunForPresident;
+			end5 = 05RunForPresident;
+			end6 = 05RunForPresident;
+			lost = 04Mogilevka;
+			template = 04Mogilevka.Chernarus;
+		};
+
+		class 05RunForPresident: MissionDefault
+		{
+			end1 = 06Esacape;
+			end2 = 06Esacape;
+			end3 = 06Esacape;
+			end4 = 06Esacape;
+			end5 = 06Esacape;
+			end6 = 06Esacape;
+			lost = 05RunForPresident;
+			template = 05RunForPresident.Chernarus;
+		};
+
+		class 06Esacape: MissionDefault
+		{
+			end1 = 07Run;
+			end2 = 07Run;
+			end3 = 07Run;
+			end4 = 07Run;
+			end5 = 07Run;
+			end6 = 07Run;
+			lost = 06Esacape;
+			template = 06Esacape.Chernarus;
+		};
+
+		class 07Run: MissionDefault
+		{
+			end1 = 08Television_Aerial;
+			end2 = 08Television_Aerial;
+			end3 = 08Television_Aerial;
+			end4 = 08Television_Aerial;
+			end5 = 08Television_Aerial;
+			end6 = 08Television_Aerial;
+			lost = 07Run;
+			template = 07Run.Chernarus;
+		};
+
+		class 08Television_Aerial: MissionDefault
+		{
+			end1 = 09Final_attack;
+			end2 = 09Final_attack;
+			end3 = 09Final_attack;
+			end4 = 09Final_attack;
+			end5 = 09Final_attack;
+			end6 = 09Final_attack;
+			lost = 08Television_Aerial;
+			template = 08Television_Aerial.Chernarus;
+		};
+
+		class 09Final_attack: MissionDefault
+		{
+			end1 = ;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = 09Final_attack;
+			template = 09Final_attack.Chernarus;
+		};
+	};	
+};	

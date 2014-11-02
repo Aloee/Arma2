@@ -1,0 +1,18 @@
+_obj= _this select 0
+_zalp= _this select 1
+_disp= _this select 2
+_snar= _this select 3
+_i=0
+_pos=getpos _obj
+#dolbi
+_perelet=random _disp
+~random 2
+_dir= random 360
+_obj setdir _dir
+ex=_snar createvehicle [(getpos _obj select 0)+_perelet*sin(getdir _obj)-_perelet*cos(getdir _obj),(getpos _obj select 1)+_perelet*cos(getdir _obj)+_perelet*sin(getdir _obj),random 100]
+ex setVelocity [0, 0, -200]
+_i=_i+1
+~2
+?_i<_zalp:goto "dolbi"
+ex= nil
+exit

@@ -1,0 +1,15 @@
+onMapSingleClick "CMTarget setPos _pos; setfire=false";
+@!setfire;
+art = false;
+"destination" setmarkerpos getPos CMTarget;
+
+onMapSingleClick "";
+titleText ["", "plain down"];
+
+~10
+;[имя_цели(логика),кол-во снарядов,разброс,имя_снаряда]exec"obstrel.sqs"
+[CMTarget,5,50,"Bo_GBU12_LGB"] exec "obstrel\obstrel.sqs";
+~40
+setfire=true;
+p=[] execvm "batset.sqf"
+exit

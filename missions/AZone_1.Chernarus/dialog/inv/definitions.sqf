@@ -1,0 +1,4 @@
+#define INV_DIALOG 40001
+#define INV_BCKGRND 40002
+#define INV_TITLE_W 400031
+#define INV_B_C 40004

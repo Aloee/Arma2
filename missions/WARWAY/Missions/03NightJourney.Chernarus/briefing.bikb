@@ -1,0 +1,57 @@
+class Sentences
+{
+
+
+class STRD_PIO10
+	{
+		text = "$STRD_PIO10";
+		speech[] = {"\sound\STRD_PIO10.ogg"};
+		class Arguments {};
+	};
+
+class STRD_PIO11
+	{
+		text = "$STRD_PIO11";
+		speech[] = {"\sound\STRD_PIO11.ogg"};
+		class Arguments {};
+	};
+
+
+class STRD_PIO13
+	{
+		text = "$STRD_PIO13";
+		speech[] = {"\sound\STRD_PIO13.ogg"};
+		class Arguments {};
+	};
+
+class STRD_PIO14
+	{
+		text = "$STRD_PIO14";
+		speech[] = {"\sound\STRD_PIO14.ogg"};
+		class Arguments {};
+	};
+class STRD_PIO15
+	{
+		text = "$STRD_PIO15";
+		speech[] = {"\sound\STRD_PIO15.ogg"};
+		class Arguments {};
+	};
+class STRD_PIO16
+	{
+		text = "$STRD_PIO16";
+		speech[] = {"\sound\STRD_PIO16.ogg"};
+		class Arguments {};
+	};
+
+class STRD_PIO17
+	{
+		text = "$STRD_PIO17";
+		speech[] = {"\sound\STRD_PIO17.ogg"};
+		class Arguments {};
+	};
+};
+
+class Arguments{};
+class Special{};
+startWithVocal[] = {hour};
+startWithConsonant[] = {europe, university};

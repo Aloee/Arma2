@@ -1,0 +1,2 @@
+[nil, _this, "per", raddaction, localize "STR_action_unlock", "fx\actions\lockfalse.sqf",[],0,false,false,"","(locked _target) and (_target getVariable ""owner"" == getPlayerUID player) and (isNil {_target getVariable ""repairing""})"] call RE;
+[nil, _this, "per", raddaction, localize "STR_action_lock", "fx\actions\locktrue.sqf",[],0,false,false,"","(!locked _target) and (_target getVariable ""owner"" == getPlayerUID player)"] call RE;

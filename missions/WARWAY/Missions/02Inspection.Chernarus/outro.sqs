@@ -1,0 +1,145 @@
+titleCut ["","Black faded",10];
+c1 setidentity "spec_4"
+f2 setidentity "spec_5"
+f3 setidentity "spec_6"
+c1 disableAI "MOVE"
+c2 disableAI "MOVE"
+c3 disableAI "MOVE"
+c4 disableAI "MOVE"
+c5 disableAI "MOVE"
+f1 disableAI "MOVE"
+f2 disableAI "MOVE"
+f3 disableAI "MOVE"
+f4 disableAI "MOVE"
+removeallweapons f1
+removeallweapons f2
+removeallweapons f3
+0 fadesound 0
+1 fademusic 1
+c4 playmove "aidlpercmstpsraswrfldnon_idlesteady01n"
+c5 playmove "AmovPercMstpSnonWnonDnon_talking"
+c3 playmove "AmovPercMstpSnonWnonDnon_Ease"
+{_x setVariable ["BIS_noCoreConversations", true];_x disableConversation true} foreach allunits;
+enableRadio false
+setAccTime 1
+showcinemaborder false
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+_camera camPrepareFocus [-1,-1]
+~1
+playmusic "Estate2"
+~8
+_camera camPrepareTarget [-86384.55,38630.14,21612.98];
+_camera camPreparePos [6221.31,7718.60,10.13];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+2 fadesound 0.7
+2 fademusic 0.7
+titleCut ["","Black in",6];
+~3
+_camera camPrepareTarget [-87448.03,38985.05,15681.83];
+_camera camPreparePos [6221.17,7718.73,5.55];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 8
+~3
+titleRSC ["v14", "PLAIN"]
+~7
+c2 playmove "AidlPercSnonWnonDnon_talk4"
+c1 playmove "poslouchaniproslovgenerala_CsdrAidlPercMstpSnon_ruceZaZady"
+
+_camera camPrepareTarget [72927.40,82034.96,-4958.03];
+_camera camPreparePos [6216.94,7712.01,1.64];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+_camera camPrepareTarget [72927.40,82034.96,-4958.03];
+_camera camPreparePos [6227.74,7724.30,1.61];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 8
+~8
+_camera camPrepareTarget [87401.59,-50115.71,8395.18];
+_camera camPreparePos [6229.15,7724.96,1.62];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 4
+~4
+_camera camPrepareTarget c1
+_camera camPreparePos [6229.15,7724.96,1.62];
+_camera camPrepareFOV 0.400;
+_camera camCommitPrepared 5
+~2
+playsound "STRD_PIO14"
+~10
+playsound "STRD_PIO15"
+~6
+playsound "STRD_PIO16"
+~6
+c1 switchmove "AmovPercMstpSnonWnonDnon_SaluteIn"
+c2 switchmove "AmovPercMstpSnonWnonDnon_SaluteIn"
+~1
+titleCut ["","BLACK OUT", 3]
+~4
+skiptime 1
+~1
+_camera camPrepareTarget [-64641.72,79147.30,-299.57];
+_camera camPreparePos [7373.10,9765.54,1.21];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleCut ["","Black in",4];;
+f1 action ["lightOn", car]
+f1 playmove "AmovPercMstpSnonWnonDnon_carCheckWheel"
+_camera camPrepareTarget [-64641.72,79147.30,-299.57];
+_camera camPreparePos [7367.31,9770.29,1.40];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 6
+~6
+playsound "STRD_PIO17"
+_camera camPrepareTarget [-3979.05,108772.00,-8269.33];
+_camera camPreparePos [7365.60,9772.12,1.52];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 2
+f2 playmove "poslouchaniproslovgenerala_CsdrAidlPercMstpSnon_rukaVtvar45st1"
+f3 playmove "poslouchaniproslovgenerala_CsdrAidlPercMstpSnon_ruceVbok3"
+~5
+playsound "STRD_PIO18"
+_camera camPrepareTarget [15035.02,-89914.68,2051.22];
+_camera camPreparePos [7363.42,9775.11,1.61];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~12
+titleCut ["","BLACK OUT", 1]
+~3
+f2 setpos [7363.68,9771.51,1.81];
+f2 setvectorDir  [-55270.08,87213.20,-8973.63];
+deletevehicle f1
+f4 setpos [7369.37,9767.30,1.49];
+map attachto [car,[0,1.4,-0.7]]
+~1
+f2 playmove "ActsPercSnonWnonDnon_tableSupport_TalkA"
+titleCut ["","Black in",2];
+playsound "STRD_PIO19"
+_camera camPrepareTarget [86817.83,-41366.40,-32331.30];
+_camera camPreparePos [7361.13,9773.76,1.81];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~11
+playsound "STRD_PIO20"
+f4 enableAi "MOVE"
+_camera camPrepareTarget f2
+_camera camPreparePos [7371.76,9753.91,1.89];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+playsound "STRD_PIO21"
+_camera camPrepareTarget f2
+_camera camPreparePos [7371.76,9753.91,1.89];
+_camera camPrepareFOV 0.200;
+_camera camCommitPrepared 5
+~6
+titleCut ["","BLACK OUT", 3]
+~3
+1 fademusic 0 
+1 fadesound 0
+~1
+_camera cameraeffect ["terminate", "Back"] 
+camdestroy _camera  
+endMission "END1"

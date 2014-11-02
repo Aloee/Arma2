@@ -1,0 +1,208 @@
+titleCut ["","Black faded",10];
+of2 setIdentity "spec_1"
+of2_1 setIdentity "spec_1"
+of2_3 setIdentity "spec_1"
+of1 setIdentity "spec_2"
+of1_1 setIdentity "spec_2"
+of1_3 setIdentity "spec_2"
+c2 setIdentity "spec_3"
+car1 disableAI "MOVE"
+car2 disableAI "MOVE"
+car3 disableAI "MOVE"
+plane_3 hideObject true
+of1_3 hideObject true
+of2_3 hideObject true
+of3_3 hideObject true
+0 fadesound 0
+1 fademusic 1
+setAccTime 1
+showcinemaborder false
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+_camera camPrepareFocus [-1,-1]
+~1
+playmusic "Intro"
+~8
+_camera camPrepareTarget [8054.60,110763.17,34.42];
+_camera camPreparePos [8016.81,11000.16,20.57];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+2 fadesound 0.2
+1 fademusic 0.3
+titleCut ["","Black in",4];
+cutRSC ["v9", "PLAIN", 5]
+_camera camPrepareTarget [8054.60,110763.17,34.42];
+_camera camPreparePos [8055.09,11013.18,50.92];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 8
+~8
+_camera camPrepareTarget plane
+_camera camPreparePos [8055.09,11013.18,50.92];
+_camera camCommitPrepared 5
+~5
+_wait=time+9
+#plane
+_camera camPrepareTarget plane
+_camera camPrepareRelPos [7,9,2]
+_camera camCommitPrepared 0
+~0.01
+?_wait>=time:goto "plane"
+titleCut ["","Black out",3];
+~3
+_camera camPrepareTarget [11571.99,-83173.51,16071.94];
+_camera camPreparePos [4762.07,15385.42,2.18];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~1
+titleCut ["","Black in",2];
+_camera camPrepareTarget [2615.19,-82400.80,21413.72];
+_camera camPreparePos [4762.32,15382.30,2.62];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 6
+~6
+_camera camPrepareTarget [-86863.09,52534.79,-14877.38];
+_camera camPreparePos [4762.66,15382.00,2.69];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 4
+~4
+_camera camPrepareTarget [-44148.71,-27459.01,-75466.99];
+_camera camPreparePos [4762.54,15382.61,3.08];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+playsound "STRD_PIO1"
+~4
+playsound "STRD_PIO2"
+_wait1=time+9
+#plane1
+_camera camPrepareTarget plane
+_camera camPrepareRelPos [3,6,5]
+_camera camCommitPrepared 0
+~0.01
+?_wait1>=time:goto "plane1"
+~1
+playsound "STRD_PIO3"
+_camera camPrepareTarget plane
+_camera camPreparePos [8195.94,8030.30,29.71];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+_camera camPrepareTarget plane
+_camera camPreparePos [8195.94,8030.30,29.71];
+_camera camPrepareFOV 0.400;
+_camera camCommitPrepared 10
+~10
+playsound "STRD_PIO4"
+_wait3=time+11
+#plane3
+_camera camPrepareTarget plane
+_camera camPrepareRelPos [33,-26,35]
+_camera camCommitPrepared 0
+~0.01
+?_wait3>=time:goto "plane3"
+playsound "STRD_PIO5"
+~9
+playsound "STRD_PIO6"
+titleCut ["","Black out",3];
+~11
+titleCut ["","Black in",2];
+_camera camPrepareTarget [-44148.71,-27459.01,-75466.99];
+_camera camPreparePos [4762.54,15382.61,3.08];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+titleCut ["","Black out",3];
+~4
+titleCut ["","Black in",2];
+playsound "STRD_PIO7"
+deletevehicle plane
+_wait4=time+8
+#plane4
+_camera camPrepareTarget plane_2
+_camera camPrepareRelPos [-9,26,25]
+_camera camCommitPrepared 0
+~0.01
+?_wait4>=time:goto "plane4"
+playsound "STRD_PIO8"
+titleCut ["","Black out",3];
+~7
+_camera camPrepareTarget [57444.28,-81654.23,14680.75];
+_camera camPreparePos [5155.13,2329.14,11.39];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleCut ["","Black in",2];
+~3
+_camera camPrepareTarget [-84606.55,44527.40,-10854.74];
+_camera camPreparePos [5373.40,2174.35,18.56];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 8
+~8
+_camera camPrepareTarget plane
+_camera camPreparePos [5373.40,2174.35,18.56];
+_camera camPrepareFOV 0.200;
+_camera camCommitPrepared 6
+~13
+_wait5=time+8
+#plane5
+_camera camPrepareTarget plane_2
+_camera camPrepareRelPos [-1,6,3]
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~0.01
+?_wait5>=time:goto "plane5"
+~5
+titleCut ["","Black out",2];
+~3
+deletevehicle plane_2
+deletevehicle c1_3
+deletevehicle c1_4
+plane_3 hideObject false
+of1_3 hideObject false
+of2_3 hideObject false
+of3_3 hideObject false
+_camera camPrepareTarget [32663.88,98523.74,-224.17];
+_camera camPreparePos [4755.23,2497.17,2.21];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleCut ["","Black in",2];
+_camera camPrepareTarget [48802.63,92273.73,-185.89];
+_camera camPreparePos [4755.55,2498.72,3.67];
+_camera camPrepareFOV 0.400;
+_camera camCommitPrepared 5
+c2 playmove "AidlPercSnonWnonDnon_talk5"
+of1_3 playmove "AidlPercSnonWnonDnon_talk5"
+~3
+playsound "STRD_PIO9"
+~5
+playsound "STRD_PIO10"
+~5
+titleCut ["","Black out",2];
+~3
+car1 enableAI "MOVE"
+car2 enableAI "MOVE"
+car3 enableAI "MOVE"
+
+_camera camPrepareTarget [83901.57,-58950.65,7.09];
+_camera camPreparePos [4869.64,2318.88,2.00];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleCut ["","Black in",2];
+_camera camPrepareTarget [83901.57,-58950.65,7.28];
+_camera camPreparePos [4869.65,2318.86,21.50];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 15
+~3
+cutRSC ["v1", "PLAIN"]
+~5
+titleRSC ["v2", "PLAIN"]
+~6
+titleCut ["","BLACK OUT", 3]
+~4
+titleRsc ["Title", "PLAIN",0.01]
+~4
+2 fademusic 0 
+2 fadesound 0
+~2
+3 fademusic 1
+_camera cameraeffect ["terminate", "Back"] 
+camdestroy _camera  
+endMission "END1"

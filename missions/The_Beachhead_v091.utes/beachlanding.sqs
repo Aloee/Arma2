@@ -1,0 +1,44 @@
+? ! (isServer) : exit
+
+_leadunit = _this select 0
+_startpos = _this select 1
+_landingpos = _this select 2
+_assaultpos = _this select 3
+
+_group = group _leadunit
+_veh = vehicle _leadunit
+_veh lock true
+
+~ 13
+
+_veh setpos getpos _startpos
+
+_wp0 = _group addWaypoint [_landingpos, 0];
+[_group, 1] setWaypointStatements ["true", "vehicle this lock false"];
+[_group, 1] setWaypointTimeout [0, 0, 0];
+[_group, 1] showWaypoint "NEVER";
+[_group, 1] setWaypointSpeed "FULL";
+[_group, 1] setWaypointType "MOVE";
+
+_wp1 = _group addWaypoint [_landingpos, 0];
+[_group, 2] setWaypointStatements ["true", ""];
+[_group, 2] setWaypointTimeout [0, 0, 0];
+[_group, 2] showWaypoint "NEVER";
+[_group, 2] setWaypointSpeed "FULL";
+[_group, 2] setWaypointType "UNLOAD";
+
+_wp2 = _group addWaypoint [_assaultpos, 0];
+[_group, 3] setWaypointStatements ["true", ""];
+[_group, 3] setWaypointTimeout [0, 0, 0];
+[_group, 3] showWaypoint "NEVER";
+[_group, 3] setWaypointSpeed "FULL";
+[_group, 3] setWaypointType "SAD";
+
+_wp3 = _group addWaypoint [_assaultpos, 0];
+[_group, 4] setWaypointStatements ["true", ""];
+[_group, 4] setWaypointTimeout [0, 0, 0];
+[_group, 4] showWaypoint "NEVER";
+[_group, 4] setWaypointSpeed "FULL";
+[_group, 4] setWaypointType "GUARD";
+
+exit

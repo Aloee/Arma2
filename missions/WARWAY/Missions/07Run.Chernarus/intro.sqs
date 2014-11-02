@@ -1,0 +1,134 @@
+titleCut ["","Black faded",7];
+0 fadesound 0
+1 fademusic 1
+player disableAI "MOVE"
+of disableAI "MOVE"
+e1 disableAI "MOVE"
+removeallweapons e1
+{_x setVariable ["BIS_noCoreConversations", true];_x disableConversation true} foreach allunits;
+enableRadio false
+setAccTime 1
+showcinemaborder false
+of playmove "AmovPsitMstpSnonWnonDnon_ground"
+e1 playmove "AmovPsitMstpSnonWnonDnon_ground"
+e2 playmove "AmovPsitMstpSnonWnonDnon_ground"
+e2 setidentity "spec_1"
+of setidentity "spec_3"
+e1 setidentity "spec_6"
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+_camera camPrepareFocus [-1,-1]
+~7
+_camera camPrepareTarget [24821.84,104365.70,105.98];
+_camera camPreparePos [8869.47,5646.31,5.55];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+2 fadesound 0.7
+playmusic "Forest"
+titleCut ["","Black in",4];
+_camera camPrepareTarget [32377.23,102844.33,74.43];
+_camera camPreparePos [8871.25,5646.25,5.15];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 7
+~7
+cutRSC ["v9", "PLAIN", 2]
+_camera camPrepareTarget [32377.23,102844.33,74.43];
+_camera camPreparePos [8871.25,5646.25,5.15];
+_camera camPrepareFOV 0.200;
+_camera camCommitPrepared 4
+~5
+_camera camPrepareTarget [29805.18,92208.90,-45438.43];
+_camera camPreparePos [8876.62,5670.72,1.07];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+playsound "STRD_PIO1"
+~13
+playsound "STRD_PIO2"
+~18
+playsound "STRD_PIO7"
+~20
+_camera camPrepareTarget e2
+_camera camPreparePos [8876.38,5671.27,1.59];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 4
+~3
+playsound  "STRD_PIO3"
+~1
+_camera camPrepareTarget of
+_camera camPreparePos [8877.92,5672.62,1.85];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+playsound "STRD_PIO4"
+~4
+_camera camPrepareTarget [-80024.84,30704.77,-38296.32];
+_camera camPreparePos [8883.26,5671.14,4.14];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+_camera camPrepareTarget [-19296.65,-82277.71,-37974.37];
+_camera camPreparePos [8877.75,5679.67,4.16];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 13
+playsound "STRD_PIO5"
+~3
+playsound "STRD_PIO6"
+~10
+_camera camPrepareTarget [90554.37,57584.36,-24777.68];
+_camera camPreparePos [8868.52,5668.97,3.68];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+_camera camPrepareTarget [-80642.05,42154.70,-25592.86];
+_camera camPreparePos [8882.69,5670.47,3.48];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 15
+playsound "STRD_PIO8"
+~7
+playsound "STRD_PIO9"
+~14
+playsound "STRD_PIO10"
+~16
+_camera camPrepareTarget e2
+_camera camPreparePos [8876.38,5671.27,1.59];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+playsound "STRD_PIO11"
+~10
+_camera camPrepareTarget e1
+_camera camPreparePos [8876.83,5671.44,1.59];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+playsound "STRD_PIO12"
+~5
+_camera camPrepareTarget e2
+_camera camPreparePos [8876.05,5672.71,1.61];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 2
+playsound "STRD_PIO13"
+~2
+_camera camPrepareTarget [-63854.14,66540.32,-31717.50];
+_camera camPreparePos [8877.30,5671.73,1.59];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+playsound  "STRD_PIO14"
+~3
+_camera camPrepareTarget [50187.72,91037.56,-31473.32];
+_camera camPreparePos [8874.49,5668.04,3.44];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+_camera camPrepareTarget [-85874.36,1676.10,-31614.68];
+_camera camPreparePos [8882.04,5673.59,3.67];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 15
+playsound "STRD_PIO15"
+~5
+playsound "STRD_PIO16"
+~3
+playsound "STRD_PIO17"
+~2
+titleCut ["","BLACK OUT", 3]
+~3
+1 fademusic 0 
+1 fadesound 0
+~1
+_camera cameraeffect ["terminate", "Back"] 
+camdestroy _camera  
+endMission "END1"

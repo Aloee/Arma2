@@ -1,0 +1,10 @@
+sleep 2;
+player saveStatus "juriy_status_mik2"; 
+task2 setTaskState "SUCCEEDED";
+pioneer=[objNull, objNull, task2, "SUCCEEDED"] execVM "CA\Modules\MP\data\scriptCommands\taskHint.sqf";
+sleep 2;
+titlecut ["","BLACK out",3];
+3 fadeMusic 0;
+3 fadesound 0;
+sleep 3;
+endMission "END1";

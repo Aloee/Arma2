@@ -1,0 +1,188 @@
+titleCut ["","Black faded",10];
+c1 setidentity "spec_4"
+k3_1 setidentity "spec_1"
+k_3 setidentity "spec_1"
+car1 hideobject true
+k1_1 hideobject true
+k2_1 hideobject true
+k3_1  hideobject true
+k3_1 forcespeed 2.4
+k1_1 forcespeed 2.4
+k2_1 disableAi "MOVE"
+k2 disableAI "MOVE"
+c1 disableAI "MOVE"
+c2 disableAI "MOVE"
+c3 disableAI "MOVE"
+0 fadesound 0
+1 fademusic 1
+{_x setVariable ["BIS_noCoreConversations", true];_x disableConversation true} foreach allunits;
+enableRadio false
+setAccTime 1
+showcinemaborder false
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+_camera camPrepareFocus [-1,-1]
+~1
+playmusic "Estate"
+~5
+_camera camPrepareTarget [59585.14,92119.94,-4897.21];
+_camera camPreparePos [6220.82,7704.96,2.53];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+2 fadesound 0.7
+~3
+titleCut ["","Black in",4];
+_camera camPrepareTarget [59130.82,91401.26,-13891.12];
+_camera camPreparePos [6229.51,7719.04,2.37];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 8
+~4
+cutRSC ["v9", "PLAIN", 5]
+~4
+playsound "STRD_PIO1"
+c2 playmove "AidlPercSnonWnonDnon_talk5"
+c1 playmove "poslouchaniproslovgenerala_CsdrAidlPercMstpSnon_ruceZaZady"
+_camera camPrepareTarget c2
+_camera camPreparePos [6229.51,7719.04,2.37];
+_camera camCommitPrepared 8
+~12
+playsound   "STRD_PIO2"
+_camera camPrepareTarget [69720.49,84690.29,6935.18];
+_camera camPreparePos [6231.40,7721.52,1.77];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 5
+~6
+playsound  "STRD_PIO3"
+
+_camera camPrepareTarget [-79561.40,57907.14,10873.78];
+_camera camPreparePos [6232.86,7721.83,1.77];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 4
+~5
+playsound  "STRD_PIO4"
+
+_camera camPrepareTarget [-21685.15,103156.26,10520.84];
+_camera camPreparePos [6232.72,7721.43,1.77];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 6
+~5
+playsound  "STRD_PIO5"
+~10
+c1 switchmove "AmovPercMstpSnonWnonDnon_SaluteIn"
+c2 switchmove "AmovPercMstpSnonWnonDnon_SaluteIn"
+~1
+k2 enableAI "MOVE"
+titleCut ["","BLACK OUT", 3]
+~3
+1 fademusic 0 
+1 fadesound 0
+~1
+playmusic "Sunning"
+~2
+_camera camPrepareTarget [-88061.85,36354.36,13749.09];
+_camera camPreparePos [5357.32,3534.82,1.00];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleCut ["","Black in",4];
+9 fademusic 1
+2 fadesound 1
+~4
+titleRSC ["v2", "PLAIN"]
+~7
+_wait=time+11
+#car
+_camera camPrepareTarget car
+_camera camPrepareRelPos [3,-3,3]
+_camera camCommitPrepared 0
+~0.01
+?_wait>=time:goto "car"
+~2
+_camera camPrepareTarget [-94642.56,3977.02,5.88];
+_camera camPreparePos [5357.04,3667.48,1.81];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+_camera camPrepareTarget car
+_camera camPreparePos [5357.04,3667.48,1.81];
+_camera camCommitPrepared 5
+~6
+_wait1=time+9
+#car1
+_camera camPrepareTarget car
+_camera camPrepareRelPos [4,5,1]
+_camera camCommitPrepared 0
+~0.01
+?_wait1>=time:goto "car1"
+~7
+titleCut ["","BLACK OUT", 3]
+~5
+deletevehicle car
+deletevehicle k1
+deletevehicle k2
+deletevehicle k3
+car1 hideObject false
+k1_1 hideObject false
+k2_1 hideObject false
+k3_1  hideObject false
+_camera camPrepareTarget [-9720.36,-94950.53,175.36];
+_camera camPreparePos [5428.87,3907.72,1.94];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleCut ["","Black in",3];
+0 fademusic 0.4
+
+
+k3_1 move  [5428.24,3890.85,2.00];
+k1_1 move [5427.70,3891.33,2.00];
+
+_camera camPrepareTarget k1_1
+_camera camPreparePos [5428.87,3907.72,1.94];
+_camera camCommitPrepared 0
+~1
+_camera camPrepareTarget k1_1
+_camera camPreparePos [5428.87,3907.72,1.94];
+_camera camPrepareFOV 0.400;
+_camera camCommitPrepared 9
+playsound  "STRD_PIO6"
+~12
+playsound  "STRD_PIO7"
+~3
+playsound  "STRD_PIO8"
+~6
+playsound  "STRD_PIO9"
+~1
+_camera camPrepareTarget [-79294.58,48292.05,-29512.92];
+_camera camPreparePos [5414.58,3878.40,1.65];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~1
+2 fademusic 0
+playsound  "STRD_PIO10"
+~5
+deletevehicle k1_1 
+deletevehicle k3_1
+k_3 setvectorDir  [-64649.04,-67461.59,164.68];
+k_3 setpos [5420.33,3884.64,1.86];
+k_1 setvectorDir [-87979.00,-31799.07,54.23];
+k_1 setpos  [5422.61,3882.47,2.06];
+_camera camPrepareTarget [-94569.72,4541.21,-15.79];
+_camera camPreparePos [5427.81,3880.64,1.91];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 7
+playsound  "STRD_PIO11"
+~13
+playsound  "STRD_PIO12"
+~5
+_camera camPrepareTarget k_1
+_camera camPreparePos [5413.57,3879.20,2.57];
+_camera camPrepareFOV 0.500;
+_camera camCommitPrepared 0
+playsound  "STRD_PIO13"
+titleCut ["","BLACK OUT", 3]
+~3
+1 fademusic 0 
+1 fadesound 0
+~1
+_camera cameraeffect ["terminate", "Back"] 
+camdestroy _camera  
+endMission "END1"

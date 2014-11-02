@@ -1,0 +1,303 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"gsc_units_stalker_patch",
+		"namalsk",
+		"ca_modules_functions",
+		"ca_modules_clouds"
+	};
+	addOnsAuto[]=
+	{
+		"gsc_units_stalker_patch",
+		"ca_modules_functions",
+		"ca_modules_clouds",
+		"namalsk"
+	};
+	randomSeed=9748017;
+	class Intel
+	{
+		briefingName="@STRD_location_sebmines";
+		startWeather=0;
+		forecastWeather=0;
+		year=1999;
+		month=7;
+		hour=16;
+		minute=5;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4061.2969,150.55797,8497.5947};
+					id=0;
+					side="GUER";
+					vehicle="gsc_eco_stalker_mask_fred";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="a1";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6015.792,0.54001105,12607.285};
+					id=1;
+					side="LOGIC";
+					vehicle="FunctionsManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6363.4658,0.56966239,12617.416};
+					id=2;
+					side="LOGIC";
+					vehicle="BIS_clouds_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=7;
+		class Item0
+		{
+			position[]={4191.1489,100.96114,7363.708};
+			name="pLocation1";
+			type="hd_arrow";
+			colorName="ColorBlack";
+			a=0.5;
+			b=0.5;
+			angle=154.01062;
+		};
+		class Item1
+		{
+			position[]={6293.4839,16.074839,8714.501};
+			name="pLocation3";
+			type="hd_arrow";
+			colorName="ColorBlack";
+			a=0.5;
+			b=0.5;
+			angle=149.88768;
+		};
+		class Item2
+		{
+			position[]={6144.0718,49.670383,9080.5156};
+			name="pLocation6";
+			type="hd_arrow";
+			colorName="ColorBlack";
+			a=0.5;
+			b=0.5;
+			angle=61.23251;
+		};
+		class Item3
+		{
+			position[]={5218.1934,75.878273,9070.0371};
+			name="pLocation4";
+			type="hd_arrow";
+			colorName="ColorBlack";
+			a=0.5;
+			b=0.5;
+			angle=14.201115;
+		};
+		class Item4
+		{
+			position[]={8345.0986,0.42769742,8092.228};
+			name="black";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorBlack";
+			a=4678;
+			b=2000;
+			angle=-270.44501;
+		};
+		class Item5
+		{
+			position[]={2429.7639,0.52226204,11151.887};
+			name="black_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorBlack";
+			a=3900;
+			b=2000;
+			angle=-180.61548;
+		};
+		class Item6
+		{
+			position[]={2377.3252,0.62089497,5307.9082};
+			name="black_2";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorBlack";
+			a=4000;
+			b=2000;
+			angle=-180.6355;
+		};
+	};
+	class Sensors
+	{
+		items=4;
+		class Item0
+		{
+			position[]={4326.2383,121.31481,7325.4443};
+			a=2000;
+			b=30;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="STRD_location_brensk";
+			expCond="player in thislist";
+			expActiv="[thisTrigger, ""pLocation2"", ""END1""] call fz_sfx_reloadLocDialog;";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={6340.9375,0.56794477,7861.3574};
+			a=1300;
+			b=30;
+			angle=-90.33934;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="STRD_location_harbor";
+			expCond="player in thislist";
+			expActiv="[thisTrigger, ""pLocation2"", ""END2""] call fz_sfx_reloadLocDialog;";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={4615.3662,73.104996,9142.4404};
+			a=860;
+			b=30;
+			angle=1.263208;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="STRD_location_dam";
+			expCond="player in thislist";
+			expActiv="[thisTrigger, ""pLocation2"", ""END3""] call fz_sfx_reloadLocDialog;";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={6076.3901,41.470116,9127.7744};
+			a=600;
+			b=30;
+			angle=179.75212;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="STRD_location_airfield";
+			expCond="player in thislist";
+			expActiv="[thisTrigger, ""pLocation2_1"", ""END4""] call fz_sfx_reloadLocDialog;";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"namalsk"
+	};
+	addOnsAuto[]=
+	{
+		"namalsk"
+	};
+	randomSeed=11095398;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=1999;
+		month=7;
+		hour=16;
+		minute=5;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"namalsk"
+	};
+	addOnsAuto[]=
+	{
+		"namalsk"
+	};
+	randomSeed=14916651;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=1999;
+		month=7;
+		hour=16;
+		minute=5;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"namalsk"
+	};
+	addOnsAuto[]=
+	{
+		"namalsk"
+	};
+	randomSeed=9078325;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=1999;
+		month=7;
+		hour=16;
+		minute=5;
+	};
+};

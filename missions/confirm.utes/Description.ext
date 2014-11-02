@@ -1,0 +1,2 @@
+#include "dialog\common.hpp"
+#include "dialog\ConfirmLocation\ConfirmLocation.hpp"

@@ -1,0 +1,1 @@
+if ((m1 distance player) < 100) then {"Marker7" setMarkerColor "ColorGreen"; playsound "STRD_PIO26";}

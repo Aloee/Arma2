@@ -1,0 +1,310 @@
+﻿<Project name="Name">
+<Package name="Second name">
+
+
+<Container name="Breefing">
+
+<Key ID="STRD_Task1">
+<Original>Отыскать президента</Original>
+</Key>
+<Key ID="STRD_Task1_1">
+<Original>На пути из Могилёвки в Новый Собор, вы нашли сгоревший уазик и урал. Судя по тому, что вокруг уазика нет трупов, вероятнее всего, президенту удалось сбежать в лес. Ваша задача: Розыскать господина Президента. Стоит осмотреть близлежайщие населенные пункты и фермы, а также опросить местных жителей. Будьте осторожнее! По близости вероятно присутствие американских разведывательных подразделений!</Original>
+</Key>
+
+
+<Key ID="STRD_Plan_Title">
+<Original>Ситуация</Original>
+</Key>
+<Key ID="STRD_Plan">
+<Original>Прошло 16 часов с момента американской интервенции. По предварительным данным, враг может быть рассосредоточен в &lt;marker name="Marker7_2"&gt;Гуглово&lt;/marker&gt;. Судя по всему,  небольшие разведгруппы прочёсывают леса и сельские фермы. Вы, по-прежнему, являетесь лицом гражданским, если вы безоружны, то и заподозрить вас не должны. Попытка проникнуть на охраняемые обекты, вероятно, приведет к вашему обнаружению. Спутниковые данные, в свою очередь, сообщают о размещении нескольких мотопехотных подразделений в &lt;marker name="Marker3"&gt;Могилёвке&lt;/marker&gt;.</Original>
+</Key>
+<Key ID="STRD_Plan_Title1">
+<Original>План</Original>
+</Key>
+<Key ID="STRD_Plan1">
+<Original>Президент не мог далеко уйти, поэтому в поисковую задачу входит осмотр лишь близлежайших поселений и ферм. А именно: &lt;marker name="Marker7"&gt;Северо-Западная ферма&lt;/marker&gt; , &lt;marker name="Marker7_1"&gt;хлев&lt;/marker&gt; , &lt;marker name="Marker7_2"&gt;посёлок Гуглово&lt;/marker&gt; , &lt;marker name="Marker7_3"&gt; посёлок Кумырна&lt;/marker&gt; , &lt;marker name="Marker7_4"&gt;небольшой склад&lt;/marker&gt;</Original>
+</Key>
+</Container>
+
+<Container name="System">
+<Key ID="STR_intro">
+<Original>В номере отеля...</Original>
+</Key>
+<Key ID="STR_init">
+<Original>Вечер того же дня.</Original>
+</Key>
+<Key ID="STRD_end">
+<Original></Original>
+</Key>
+<Key ID="STR_end1">
+<Original>Вы нашли сержанта. Президент попал в плен. Теперь, необходимо разработать план по его освобождению.</Original>
+</Key> 
+<Key ID="STR_end2">
+<Original>В дебрифинге при выйграше2.</Original>
+</Key>   
+<Key ID="STR_end3">
+<Original>В дебрифинге при выйграше3.</Original>
+</Key>   
+<Key ID="STR_end4">
+<Original>В дебрифинге при выйграше4.</Original>
+</Key>   
+<Key ID="STR_end5">
+<Original>В дебрифинге при выйграше5.</Original>
+</Key>   
+<Key ID="STR_end6">
+<Original>В дебрифинге при выйграше6</Original>
+</Key>  
+<Key ID="STR_Loser">
+<Original>Вы не выполнили поставленных задач!</Original>
+</Key>
+<Key ID="STR_proval1">
+<Original>Миссия провалена.Президента поймали.</Original>
+</Key>
+<Key ID="STR_proval2">
+<Original>Миссия провалена.Вас задержали.</Original>
+</Key>
+<Key ID="STR_proval3">
+<Original>Миссия провалена.Президент попал в плен.</Original>
+</Key>
+
+
+
+<Key ID="STR_info">
+<Original>Республика Черноруссия\n 11.10.1996</Original>
+</Key>
+<Key ID="STR_campa">
+<Original>ПРЕВЕД</Original>
+</Key>
+<Key ID="STRD_SAY0_1">
+<Original>Электрозаводск</Original>
+</Key>
+<Key ID="STRD_SAY0">
+<Original>6 июня</Original>
+</Key>
+<Key ID="STRD_SAY0_2">
+<Original>18:20</Original>
+</Key>
+
+<Container name="Says">
+<Key ID="STRD_PIOBandage">
+<Original>- Мне нечем себя перевязать.</Original>
+</Key>
+<Key ID="STR_ID1">
+<Original>Перевязать себя</Original>
+</Key>
+<Key ID="STRD_PIO1">
+<Original>Здравствуйте. Пару часов назад здесь не проходил мужчина в костюме, среднего роста, лет 55?</Original>
+</Key>
+<Key ID="STRD_PIO2">
+<Original>Не приметил. Час назад лишь американский патруль прочесал.</Original>
+</Key>
+<Key ID="STRD_PIO3">
+<Original>Американцы, говорите? </Original>
+</Key>
+<Key ID="STRD_PIO4">
+<Original>Да, полтора часа назад завалились в Гуглово, черт бы их побрал, ищут кого-то они, как пид дать!</Original>
+</Key>
+<Key ID="STRD_PIO5">
+<Original>Добрый вечер. Никого не из местных не замечали здесь сегодня? Мужчина, в дорогом костюме, средних лет.</Original>
+</Key>
+<Key ID="STRD_PIO6">
+<Original>Неизвестных? ХЕх... обернись сынок... тут полно янков.</Original>
+</Key>
+<Key ID="STRD_PIO7">
+<Original>Этот человек бы сразу вам бросился в глаза. Думаю, он должен был идти с западной части леса.</Original>
+</Key>
+<Key ID="STRD_PIO8">
+<Original>Говорю же не видел, ничего не знаю. Пристают тут всякие.</Original>
+</Key>
+<Key ID="STRD_PIO9">
+<Original>Простите, вы, в окрестностях, не видели мужчину в костюме, он возможно ранен?</Original>
+</Key>
+<Key ID="STRD_PIO10">
+<Original>В костюме, не видел, а вот то что трое человек, не местных,  по лесу бежали - видел.</Original>
+</Key>
+<Key ID="STRD_PIO11">
+<Original>Где и когда?</Original>
+</Key>
+<Key ID="STRD_PIO12">
+<Original>Да вот пару часов назад, когда я домой возвращался на машине. В сторону Кумырны бежали.</Original>
+</Key>
+<Key ID="STRD_PIO13">
+<Original>-Так, вижу кровь на траве... ага.. так, тут трава примята, следы ведут в лес... Далеко уйти они не могли.</Original>
+</Key>
+<Key ID="STRD_PIO14">
+<Original>Юрий Михайлович!</Original>
+</Key>
+<Key ID="STRD_PIO15">
+<Original>Я уж и не надеялся кого нибудь найти. Где остальные? Где президент?</Original>
+</Key>
+<Key ID="STRD_PIO16">
+<Original>Я их здесь оставил, пока в Гуглово пробирался на разведку и медикаментов для водителя взять - ранили его. А когода возвращался увидел, как их патруль нашёл. Увезли обоих, но, вроде, президента не узнали. Я с ним одеждой махнулся, и они его за военного приняли.</Original>
+</Key>
+<Key ID="STRD_PIO17">
+<Original>Где же их искать теперь? Если будет проверка, то его вычислят.</Original>
+</Key>
+<Key ID="STRD_PIO18">
+<Original>В гуглово я слышал, что военнопленных держат в посёлке Старое.</Original>
+</Key>
+<Key ID="STRD_PIO19">
+<Original>Надеюсь...</Original>
+</Key>
+<Key ID="STRD_PIO20">
+<Original>... грузовик вспыхнул, одна очередь прошлась по нам, водителя зацепило, но он успел вывернуть на просёлочную дорогу. Правда не далеко уехали - бак нам пробили. Ну а куда было бежать? На дороге засада, мы и рванули в лес. </Original>
+</Key>
+<Key ID="STRD_PIO21">
+<Original>Сначала хотели уйти на север, но вовремя заметили отряд, который прочёсывал лес. Ну мы в обратную сторону и рванули. Еле добрались до развалин, там я их оставил, махнулся с президентом одеждой и пошёл в Гуглово, ну а дальше Вы знаете.</Original>
+</Key>
+<Key ID="STRD_PIO22">
+<Original>мда... повезло вам... а ребятам в грузовике - нет. У них даже оружия не было</Original>
+</Key>
+<Key ID="STRD_PIO23">
+<Original>Что делать теперь будем?</Original>
+</Key>
+<Key ID="STRD_PIO24">
+<Original>Сейчас согреемся и поспим, как никак сутки на ногах. А завтра пойдём в Старое.</Original>
+</Key>
+<Key ID="STRD_PIO25">
+<Original>-Американский блокпост... думаю здесь их нет.</Original>
+</Key>
+<Key ID="STRD_PIO26">
+<Original>-Силы США уже размещены в поселке... думаю стоит все же опросить местных жителей.</Original>
+</Key>
+
+</Container>
+
+<Container name="Persons">
+<Key ID="STR_p1">
+<Original>Юрий Михайлович</Original>
+</Key>
+<Key ID="STR_p2">
+<Original>Александр Васильевич</Original>
+</Key>
+<Key ID="STR_p3">
+<Original>Владимир Градецкий</Original>
+</Key>
+<Key ID="STR_p4">
+<Original>Фермер</Original>
+</Key>
+<Key ID="STR_p5">
+<Original>Местный</Original>
+</Key>
+<Key ID="STR_p6">
+<Original>Сержант Самойлоко</Original>
+</Key>
+
+
+<Key ID="STRM_razrab">
+<Original>TSFH</Original>
+</Key>
+
+<Key ID="STRM_voiced">
+<Original>Two Steps From Hell</Original>
+</Key>
+<Key ID="STRM_sans">
+<Original>Посередке</Original>
+</Key>
+<Key ID="STRM_sans1">
+<Original>Посередке</Original>
+</Key>
+
+<Key ID="STRM_v1">
+<Original>Редактор: Mikezar</Original>
+</Key>
+<Key ID="STRM_v2">
+<Original>На следующий день</Original>
+</Key>
+<Key ID="STRM_v3">
+<Original>Кампания: Пламя Империи</Original>
+</Key>
+<Key ID="STRM_v4">
+<Original></Original>
+</Key>
+<Key ID="STRM_v5">
+<Original>В5</Original>
+</Key>
+<Key ID="STRM_v6">
+<Original>Той же ночью./</Original>
+</Key>
+<Key ID="STRM_v7">
+<Original>0900.На пути к Чернорусской базе</Original>
+</Key>
+<Key ID="STRM_v8">
+<Original></Original>
+</Key>
+<Key ID="STRM_v9">
+<Original>Спустя час...</Original>
+</Key>
+<Key ID="STRM_v10">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v11">
+<Original>Республика</Original>
+</Key>
+<Key ID="STRM_v12">
+<Original>10 часов утра. Площадь Черногорска.</Original>
+</Key>
+<Key ID="STRM_v13">
+<Original>Эпизод 1: Рог Войны</Original>
+</Key>
+<Key ID="STRM_v14">
+<Original>В14</Original>
+</Key>
+<Key ID="STRM_v15">
+<Original>Электрозаводск.5 часов спустя.</Original>
+</Key>
+<Key ID="STRM_v16">
+<Original>3-мя часами ранее...</Original>
+</Key>
+<Key ID="STRM_v17">
+<Original>14 июля.18:20</Original>
+</Key>
+<Key ID="STRM_v18">
+<Original>В18</Original>
+</Key>
+<Key ID="STRM_v19">
+<Original>В19</Original>
+</Key>
+<Key ID="STRM_v20">
+<Original>В20</Original>
+</Key>
+<Key ID="STRM_v21">
+<Original>В21</Original>
+</Key>
+<Key ID="STRM_v22">
+<Original>В22</Original>
+</Key>
+<Key ID="STRM_v23">
+<Original>В23</Original>
+</Key>
+<Key ID="STRM_v24">
+<Original>В24</Original>
+</Key>
+<Key ID="STRM_v25">
+<Original>В25</Original>
+</Key>
+<Key ID="STRM_v26">
+<Original>В26</Original>
+</Key>
+<Key ID="STRM_blag1">
+<Original>благ 1</Original>
+</Key>
+<Key ID="STRM_blag2">
+<Original>благ 2</Original>
+</Key>
+<Key ID="STRM_blag3">
+<Original>благ 3</Original>
+</Key>
+<Key ID="STRM_blag4">
+<Original>благ 4</Original>
+</Key>
+<Key ID="STRM_blag5">
+<Original>благ 5</Original>
+</Key>
+<Key ID="STRM_blag6">
+<Original>благ 6</Original>
+</Key>
+
+</Container>
+</Package>
+</Project>
