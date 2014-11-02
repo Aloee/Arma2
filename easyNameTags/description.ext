@@ -1,0 +1,3 @@
+class RscTitles {
+	#include "easyNameTags\ENT_tag.hpp"
+};
