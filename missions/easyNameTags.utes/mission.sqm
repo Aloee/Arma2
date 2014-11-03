@@ -5,12 +5,12 @@ class Mission
 	{
 		"cacharacters2",
 		"utes",
-		"CAWheeled"
+		"cawheeled_e_hmmwv"
 	};
 	addOnsAuto[]=
 	{
 		"cacharacters2",
-		"CAWheeled",
+		"cawheeled_e_hmmwv",
 		"utes"
 	};
 	randomSeed=11811016;
@@ -72,7 +72,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3591.5857,18.874702,3652.5288};
+					position[]={3595.1875,19,3638.3704};
 					azimut=17.143988;
 					id=0;
 					side="WEST";
@@ -245,7 +245,7 @@ class Mission
 			azimut=-74.922096;
 			id=1;
 			side="EMPTY";
-			vehicle="UAZ_RU";
+			vehicle="HMMWV_M1035_DES_EP1";
 			skill=0.60000002;
 			text="car";
 		};
