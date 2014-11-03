@@ -1,0 +1,195 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"CAWheeled",
+		"cacharacters2",
+		"utes",
+		"ca_modules_functions",
+		"CATracked2_2S6M_Tunguska"
+	};
+	addOnsAuto[]=
+	{
+		"CAWheeled",
+		"cacharacters2",
+		"ca_modules_functions",
+		"CATracked2_2S6M_Tunguska",
+		"utes"
+	};
+	randomSeed=4094859;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3595.0164,18.803627,3659.637};
+					azimut=1.58919;
+					id=0;
+					side="WEST";
+					vehicle="HMMWV_M2";
+					leader=1;
+					skill=0.60000002;
+					init="veh = [this, 5, 10, 3, TRUE]  execVM ""vehicle.sqf""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3596.1299,20.485582,3774.9641};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3599.5554,19.71875,3731.8438};
+					azimut=-85.413879;
+					id=1;
+					side="WEST";
+					vehicle="USMC_Soldier_LAT";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3602.0962,18.391777,3689.2141};
+					id=3;
+					side="LOGIC";
+					vehicle="FunctionsManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=2;
+		class Item0
+		{
+			position[]={3567.9648,18.606142,3682.7454};
+			azimut=624.18597;
+			id=2;
+			side="EMPTY";
+			vehicle="HMMWV_M2";
+			leader=1;
+			skill=0.60000002;
+			text="car";
+			init="hint str (isNull (driver this))";
+		};
+		class Item1
+		{
+			position[]={3600.4285,19.573689,3729.7549};
+			azimut=-85.413879;
+			id=4;
+			side="EMPTY";
+			vehicle="2S6M_Tunguska";
+			leader=1;
+			skill=0.60000002;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=9736237;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=6966078;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=8732595;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
