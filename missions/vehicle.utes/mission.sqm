@@ -46,7 +46,7 @@ class Mission
 					vehicle="HMMWV_M2";
 					leader=1;
 					skill=0.60000002;
-					init="veh = [this, 5, 10, 3, TRUE]  execVM ""vehicle.sqf""";
+					init="veh = [this, 5, 10, 3, TRUE]  execVM ""vehicle_1.sqf""";
 				};
 			};
 			class Waypoints
