@@ -29,7 +29,7 @@ class Mission
 		items=2;
 		class Item0
 		{
-			side="CIV";
+			side="EAST";
 			class Vehicles
 			{
 				items=1;
@@ -38,7 +38,7 @@ class Mission
 					position[]={2993.6816,38.116402,4503.981};
 					azimut=106.23643;
 					id=0;
-					side="CIV";
+					side="EAST";
 					vehicle="Villager1";
 					player="PLAYER COMMANDER";
 					leader=1;
@@ -68,7 +68,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			position[]={3216.5662,14.522812,4399.832};
@@ -76,6 +76,13 @@ class Mission
 			type="Empty";
 			colorName="ColorKhaki";
 			angle=105.55429;
+		};
+		class Item1
+		{
+			position[]={3008.1643,34.508423,4496.9351};
+			name="marker";
+			text="Хуй";
+			type="Empty";
 		};
 	};
 	class Sensors

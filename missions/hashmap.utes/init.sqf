@@ -1,11 +1,18 @@
-		call compile preprocessFileLineNumbers "oo_hashmap.sqf";
+		call compile preprocessFileLineNumbers "myClass.sqf";
+		_map = ["new", []] call MYCLASSCHILD2;
+			["check", []] call _map;
+
+		/*
+			
+			
+		
 		
 		//call compile preprocessFileLineNumbers "myClass.sqf";
-		_map = ["new", []] call MYCLASSCHILD2;
+		//_map = ["new", []] call MYCLASSCHILD2;
 		//_return = ["check", ["var"]] call _map;
 		//_return = ["Get", ["var"]] call _map;
-		_return = ["check", ["var"]] call _map;
-		hint str _return;
+		//_return = ["check", ["var"]] call _map;
+		//hint str _return;
 /*
 		_return = "IsEmpty" call _map;
 		diag_log format["isempty %1", _return];

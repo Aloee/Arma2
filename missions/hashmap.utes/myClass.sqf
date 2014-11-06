@@ -1,43 +1,47 @@
-#include "oop.h"
+#include "\oop_framework\oop.h"
 
-CLASS_EXTENDS("MYCLASS", "OO_HASHMAP")
-		PRIVATE VARIABLE("array", "arr");
-		PUBLIC VARIABLE("string", "var1");
+CLASS("MYCLASS")
+	PRIVATE VARIABLE("array", "arr");
+	PROTECTED VARIABLE("string", "var1");
 
-		PUBLIC FUNCTION("array","constructor") {
-			private ["_array"];
-			_array = [];
-			MEMBER("index", _array);
-			MEMBER("map", _array);
-			MEMBER("var1", "text1");
-		};
-		
-		PROTECTED FUNCTION("array", "privateCheck") {
-			hint str "privateCheck";
-		};
-		
-		PUBLIC FUNCTION("array", "check") {
-			MEMBER("privateCheck", []);
-		};
+	PUBLIC FUNCTION("array","constructor") {
+		MEMBER("var1", "text1");
+	};
+	
+	PROTECTED FUNCTION("array", "privatecheck") {
+		hint str (MEMBER("var1", nil));
+	};
+	
+	PUBLIC FUNCTION("array", "check") {
+		MEMBER("privatecheck", []);
+	};
+	
 ENDCLASS;
 
 CLASS_EXTENDS("MYCLASSCHILD1", "MYCLASS")
-		PUBLIC VARIABLE("string", "var");
-		
-		PUBLIC FUNCTION("array","constructor") {
-			MEMBER("var", "text");
-		};
-		PUBLIC FUNCTION("array", "check") {
-			MEMBER("var", nil)
-			//hint "ok";
-		};
+	PUBLIC VARIABLE("string", "var");
+	PRIVATE STATIC_VARIABLE("string", "sVar");
+	
+	PUBLIC FUNCTION("array","constructor") {
+		MEMBER("var", "text");
+		MEMBER("sVar", "static text");
+	};
+	PUBLIC FUNCTION("array", "check") {
+		MEMBER("sVar", nil)
+	};
 ENDCLASS;
 
 CLASS_EXTENDS("MYCLASSCHILD2", "MYCLASSCHILD1")
-
-		PUBLIC FUNCTION("array", "check") {
-			//MEMBER("var", nil)
-			MEMBER("var1", nil)
-			//hint "ok";
-		};
+	PUBLIC VARIABLE("string", "var");
+	
+	PUBLIC FUNCTION("array","constructor") {
+		MEMBER("var", "text 2");
+		MEMBER("var1", "text 3");
+	};
+	
+	PUBLIC FUNCTION("array", "check") {
+		MEMBER("privatecheck", []);
+		//hint (MEMBER("var1", nil));
+	};
 ENDCLASS;
+

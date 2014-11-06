@@ -94,7 +94,7 @@ if(isServer)then{
 	call (compile (preprocessFileLineNumbers "oop_framework\init.sqf"));
 	if(CLY_debug)then{ [debug, nil, rglobalChat,  format ["SFramework Initialized", player]] call RE };
 };
-	
+
 if(local player)then{
 
 	FZ_DYNAMIC_BLUR_BACKGROUND = false;
