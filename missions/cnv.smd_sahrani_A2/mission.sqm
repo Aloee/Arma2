@@ -1,0 +1,169 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"smd_sahrani_a2",
+		"cacharacters_e",
+		"ca_modules_functions"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters_e",
+		"ca_modules_functions",
+		"smd_sahrani_a2"
+	};
+	randomSeed=1498939;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9526.2939,143.57736,9674.4873};
+					id=0;
+					side="WEST";
+					vehicle="US_Soldier_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9329.6494,139.98311,10086.991};
+					id=1;
+					side="LOGIC";
+					vehicle="FunctionsManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=6;
+		class Item0
+		{
+			position[]={9528.0088,139.98311,9859.0898};
+			name="convoywp1";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={8960.6484,162.63417,8359.0586};
+			name="convoywp2";
+			type="Empty";
+		};
+		class Item2
+		{
+			position[]={12363.386,31.990528,8480.791};
+			name="convoywp3";
+			type="Empty";
+		};
+		class Item3
+		{
+			position[]={12908.369,21.951982,11294.946};
+			name="convoywp4";
+			type="Empty";
+		};
+		class Item4
+		{
+			position[]={14313.357,55.48275,11968.556};
+			name="convoywp5";
+			type="Empty";
+		};
+		class Item5
+		{
+			position[]={14228.532,49.681244,9354.0693};
+			name="convoywp6";
+			type="Empty";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"smd_sahrani_a2"
+	};
+	addOnsAuto[]=
+	{
+		"smd_sahrani_a2"
+	};
+	randomSeed=7598150;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"smd_sahrani_a2"
+	};
+	addOnsAuto[]=
+	{
+		"smd_sahrani_a2"
+	};
+	randomSeed=14225684;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"smd_sahrani_a2"
+	};
+	addOnsAuto[]=
+	{
+		"smd_sahrani_a2"
+	};
+	randomSeed=9683469;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};

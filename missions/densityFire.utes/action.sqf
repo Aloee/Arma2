@@ -1,0 +1,1 @@
+hint str [(t2 getVariable "densityFire"), count bullets];
