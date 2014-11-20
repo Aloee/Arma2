@@ -1,2 +1,4 @@
 *.ArmA2OAProfile
+*.namalsk
+*.namalsk -old
 /UserSaved/
