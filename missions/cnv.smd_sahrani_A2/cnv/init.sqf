@@ -1,5 +1,3 @@
-if(!isServer && !isDedicated)exitwith{};
-
 /*
 	Author: aloe itfruit@mail.ru
 	Copyright (C) 2014 Aloe
@@ -38,6 +36,8 @@ If driver same vehicle will be killed his place will be a unit of any unit of th
 and the convoy will continue the path.
 Upon reaching the destination of the convoy - the convoy will be deleted
 */
+
+if(!isServer && !isDedicated)exitwith{};
 
 _randway = _this;
 
