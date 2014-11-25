@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project name='INV'>
+	<Package name='INV_Localize'>
+		<Container name='Hints'>
+			<Key ID="STR_event_hotkeysOn">
+				<English>Interface: on</English>
+				<Russian>Интерфейс: вкл</Russian>
+			</Key>
+			<Key ID="STR_event_hotkeysOff">
+				<English>Interface: off</English>
+				<Russian>Интерфейс: выкл</Russian>
+			</Key>			
+		</Container>
+		
+		<Container name='Gui'>
+			<Key ID="STR_gui_inv_titleinv">
+				<English>Inventory %1</English>
+				<Russian>Инвентарь %1</Russian>
+			</Key>
+			<Key ID="STR_gui_inv_buttonUse">
+				<English>Use</English>
+				<Russian>Использовать</Russian>
+			</Key>
+			<Key ID="STR_gui_inv_buttonDrop">
+				<English>Drop</English>
+				<Russian>Выбросить</Russian>
+			</Key>
+			<Key ID="STR_gui_inv_buttonDropAll">
+				<English>Drop all</English>
+				<Russian>Выбросить все</Russian>
+			</Key>
+		</Container>
+	</Package>	
+</Project>

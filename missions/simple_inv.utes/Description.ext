@@ -1,0 +1,2 @@
+#include "dialog\common.hpp"
+#include "dialog\inv\inv.hpp"
