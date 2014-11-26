@@ -69,7 +69,7 @@ if(local player)then{
 	};
 	*/
 	inv_fx_useItem = {
-		hint "Use: inv_fuctions.sqf line 64";
+		hint "Use: inv_fuctions.sqf line 72";
 	};
 
 	inv_fx_dropItem = {
