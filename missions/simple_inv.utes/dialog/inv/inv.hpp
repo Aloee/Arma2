@@ -162,7 +162,7 @@ class INVENTORY {
 			w = 0.1; h = 0.03;
 			sizeEx = 0.020;
 			text = "$STR_gui_inv_buttonDrop";
-			onButtonClick = "'one' call inv_fx_dropItem";
+			onButtonClick = "false call inv_fx_dropItem";
 			action = "";
 		};
 		class STR_gui_buttonDropAll: InventoryDescButtonDrop {
@@ -170,7 +170,7 @@ class INVENTORY {
 			x = 0.81;
 			sizeEx = 0.020;
 			text = "$STR_gui_inv_buttonDropAll";
-			onButtonClick = "'all' call inv_fx_dropItem";
+			onButtonClick = "true call inv_fx_dropItem";
 		};
 	};
 };

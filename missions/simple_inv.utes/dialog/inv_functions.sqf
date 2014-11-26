@@ -17,11 +17,12 @@
 	You should have received a copy of the GNU General Public License
 	along with this program.  If not, see <http://www.gnu.org/licenses/>. 
 */
+
 if(local player)then{
 
 	#include "inv\definitions.sqf"
 
-	//PRIVATE
+	//BASIC
 	inv_fGetIDC = {
 		private ["_aCtrl", "_cnt"];
 		
@@ -34,31 +35,7 @@ if(local player)then{
 	_aCtrl resize _cnt;
 	parseNumber toString _aCtrl
 	};
-
-	inv_fx_parse_data = {
-		private ["_f", "_far", "_far_type", "_cnt_type", "_stop"];
-		
-		_f = _this select 0;
-		_far = toArray (_f);
-			_far_type = [];
-			_cnt_type = [];    
-		_stop = false;    	  		
-		for "_icn" from  0 to (count _far) do {
-			if(!_stop)then{
-				if( (_far select _icn) == 124 )then{
-					_icn = _icn + 1;
-					for "_sicn" from _icn to (count _far) do {
-						_cnt_type set [count _cnt_type, (_far select _sicn)];
-						_stop = true;
-					};
-				}else{
-					_far_type set [count _far_type, (_far select _icn)]; 
-				};    
-			};
-		};
-	[toString (_far_type), parseNumber toString (_cnt_type)]
-	};
-
+	
 	//PUBLIC
 	/*GO TO 
 	inv_fx_setItem = {
@@ -74,21 +51,20 @@ if(local player)then{
 
 	inv_fx_dropItem = {
 		private ["_display", "_listControl", "_listIndex", "_idc", "_data", "_itemName", "_inv", "_entry", "_all"];
-
+		
+		_all = _this;
 		_display = findDisplay INV_DIALOG;
 		_listControl = _display displayCtrl INV_LIST_A;
 		_listIndex = lbCurSel _listControl;
 		
 		_idc = _listControl call inv_fGetIDC;
 		_data = lbData [_idc, _listIndex];
-		_itemName = ([_data] call inv_fx_parse_data) select 0;
+		_itemName = (call compile _data) select 0;
 		
 		_inv = player getVariable "inv_misc";
 		for "_i" from 0 to (count _inv)-1 do {
 			_entry = _inv select _i;
 			if((_entry select 0) == _itemName)exitWith{
-				_all = switch(_this)do{case "one": {false}, case "all": {true}};
-				
 				if(!_all)then{
 					if(_entry select 1 > 0)then{
 						_inv set [_i, [_entry select 0, (_entry select 1)-1]];
@@ -111,7 +87,7 @@ if(local player)then{
 		
 		_idc = _conrtolA call inv_fGetIDC;
 		_data = lbData [_idc, _index];
-		_itemName = ([_data] call inv_fx_parse_data) select 0;
+		_itemName = (call compile _data) select 0;
 		
 		if(_itemName != "")then{
 		
@@ -141,7 +117,7 @@ if(local player)then{
 		
 		_display = findDisplay INV_DIALOG;	
 		_list = _display displayCtrl INV_LIST_A;
-
+	
 		if(!isNil "_list")then{
 			lbClear _list;
 			_value =  player getVariable "inv_misc";
@@ -158,7 +134,7 @@ if(local player)then{
 						_index = _list lbAdd _string;
 						
 						_list lbSetPicture [_index, getText (configFile >> "cfgWeapons" >> _name >> "picture")];
-						_list lbSetData [_index, format ["%1|%2", _name, _cnt]];
+						_list lbSetData [_index, format ["['%1',%2]", _name, _cnt]];
 					};
 				} foreach _value;
 				_list lbAdd "";
