@@ -60,6 +60,14 @@ if(local player)then{
 	};
 
 	//PUBLIC
+	/*GO TO 
+	inv_fx_setItem = {
+	
+	};
+	inv_fx_getItem = {
+	
+	};
+	*/
 	inv_fx_useItem = {
 		hint "Use: inv_fuctions.sqf line 64";
 	};
