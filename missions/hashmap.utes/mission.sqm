@@ -5,7 +5,6 @@ class Mission
 	{
 		"utes",
 		"cacharacters2",
-		"ca_modules_functions",
 		"oop_framework"
 	};
 	addOnsAuto[]=

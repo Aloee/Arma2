@@ -42,7 +42,7 @@ if(!isServer && !isDedicated)exitwith{};
 _randway = _this;
 
 _cnvs = [
-[west,
+[east,
 	 getMarkerPos (_randway select 0),
 	 [
 	 [["BTR90", 0],[["CDF_Soldier_Crew","CDF_Soldier_Crew","CDF_Soldier_Crew"],[]]],
@@ -52,7 +52,7 @@ _cnvs = [
 	 ],
 	 _randway
 ],
-[west,
+[east,
 	getMarkerPos (_randway select 0),
 	 [
 	 [["T90", 0],[["CDF_Soldier_Crew","CDF_Soldier_Crew","CDF_Soldier_Crew"],[]]],
@@ -62,7 +62,7 @@ _cnvs = [
 	 ],
 	 _randway
 ],
-[west,
+[east,
 	getMarkerPos (_randway select 0),
 	 [
 	 [["BRDM2_GUE", 0],[["CDF_Soldier_Crew","CDF_Soldier_Crew",nil],[]]],

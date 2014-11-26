@@ -66,7 +66,7 @@ if(local player)then{
 
 	inv_fx_dropItem = {
 		private ["_display", "_listControl", "_listIndex", "_idc", "_data", "_itemName", "_inv", "_entry", "_all"];
-		
+
 		_display = findDisplay INV_DIALOG;
 		_listControl = _display displayCtrl INV_LIST_A;
 		_listIndex = lbCurSel _listControl;
@@ -107,13 +107,11 @@ if(local player)then{
 		
 		if(_itemName != "")then{
 		
-			true call inv_displayItemDesc;
-			
 			_conf = (configFile >> "cfgWeapons" >> _itemName);
-				_name = getText(_conf >> "displayName");
-				_desc = getText(_conf >> "Library" >> "libTextDesc");
-				_image = getText(_conf >> "picture");
-			
+			_name = getText(_conf >> "displayName");
+			_desc = getText(_conf >> "Library" >> "libTextDesc");
+			_image = getText(_conf >> "picture");
+		
 			_display = findDisplay INV_DIALOG;
 			
 			_controlTitle = _display displayCtrl INV_TITLE_B;
@@ -124,6 +122,7 @@ if(local player)then{
 				'<img image="%1" size="20" align="center" /><br/><t size="1.5" font="Zeppelin33" color="#555555">%2</t>',
 			_image, _desc]);
 			
+			true call inv_displayItemDesc;
 		}else{
 			false call inv_displayItemDesc;
 		};
@@ -160,10 +159,7 @@ if(local player)then{
 	};
 
 	inv_displayItemDesc = {
-		if(_this)then{
-			{ctrlShow [_x, true]}foreach [INV_BCKGRND_B, INV_TITLE_B, INV_LIST_DESC, INV_LIST_DESCB1, INV_LIST_DESCB2, INV_LIST_DESCB3];
-		}else{
-			{ctrlShow [_x, false]}foreach [INV_BCKGRND_B, INV_TITLE_B, INV_LIST_DESC, INV_LIST_DESCB1, INV_LIST_DESCB2, INV_LIST_DESCB3];
-		};
+		_DescEntity = [INV_BCKGRND_B, INV_TITLE_B, INV_LIST_DESC, INV_LIST_DESCB1, INV_LIST_DESCB2, INV_LIST_DESCB3];
+		if(_this)then{{ctrlShow [_x, true]}foreach _DescEntity}else{{ctrlShow [_x, false]}foreach _DescEntity};
 	};
 };

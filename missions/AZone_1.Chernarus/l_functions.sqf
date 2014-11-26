@@ -326,7 +326,6 @@ box_remove_to_list = {
 		_forIndex = _forIndex + 1;
 	}foreach _items;
 
-	
 _items
 };
 box_add_to_list = {

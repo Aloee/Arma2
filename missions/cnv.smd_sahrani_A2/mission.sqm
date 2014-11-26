@@ -4,13 +4,13 @@ class Mission
 	addOns[]=
 	{
 		"smd_sahrani_a2",
-		"cacharacters_e",
-		"ca_modules_functions"
+		"ca_modules_functions",
+		"cacharacters2"
 	};
 	addOnsAuto[]=
 	{
-		"cacharacters_e",
 		"ca_modules_functions",
+		"cacharacters2",
 		"smd_sahrani_a2"
 	};
 	randomSeed=1498939;
@@ -28,24 +28,6 @@ class Mission
 		items=2;
 		class Item0
 		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={9526.2939,143.57736,9674.4873};
-					id=0;
-					side="WEST";
-					vehicle="US_Soldier_EP1";
-					player="PLAYER COMMANDER";
-					leader=1;
-					skill=0.60000002;
-				};
-			};
-		};
-		class Item1
-		{
 			side="LOGIC";
 			class Vehicles
 			{
@@ -53,11 +35,29 @@ class Mission
 				class Item0
 				{
 					position[]={9329.6494,139.98311,10086.991};
-					id=1;
+					id=0;
 					side="LOGIC";
 					vehicle="FunctionsManager";
 					leader=1;
 					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9525.8242,143.54744,9676.4531};
+					id=1;
+					side="EAST";
+					vehicle="RU_Soldier2";
+					player="PLAYER COMMANDER";
+					leader=1;
 					skill=0.60000002;
 				};
 			};
