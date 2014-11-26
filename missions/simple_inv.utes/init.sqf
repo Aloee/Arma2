@@ -1,5 +1,5 @@
 if(local player)then{
-
+	hint localize "STR_gui_inv_titleinvHint";
 	inv_hotkeys = true;
 	
 	waitUntil{!isNull (findDisplay 46)};

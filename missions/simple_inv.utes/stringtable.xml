@@ -3,12 +3,16 @@
 	<Package name='INV_Localize'>
 		<Container name='Hints'>
 			<Key ID="STR_event_hotkeysOn">
-				<English>Interface: on</English>
-				<Russian>Интерфейс: вкл</Russian>
+				<English>Hotkeys: on</English>
+				<Russian>Hotkeys: вкл</Russian>
 			</Key>
 			<Key ID="STR_event_hotkeysOff">
-				<English>Interface: off</English>
-				<Russian>Интерфейс: выкл</Russian>
+				<English>Hotkeys: off</English>
+				<Russian>Hotkeys: выкл</Russian>
+			</Key>	
+			<Key ID="STR_gui_inv_titleinvHint">
+				<English>press "i" to open inventory</English>
+				<Russian>нажмите "i", чтобы открыть инвентарь</Russian>
 			</Key>			
 		</Container>
 		
