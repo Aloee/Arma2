@@ -41,7 +41,7 @@ class INVENTORY {
 			sizeEx = 0.023;
 			x = 0.05; y = 0.101;
 			w = 0.5; h = 1;
-			colorBackground[] = { 0, 0, 0, 0.5 };
+			colorBackground[] = { 0, 0, 0, 0.6 };
 			text = "";
 		};
 		class Mainbackgrnd_B : Mainbackgrnd_A {
@@ -79,7 +79,6 @@ class INVENTORY {
 			default = 1;
 			x = 0.101; y = 0.21;
 			w = 0.44; h = 0.7;
-			//lineSpacing = 0;
 			type = 5;
 			style = 0 + 0x10;
 			font = "Zeppelin32";

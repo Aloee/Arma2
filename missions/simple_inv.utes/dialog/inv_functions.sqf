@@ -90,7 +90,6 @@ if(local player)then{
 		_itemName = (call compile _data) select 0;
 		
 		if(_itemName != "")then{
-		
 			_conf = (configFile >> "cfgWeapons" >> _itemName);
 			_name = getText(_conf >> "displayName");
 			_desc = getText(_conf >> "Library" >> "libTextDesc");
@@ -130,9 +129,7 @@ if(local player)then{
 					
 					if(_cnt > 0)then{
 						_displname = getText (configFile >> "cfgWeapons" >> _name >> "displayName");
-						_string = format["%2 %1", _displname, _cnt];
-						_index = _list lbAdd _string;
-						
+						_index = _list lbAdd format["%2 %1", _displname, _cnt];
 						_list lbSetPicture [_index, getText (configFile >> "cfgWeapons" >> _name >> "picture")];
 						_list lbSetData [_index, format ["['%1',%2]", _name, _cnt]];
 					};
