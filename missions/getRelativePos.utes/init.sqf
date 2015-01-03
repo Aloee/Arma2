@@ -1,3 +1,5 @@
+waitUntil {!isNil "bis_fnc_init"};
+
 getRelativePos = {
 	/*
 	Description:
@@ -22,5 +24,7 @@ getRelativePos = {
 	[(_position select 0)+_distance * sin(_azimut),(_position select 1)+_distance * cos(_azimut), _position select 2]
 };
 
-_pos = [getPos a1, getDir a1, a1 distance player, -90] call getRelativePos;
+//_pos = [getPos a1, getDir a1, a1 distance player, -90] call getRelativePos;
+_pos = ([a1, a1 distance player, getDir a1] call BIS_fnc_relPos) findEmptyPosition [0, a1 distance player];
+hint str _pos;
 "rel" setMarkerPos _pos;

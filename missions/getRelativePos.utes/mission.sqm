@@ -4,11 +4,13 @@ class Mission
 	addOns[]=
 	{
 		"cacharacters2",
-		"utes"
+		"utes",
+		"ca_modules_functions"
 	};
 	addOnsAuto[]=
 	{
 		"cacharacters2",
+		"ca_modules_functions",
 		"utes"
 	};
 	randomSeed=10514960;
@@ -24,7 +26,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			side="WEST";
@@ -33,8 +35,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3388.7437,19,3610.4497};
-					azimut=-86.065666;
+					position[]={3512.1304,18.747087,3657.6455};
+					azimut=72.828278;
 					id=0;
 					side="WEST";
 					vehicle="USMC_Soldier";
@@ -52,8 +54,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3369.6602,19,3610.6887};
-					azimut=323.21225;
+					position[]={3511.1528,18.534632,3665.512};
+					azimut=462.53815;
 					id=1;
 					side="WEST";
 					vehicle="USMC_Soldier";
@@ -63,16 +65,36 @@ class Mission
 				};
 			};
 		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3523.3745,27.628305,3669.8079};
+					azimut=106.34322;
+					id=2;
+					side="LOGIC";
+					vehicle="FunctionsManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
 	};
 	class Markers
 	{
 		items=1;
 		class Item0
 		{
-			position[]={3369.6248,19,3610.3074};
+			position[]={3510.7983,18.530384,3665.6536};
 			name="rel";
 			type="mil_dot";
 			colorName="ColorRed";
+			angle=106.34322;
 		};
 	};
 };

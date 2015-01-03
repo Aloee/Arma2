@@ -6,7 +6,6 @@ if(local player)then{
 	keyspressed = compile preprocessFile "keyspressed.sqf";
 	_displayID = (findDisplay 46) displaySetEventHandler ["KeyDown","_this call keyspressed"];
 	
-
 	call compile PreprocessFileLineNumbers "dialog\inv_functions.sqf";
 	
 	//Default Inventory

@@ -85,8 +85,8 @@ if(!isNil "_pack")then{
 		{_unit addmagazine ((_pack select 2)select 1)} foreach [0,0,0];
 		_unit addweapon ((_pack select 2)select 0);
 	};
-	if(count (_pack select 4) != 0)then{{_unit addmagazine _x} foreach (_pack select 4);};
-	if(count (_pack select 3) != 0)then{{_unit addweapon _x} foreach (_pack select 3);};
+	if(count (_pack select 4) != 0)then{{_unit addmagazine _x} foreach (_pack select 4)};
+	if(count (_pack select 3) != 0)then{{_unit addweapon _x} foreach (_pack select 3)};
 	
 };
 

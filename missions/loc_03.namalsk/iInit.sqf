@@ -68,7 +68,7 @@ if(isServer)then{
 	UPS_Debug = 1;
 	
 	FZ_MAX_ZOMBIE_COUNT = 250;
-	FZ_ABONDED_DIST = 100;
+	FZ_ABONDED_DIST = 300;
 
 	FZ_ZONES = [];
 	

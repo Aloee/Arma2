@@ -19,14 +19,16 @@ class Mission
 		"camp_armory_misc_plasticpole",
 		"cacharacters2",
 		"CAWheeled2_BTR90",
-		"dapra",
 		"CAWheeled_W_BAF",
 		"dapmisc",
 		"dapanomalies",
 		"dapartefacts",
 		"dapwilddogs",
 		"dapstalkers",
-		"dapbloodsucker"
+		"dapbloodsucker",
+		"cawheeled_e_s1203",
+		"zeu_oa_c_ai_recognition",
+		"dapflashlight"
 	};
 	addOnsAuto[]=
 	{
@@ -42,6 +44,7 @@ class Mission
 		"camisc_e",
 		"camp_armory_misc_concrete_wall",
 		"camp_armory_misc_plasticpole",
+		"cawheeled_e_s1203",
 		"namalsk"
 	};
 	randomSeed=9748017;
@@ -53,12 +56,12 @@ class Mission
 		forecastWeather=0;
 		year=2014;
 		month=7;
-		hour=15;
+		hour=5;
 		minute=5;
 	};
 	class Groups
 	{
-		items=16;
+		items=17;
 		class Item0
 		{
 			side="CIV";
@@ -359,8 +362,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={7596.5703,74.133034,8732.9473};
-					azimut=-318.87079;
+					position[]={7624.1504,71.553154,8789.3369};
+					azimut=-221.13295;
 					id=158;
 					side="CIV";
 					vehicle="Citizen1";
@@ -368,13 +371,163 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="a1";
+					init="this addWeapon ""dap_flashlight"";";
+				};
+			};
+		};
+		class Item16
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=13;
+				class Item0
+				{
+					position[]={6884.2456,6.1412945,8389.2764};
+					azimut=45;
+					id=160;
+					side="WEST";
+					vehicle="USMC_Soldier_SL";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.59999996;
+				};
+				class Item1
+				{
+					position[]={6882.8311,6.4908814,8383.6201};
+					azimut=45;
+					id=161;
+					side="WEST";
+					vehicle="USMC_Soldier_TL";
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+				class Item2
+				{
+					position[]={6884.2456,6.5259018,8382.2061};
+					azimut=45;
+					id=162;
+					side="WEST";
+					vehicle="USMC_Soldier_AR";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item3
+				{
+					position[]={6885.6597,6.5296874,8380.791};
+					azimut=45;
+					id=163;
+					side="WEST";
+					vehicle="USMC_Soldier_LAT";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item4
+				{
+					position[]={6887.0737,6.4683175,8379.377};
+					azimut=45;
+					id=164;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					skill=0.2;
+				};
+				class Item5
+				{
+					position[]={6889.1953,6.3742318,8377.2559};
+					azimut=45;
+					id=165;
+					side="WEST";
+					vehicle="USMC_Soldier_TL";
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+				class Item6
+				{
+					position[]={6890.6094,6.3111939,8375.8418};
+					azimut=45;
+					id=166;
+					side="WEST";
+					vehicle="USMC_Soldier_AR";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item7
+				{
+					position[]={6892.0234,6.2247577,8374.4277};
+					azimut=45;
+					id=167;
+					side="WEST";
+					vehicle="USMC_Soldier_LAT";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item8
+				{
+					position[]={6893.438,6.1038952,8373.0137};
+					azimut=45;
+					id=168;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					skill=0.2;
+				};
+				class Item9
+				{
+					position[]={6879.2959,7.095417,8380.084};
+					azimut=45;
+					id=169;
+					side="WEST";
+					vehicle="USMC_Soldier_TL";
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+				class Item10
+				{
+					position[]={6880.71,6.933918,8378.6699};
+					azimut=45;
+					id=170;
+					side="WEST";
+					vehicle="USMC_Soldier_AR";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item11
+				{
+					position[]={6882.124,6.834291,8377.2559};
+					azimut=45;
+					id=171;
+					side="WEST";
+					vehicle="USMC_Soldier_LAT";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item12
+				{
+					position[]={6883.5386,6.7728877,8375.8418};
+					azimut=45;
+					id=172;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					skill=0.2;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6693.2783,6.6491985,8376.6426};
+					type="SAD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
 				};
 			};
 		};
 	};
 	class Vehicles
 	{
-		items=143;
+		items=144;
 		class Item0
 		{
 			position[]={7291.604,90.242752,8030.5864};
@@ -2000,10 +2153,18 @@ class Mission
 			vehicle="Fence_corrugated_plate";
 			skill=0.60000002;
 		};
+		class Item143
+		{
+			position[]={7589.729,87.105667,8615.043};
+			id=159;
+			side="EMPTY";
+			vehicle="S1203_TK_CIV_EP1";
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
-		items=10;
+		items=13;
 		class Item0
 		{
 			position[]={6683.8818,6.2533011,8375.7588};
@@ -2068,11 +2229,11 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={7630.0522,72.400887,8734.9971};
-			name="FZ_loc_Cordon_resp1";
+			position[]={7628.8994,71.832214,8779.8086};
+			name="FZ_loc_harborBuild_resp1";
 			type="mil_dot";
 			colorName="ColorRed";
-			angle=73.320045;
+			angle=73.32;
 		};
 		class Item7
 		{
@@ -2085,22 +2246,49 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={7689.0171,71.988701,8734.5381};
-			name="FZ_loc_Cordon_resp2";
+			position[]={7686.3735,71.867363,8780.5244};
+			name="FZ_loc_harborBuild_resp2";
 			type="mil_dot";
 			colorName="ColorRed";
-			angle=73.320045;
+			angle=73.32;
 		};
 		class Item9
 		{
-			position[]={7653.3652,80.023422,8748.5889};
+			position[]={7315.1768,84.393295,7987.2891};
 			name="FZ_loc_Cordon";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorGreen";
-			a=100;
-			b=100;
-			angle=114.70322;
+			a=200;
+			b=200;
+			angle=114.703;
+		};
+		class Item10
+		{
+			position[]={7645.1968,72.11982,8729.7305};
+			name="FZ_loc_harborBuild";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorGreen";
+			a=200;
+			b=200;
+			angle=114.703;
+		};
+		class Item11
+		{
+			position[]={7331.1665,86.041107,7894.0571};
+			name="FZ_loc_Cordon_resp1";
+			type="mil_dot";
+			colorName="ColorRed";
+			angle=73.32;
+		};
+		class Item12
+		{
+			position[]={7307.2051,84.026459,8059.1729};
+			name="FZ_loc_Cordon_resp2";
+			type="mil_dot";
+			colorName="ColorRed";
+			angle=73.32;
 		};
 	};
 	class Sensors

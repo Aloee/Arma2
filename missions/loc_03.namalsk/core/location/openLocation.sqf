@@ -47,7 +47,7 @@ while{!isNil {_this getVariable "activated"}}do{
 			_center = call compile (_params select 1);
 			_prls_params = _params select 2;
 			{
-				private ["_shapes", "_groups"];
+				private ["_shapes", "_groups", "_zone"];
 				_shapes = [_x select 0, (_params select 1), _x select 1] call fz_sfx_getUnitShapes;
 				_groups = [[_center, _shapes, getMarkerPos (_x select 2),  _x select 3, _x select 4, _x select 5]] call PRECMPL_CREATEPATROLS;
 				_sGrps =  _sGrps + _groups;

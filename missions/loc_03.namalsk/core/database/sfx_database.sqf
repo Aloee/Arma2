@@ -27,12 +27,11 @@ fz_sfx_database_locations_init = {
 	private ["_trgs", "_trg", "_markerPlace", "_params", "_radius"];
 	
 	_trgs = [];
-	
 	{
 		_markerPlace = _x select 0;
 		_params = _x select 1;
 			_radius = _params select 0;
-		
+		hint str _radius;
 		_trg=createTrigger["EmptyDetector", getMarkerPos _markerPlace];
 		_trg setTriggerArea[_radius select 0, _radius select 1, 0, false];
 		_trg setTriggerActivation["ANY","PRESENT",true];

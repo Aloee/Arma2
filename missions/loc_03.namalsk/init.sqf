@@ -13,14 +13,18 @@ if(isServer or isDedicated)then{
 	FZ_ANOMALIES_NAME = ["Burn", "Gravi", "Electro", "Mincer", "Psy", "Tornado", "Souls"];
 	FZ_ANOMALIES_COUNT = 30;
 	FZ_MIN_RESPAWNS_DISTANCE_ANOMALIES = 300;
-	FZ_NO_ANOMALIES_LOCATIONS = ["FZ_loc_Cordon"];
+	FZ_NO_ANOMALIES_LOCATIONS = ["FZ_loc_Cordon", "FZ_loc_harborBuild"];
 	FZ_MARKED_ANOMALIES = true;
 	
 	//Locations
 	FZ_LOCATIONS = [
-		["FZ_loc_Cordon", [getMarkerSize "FZ_loc_Cordon", "stalkerCenter", [
+		["FZ_loc_Cordon", [getMarkerSize "FZ_loc_Cordon", "freedomCenter", [
 			[4, false, "FZ_loc_Cordon_resp1", "ammo_easy", 50, false],
 			[4, false, "FZ_loc_Cordon_resp2", "ammo_easy", 50, false]
+		]]],
+		["FZ_loc_harborBuild", [getMarkerSize "FZ_loc_harborBuild", "dutyCenter", [
+			[4, false, "FZ_loc_harborBuild_resp1", "ammo_easy", 50, false],
+			[4, false, "FZ_loc_harborBuild_resp2", "ammo_easy", 50, false]
 		]]]
 	];
 	
